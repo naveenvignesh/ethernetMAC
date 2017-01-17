@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Sun Nov 27 00:08:52 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Sat Nov 26 21:31:59 2016"
+[dumpfile_size] 5505102
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/lpi_mode_0.gtkw"
+[timestart] 0
+[size] 1177 600
+[pos] 28 9
+*-20.315842 867000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[treeopen] ethernet_tb.tx.tx_core.QOS_selector.
+[sst_width] 305
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+ethernet_tb.clks.clk
+ethernet_tb.xgmii_tx.TXCLK
+@22
+ethernet_tb.xgmii_tx.TXC[3:0]
+ethernet_tb.xgmii_tx.TXD[31:0]
+@28
+ethernet_tb.tx.tx_core.tx_rs.lpi
+ethernet_tb.tx.tx_core.tx_crc.crcfifo0_empty
+ethernet_tb.tx.tx_core.tx_crc.crcfifo1_empty
+ethernet_tb.tx.tx_core.tx_crc.crcfifo2_empty
+[pattern_trace] 1
+[pattern_trace] 0

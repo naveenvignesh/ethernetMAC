@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Sat Nov 26 23:20:21 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Sat Nov 26 21:31:59 2016"
+[dumpfile_size] 5505102
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/axi_master_6.gtkw"
+[timestart] 865110
+[size] 1000 600
+[pos] 169 15
+*-13.754142 865110 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[treeopen] ethernet_tb.tx.tx_core.axi_master.
+[sst_width] 229
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+ethernet_tb.clks.clk
+@22
+ethernet_tb.rd_data_ch.RDATA[63:0]
+ethernet_tb.rd_data_ch.RID[3:0]
+@28
+ethernet_tb.rd_data_ch.RVALID
+ethernet_tb.rd_data_ch.RREADY
+ethernet_tb.rd_data_ch.RLAST
+@22
+ethernet_tb.tx.tx_core.axi_master.cur_chstate_0[3:0]
+ethernet_tb.tx.tx_core.axi_master.link_datain_0[31:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.link_push_0
+ethernet_tb.tx.tx_core.axi_master.link_wrap_0
+[pattern_trace] 1
+[pattern_trace] 0

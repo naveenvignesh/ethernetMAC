@@ -1,0 +1,15 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : eth_core
+Version: K-2015.12-SP1
+Date   : Fri Nov 11 15:43:59 2016
+****************************************
+
+
+
+                                      Int      Switch   Leak      Total
+Hierarchy                             Power    Power    Power     Power    %
+--------------------------------------------------------------------------------
+eth_core                              2.93e-03 1.23e-04 7.91e-05  3.13e-03 100.0
+1

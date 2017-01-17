@@ -1,0 +1,2 @@
+#!/usr/bin/csh
+sv_ncgatescg ethernet_tb.sv ../rtl/syn_CG/eth_core_tc240CG_netlist.v 

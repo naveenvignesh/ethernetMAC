@@ -1,0 +1,2 @@
+#!/usr/bin/csh
+sv_ncgates ethernet_tb.sv ../rtl/syn_wholedesign/eth_core_netlist.v 

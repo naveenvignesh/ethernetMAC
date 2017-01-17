@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Sat Nov 26 22:08:34 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Sat Nov 26 21:31:59 2016"
+[dumpfile_size] 5505102
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/axi_slave_write_addr_ch.gtkw"
+[timestart] 141100
+[size] 1000 600
+[pos] 169 15
+*-15.119322 155000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[sst_width] 229
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+ethernet_tb.clks.clk
+ethernet_tb.clks.rst
+ethernet_tb.wr_addr_ch.AWVALID
+ethernet_tb.wr_addr_ch.AWREADY
+@22
+ethernet_tb.wr_addr_ch.AWADDR[31:0]
+@28
+ethernet_tb.wr_addr_ch.AWBURST[1:0]
+ethernet_tb.wr_addr_ch.AWSIZE[2:0]
+@22
+ethernet_tb.wr_addr_ch.AWLEN[3:0]
+ethernet_tb.wr_addr_ch.AWID[3:0]
+ethernet_tb.tx.tx_core.axi_slave.wchaddr_datain[35:0]
+@29
+ethernet_tb.tx.tx_core.axi_slave.wchaddr_push
+[pattern_trace] 1
+[pattern_trace] 0

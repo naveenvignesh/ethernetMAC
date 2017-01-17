@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Sat Nov 26 23:28:11 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Sat Nov 26 21:31:59 2016"
+[dumpfile_size] 5505102
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/eth_tx_crc_1.gtkw"
+[timestart] 875000
+[size] 1000 600
+[pos] 169 15
+*-15.465609 875000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[treeopen] ethernet_tb.tx.tx_core.axi_master.
+[treeopen] ethernet_tb.tx.tx_core.tx_crc.
+[sst_width] 305
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+ethernet_tb.clks.clk
+ethernet_tb.tx.tx_core.tx_crc.dready_pkt0
+ethernet_tb.tx.tx_core.tx_crc.dready_pkt1
+ethernet_tb.tx.tx_core.tx_crc.dready_pkt2
+@22
+ethernet_tb.tx.tx_core.tx_crc.datain_pkt0[63:0]
+ethernet_tb.tx.tx_core.tx_crc.datain_pkt1[63:0]
+ethernet_tb.tx.tx_core.tx_crc.datain_pkt2[63:0]
+ethernet_tb.tx.tx_core.tx_crc.crcfifo0_datain[31:0]
+ethernet_tb.tx.tx_core.tx_crc.crcfifo1_datain[31:0]
+ethernet_tb.tx.tx_core.tx_crc.crcfifo2_datain[31:0]
+@28
+ethernet_tb.tx.tx_core.tx_crc.crcfifo0_push
+ethernet_tb.tx.tx_core.tx_crc.crcfifo1_push
+ethernet_tb.tx.tx_core.tx_crc.crcfifo2_push
+[pattern_trace] 1
+[pattern_trace] 0

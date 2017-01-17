@@ -1,0 +1,631 @@
+
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                       FloorPlan Manager (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                        Library Compiler (TM)
+                      DesignWare Developer (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                         Power Compiler (TM)
+
+           Version C-2009.06-SP5 for linux -- Jan 15, 2010
+              Copyright (c) 1988-2009 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+The above trademark notice does not imply that you are licensed to use 
+all of the listed products. You are licensed to use only those products 
+for which you have lawfully obtained a valid license key.
+
+Initializing...
+#
+# set the inf.clk to be your interface name <name>.clk
+# set the inf.rst to be your interface name <name>.rst
+#
+set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb
+set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25}
+/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25
+analyze -format sverilog {
+/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_interface.sv 
+/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv 
+/home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv }
+Running PRESTO HDLC
+Compiling source file /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_interface.sv
+Compiling source file /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:30: the undeclared symbol 'wchaddr_push' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:30: the undeclared symbol 'wchaddr_pull' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:30: the undeclared symbol 'wchaddr_datain' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:30: the undeclared symbol 'wchaddr_dataout' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:30: the undeclared symbol 'wchaddr_depthleft' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:30: the undeclared symbol 'wchaddr_full' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:30: the undeclared symbol 'wchaddr_empty' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:31: the undeclared symbol 'wchdata_push' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:31: the undeclared symbol 'wchdata_pull' assumed to have the default net type, which is 'wire'. (VER-936)
+Compiling source file /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:37: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:39: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:2: Parameter keyword used in local parameter declaration. (VER-329)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:56: The 'assert property' construct is not supported.  It will be ignored. (VER-104)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:57: The 'assert property' construct is not supported.  It will be ignored. (VER-104)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:31: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:32: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:33: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:37: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:38: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:42: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:43: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:44: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:48: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:49: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+Loading db file '/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Warning: Can't read link_library file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'. (UID-3)
+1
+elaborate AXI_master
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loading db file '/apps/synopsys/SYNTH/libraries/syn/gtech.db'
+Loading db file '/apps/synopsys/SYNTH/libraries/syn/standard.sldb'
+  Loading link library 'tc240c'
+Warning: Function '=' leaked 1 allocations for 16 bytes. (EQN-21)
+  Loading link library 'gtech'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Warning: Can't read link_library file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'. (UID-3)
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 45 in file
+	'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            47            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AXI_master line 34 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cur_state_reg    | Flip-flop |   4   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master line 45 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     arburst_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|     arvalid_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|     arsize_reg      | Latch |   3   |  Y  | N  | N  | N  | -  | -  | -  |
+|     araddr_reg      | Latch |  32   |  N  | N  | N  | N  | -  | -  | -  |
+|      arlen_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Elaborated 1 design.
+Current design is now 'AXI_master'.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Warning: Can't read link_library file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'. (UID-3)
+Information: Building the design 'dma_fifo' instantiated from design 'AXI_master' with
+	the parameters "32|((N%clks%I%AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_DWIDTH32I_clks_AXI_clks_to_rtl_ line 29 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      w_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop | 1024  |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================================================
+|              block name/line                | Inputs | Outputs | # sel inputs | MB |
+======================================================================================
+| dma_fifo_DWIDTH32I_clks_AXI_clks_to_rtl_/23 |   32   |   32    |      5       | N  |
+======================================================================================
+Presto compilation completed successfully.
+Error: Width mismatch on port 'data_in' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell wchaddr_fifo ('dma_fifo') to 'dma_fifo_DWIDTH32I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Information: Building the design 'dma_fifo' instantiated from design 'AXI_master' with
+	the parameters "64|((N%clks%I%AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_DWIDTH64I_clks_AXI_clks_to_rtl_ line 29 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      w_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop | 1024  |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================================================
+|              block name/line                | Inputs | Outputs | # sel inputs | MB |
+======================================================================================
+| dma_fifo_DWIDTH64I_clks_AXI_clks_to_rtl_/23 |   32   |   32    |      5       | N  |
+======================================================================================
+Presto compilation completed successfully.
+Error: Width mismatch on port 'data_in' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell wchdata_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+1
+create_clock clks.clk -name clk -period 8.0
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+1
+set_propagated_clock clk
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_clock_uncertainty 0.25 clk
+1
+set_propagated_clock clk
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_output_delay 0.5 -clock clk [all_outputs]
+1
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+{rdata_ch.RID rdata_ch.RDATA rdata_ch.RRESP rdata_ch.RLAST rdata_ch.RUSER rdata_ch.RVAILD waddr_ch.AWREADY wdata_ch.WREADY wresp_ch.BID[3] wresp_ch.BID[2] wresp_ch.BID[1] wresp_ch.BID[0] wresp_ch.BRESP[1] wresp_ch.BRESP[0] wresp_ch.BUSER wresp_ch.BVALID rd haddr[31] haddr[30] haddr[29] haddr[28] haddr[27] haddr[26] haddr[25] haddr[24] haddr[23] haddr[22] haddr[21] haddr[20] haddr[19] haddr[18] haddr[17] haddr[16] haddr[15] haddr[14] haddr[13] haddr[12] haddr[11] haddr[10] haddr[9] haddr[8] haddr[7] haddr[6] haddr[5] haddr[4] haddr[3] haddr[2] haddr[1] haddr[0]}
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+1
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+1
+set_output_delay 0.6 -clock clk [all_outputs]
+1
+set_fix_hold [ get_clocks clk ]
+1
+set_output_delay 0.3 -clock clk [all_outputs]
+1
+set_wire_load_model -name T8G00TW8
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+1
+compile_ultra
+Alib files are up-to-date.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Warning: Can't read link_library file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'. (UID-3)
+Loading db file '/apps/synopsys/SYNTH/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | C-2009.06-DWBB_0912 |    *     |
+| Licensed DW Building Blocks             | C-2009.06-DWBB_0912 |    *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 133 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loaded alib file './alib-52/tc240c.db_NOMIN25.alib'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Warning: Can't read link_library file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'. (UID-3)
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+  Processing 'AXI_master'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Information: The register 'cur_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arburst_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'arlen_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arlen_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arsize_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arsize_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arsize_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+Warning: Can't read link_library file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'. (UID-3)
+Error: Width mismatch on port 'data_in' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell wchaddr_fifo ('dma_fifo') to 'dma_fifo_DWIDTH32I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Error: Width mismatch on port 'data_in' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell wchdata_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+Error: Can't read in the DB file 'dw_foundation.sldb'.
+	File 'dw_foundation.sldb' is created using program version 'I-2013.12-SP5'
+	which is newer than 'C-2009.06-SP5'. (UID-403)
+Error: Could not read in the DB file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Re-synthesis Optimization (Phase 1)
+  Re-synthesis Optimization (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01     154.5      0.00       0.0       0.0                                0.00
+    0:00:01     154.5      0.00       0.0       0.0                                0.00
+    0:00:01     154.5      0.00       0.0       0.0                                0.00
+    0:00:02     154.5      0.00       0.0       0.0                                0.00
+    0:00:02     154.5      0.00       0.0       0.0                                0.00
+    0:00:02     154.5      0.00       0.0       0.0                                0.00
+    0:00:02     154.5      0.00       0.0       0.0                                0.00
+    0:00:02     154.5      0.00       0.0       0.0                                0.00
+    0:00:02     155.0      0.00       0.0       0.0                                0.00
+    0:00:02     155.0      0.00       0.0       0.0                                0.00
+    0:00:02     155.0      0.00       0.0       0.0                                0.00
+    0:00:02     155.0      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03     154.0      0.00       0.0       0.0                                0.00
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+    0:00:03     151.5      0.00       0.0       0.0                                0.00
+    0:00:03     151.5      0.00       0.0       0.0                                0.00
+    0:00:03     151.5      0.00       0.0       0.0                                0.00
+    0:00:03     151.5      0.00       0.0       0.0                                0.00
+    0:00:03     151.5      0.00       0.0       0.0                                0.00
+Loading db file '/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25'
+
+  Optimization Complete
+  ---------------------
+1
+create_clock clks.clk -name clk -period 10.0
+1
+update_timing
+Information: Updating design information... (UID-85)
+1
+report_timing -max_paths 3
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : AXI_master
+Version: C-2009.06-SP5
+Date   : Thu Jun 23 19:52:06 2016
+****************************************
+
+Operating Conditions: NOMIN25   Library: tc240c
+Wire Load Model Mode: top
+
+  Startpoint: cur_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cur_state_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AXI_master         T8G00TW8              tc240c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cur_state_reg[1]/CP (CFD4QXL)            0.00       0.00 r
+  cur_state_reg[1]/Q (CFD4QXL)             0.58       0.58 r
+  U54/Z (CND2X1)                           0.89       1.48 f
+  U55/Z (CNR2IX1)                          0.27       1.74 r
+  U8/Z (CIVX2)                             0.09       1.83 f
+  U56/Z (CAN2X1)                           0.11       1.95 f
+  cur_state_reg[1]/D (CFD4QXL)             0.00       1.95 f
+  data arrival time                                   1.95
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.25       9.75
+  cur_state_reg[1]/CP (CFD4QXL)            0.00       9.75 r
+  library setup time                      -0.24       9.51
+  data required time                                  9.51
+  -----------------------------------------------------------
+  data required time                                  9.51
+  data arrival time                                  -1.95
+  -----------------------------------------------------------
+  slack (MET)                                         7.56
+
+
+  Startpoint: cur_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cur_state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AXI_master         T8G00TW8              tc240c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cur_state_reg[1]/CP (CFD4QXL)            0.00       0.00 r
+  cur_state_reg[1]/Q (CFD4QXL)             0.58       0.58 r
+  U45/Z (CND2X1)                           0.23       0.82 f
+  U11/Z (COND4CX1)                         0.09       0.91 r
+  cur_state_reg[0]/D (CFD2XL)              0.00       0.91 r
+  data arrival time                                   0.91
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.25       9.75
+  cur_state_reg[0]/CP (CFD2XL)             0.00       9.75 r
+  library setup time                      -0.22       9.53
+  data required time                                  9.53
+  -----------------------------------------------------------
+  data required time                                  9.53
+  data arrival time                                  -0.91
+  -----------------------------------------------------------
+  slack (MET)                                         8.62
+
+
+1
+write -hierarchy -format verilog -output AXI_master_gates.v
+Writing verilog file '/home/bo/boop3386/Documents/MS_PROJECT/rtl/syn/AXI_master_gates.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+quit
+Information: Defining new variable 'all_inputs_wo_rst_clk'. (CMD-041)
+
+Thank you...

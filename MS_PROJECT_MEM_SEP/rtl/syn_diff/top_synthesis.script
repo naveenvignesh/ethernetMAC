@@ -1,0 +1,140 @@
+set link_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb 
+}
+set target_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db}
+################################################################################################
+################################eth_tx_crc######################################################
+################################################################################################
+set active_design eth_tx_crc
+set sub_mod {CRC_block}
+foreach mod $sub_mod {
+set syn_db $mod.db
+read_db syn_db
+}
+analyze -format sverilog {
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rtl_struct.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_interface.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx_crc.sv 
+}
+elaborate $active_design 
+current_design $active_design
+link
+uniquify
+create_clock clks.clk -name clk -period 2.40
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name SMALL
+compile_ultra
+create_clock clks.clk -name clk -period 3.00
+update_timing
+report_timing -max_paths 3
+report_area
+report_power -analysis_effort  high 
+remove_unconnected_ports [find -hierarchy cell {"*"}]
+set_dont_touch $active_design 
+write -hierarchy -output $active_design.db
+write -hierarchy -format verilog -output $active_design.v
+write_sdc     $active_design.sdc
+#write_sdf     eth_core_netlist.sdf
+##################################################################################################
+################################################################################################
+##################################################################################################
+################################################################################################
+################################eth_tx######################################################
+################################################################################################
+set active_design eth_tx
+set sub_mod {AXI_master AXI_slave dma_controller_tx  eth_tx_crc queue_selection rs_layer }
+foreach mod $sub_mod {
+set syn_db $mod.db
+read_db syn_db
+}
+analyze -format sverilog {
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rtl_struct.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_interface.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx.sv 
+}
+elaborate $active_design 
+current_design $active_design
+link
+uniquify
+create_clock clks.clk -name clk -period 2.40
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name SMALL
+compile_ultra
+create_clock clks.clk -name clk -period 3.00
+update_timing
+report_timing -max_paths 3
+report_area
+report_power -analysis_effort  high 
+remove_unconnected_ports [find -hierarchy cell {"*"}]
+set_dont_touch $active_design 
+write -hierarchy -output $active_design.db
+write -hierarchy -format verilog -output $active_design.v
+write_sdc     $active_design.sdc
+#write_sdf     eth_core_netlist.sdf
+##################################################################################################
+################################################################################################
+
+################################################################################################
+################################eth_tx######################################################
+################################################################################################
+#set active_design eth_core
+#set sub_mod {eth_tx }
+#foreach mod $sub_mod {
+#set syn_db $mod.db
+#read_db syn_db
+#}
+#analyze -format sverilog {
+#/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rtl_struct.sv 
+#/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_interface.sv 
+#/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_core.sv 
+#}
+#elaborate $active_design 
+#current_design $active_design
+#link
+#uniquify
+#create_clock clks.clk -name clk -period 2.40
+#set_propagated_clock clk
+#set_clock_uncertainty 0.25 clk
+#set_propagated_clock clk
+#set_output_delay 0.5 -clock clk [all_outputs]
+#set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+#set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+#set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+#set_output_delay 0.6 -clock clk [all_outputs]
+#set_fix_hold [ get_clocks clk ]
+#set_output_delay 0.3 -clock clk [all_outputs]
+#set_wire_load_model -name SMALL
+#compile_ultra
+#create_clock clks.clk -name clk -period 3.00
+#update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power -analysis_effort  high 
+#remove_unconnected_ports [find -hierarchy cell {"*"}]
+#set_dont_touch $active_design 
+#write -hierarchy -output $active_design.db
+#write -hierarchy -format verilog -output $active_design.v
+#write_sdc     $active_design.sdc
+##write_sdf     eth_core_netlist.sdf
+#quit
+##################################################################################################
+################################################################################################
+

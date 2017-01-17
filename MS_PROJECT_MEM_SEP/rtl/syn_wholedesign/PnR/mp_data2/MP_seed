@@ -1,0 +1,15 @@
+# Instance seed
+# HInst seed
+tx_core/dma_reg_tx
+tx_core/tx_crc/crcpkt2
+tx_core/tx_crc/crcpkt1
+tx_core/tx_crc/crcpkt0
+# IG seed
+mpIoGrp_0
+mpIoGrp_1
+mpIoGrp_2
+mpIoGrp_3
+mpIoGrp_4
+mpIoGrp_5
+mpIoGrp_6
+mpIoGrp_7

@@ -1,0 +1,88 @@
+#
+# set the inf.clk to be your interface name <name>.clk
+# set the inf.rst to be your interface name <name>.rst
+#
+#set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+#set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25}
+
+#set link_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+#set target_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db}
+
+set link_library {  /home/010123386@SJSUAD.SJSU.EDU/Documents/new_lib/FreePDK45/osu_soc/lib/files/gscl45nm.db
+/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+set target_library { /home/010123386@SJSUAD.SJSU.EDU/Documents/new_lib/FreePDK45/osu_soc/lib/files/gscl45nm.db  }
+################################################################################################
+##############################################################################
+################################################################################################
+analyze -format sverilog {
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rtl_struct.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_interface.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D8.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D16.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D24.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D32.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D40.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D48.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D56.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D64.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx_crc.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/prienc.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/queue_selection.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_core.sv 
+}
+
+##################################################################################################
+#############eth_core.sv #################################################################
+##################################################################################################
+
+elaborate eth_core 
+saif_map -start
+link
+create_clock clks.clk -name clk -period 2.76
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell INVX1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+#set_wire_load_model -name T8G00TW8
+set_clock_gating_style -minimum_bitwidth 16
+compile_ultra -gate_clock 
+#compile_ultra -ungroup_all -map_effort medium
+#compile_ultra -incremental_mapping -map_effort medium
+create_clock clks.clk -name clk -period 3.45
+update_timing
+report_timing -max_paths 3
+report_area
+report_power -analysis_effort  high 
+report_cell
+write -hierarchy -format verilog -output eth_core_netlist_CG.v
+write_sdc     eth_core_netlist_CG.sdc
+write_parasitics -output eth_core.spf
+#write -f db -hier -output eth_core_netlist_CG.db 
+#write_sdf     eth_core_netlist.sdf
+read_saif -auto_map_names -input /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/eth_core.saif -instance ethernet_tb/tx -verbose
+report_saif  
+saif_map -write_map eth_core_ptpxmap.tcl -type ptpx
+saif_map -end
+quit 
+##################################################################################################

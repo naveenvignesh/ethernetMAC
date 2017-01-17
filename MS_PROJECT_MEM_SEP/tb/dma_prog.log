@@ -1,0 +1,5 @@
+ETH_TB::axi_waddr:0ffff0008 axi_wdata:ff0aa010000afc01
+ETH_TB::axi_waddr:0ffff0010 axi_wdata:ffa107a0000afc40
+ETH_TB::axi_waddr:0ffff0018 axi_wdata:ff5e5700000afc20
+ETH_TB::axi_waddr:0ffff0020 axi_wdata:fffdfd90000afc01
+ETH_TB::axi_waddr:0ffff0028 axi_wdata:ff3ca510000afc02

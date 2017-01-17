@@ -1,0 +1,356 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 9.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : liboaDesign.so: cannot open shared object file: No such file or directory
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2010.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.14-s273_1 (32bit) 02/17/2011 18:35 (Linux 2.6)
+@(#)CDS: NanoRoute v09.14-s029 NR110207-1105/USR65-UB (database version 2.30, 112.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v09.14-s097_1 (32bit) 02/08/2011 02:24:38 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 09.14-s001 (32bit) 02/17/2011 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 09.14-s140_1 (32bit) Feb  8 2011 01:13:15 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v09.14-s001
+--- Starting "Encounter v09.14-s273_1" on Tue Nov 15 13:26:29 2016 (mem=50.6M) ---
+--- Running on coe-ee-cad45.sjsuad.sjsu.edu (x86_64 w/Linux 4.8.4-200.fc24.x86_64) ---
+This version was compiled on Thu Feb 17 18:35:02 PST 2011.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reading config file - eth_core.enc.dat/eth_core.conf
+**WARN: (ENCLF-108):	There is no overlap layer defined in any lef file
+so you are unable to create rectilinear partition in a hierarchical flow.
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURN1 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURN2 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURN3 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURN4 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURN5 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURN6 GENERATE
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (ENCTS-302):	Min timing libraries are not specified, while max timing libraries are specified in configuration file. This may cause issues in hold analysis. Use rda_Input(ui_timelib) instead of rda_Input(ui_timelib,max) for timing library specification, or use setTimingLibrary command to set min timing libraries. By default max timing libraries will be used for hold analysis.
+*** End library_loading (cpu=0.00min, mem=0.1M, fe_cpu=0.05min, fe_mem=280.3M) ***
+eth_core
+Loading preference file eth_core.enc.dat/enc.pref.tcl ...
+Loading mode file eth_core.enc.dat/eth_core.mode ...
+loading place ...
+loading route ...
+**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M2. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M3. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M4. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M5. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M6. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}'set_default_switching_activity' finished successfully.
+'read_activity_file' finished successfully.
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> violationBrowser -all -no_display_false
+<CMD> zoomBox 1233.0 1318.5 1235.0 1320.5
+<CMD> zoomBox 1233.0 1318.5 1235.0 1320.5
+<CMD> zoomBox 1233.0 1318.5 1235.0 1320.5
+<CMD> fit
+<CMD_INTERNAL> violationBrowserHilite -tool Other -type Geometry -subtype Spacing -color #fa1340
+<CMD_INTERNAL> violationBrowserHilite -tool Other -type Geometry -subtype Spacing -color #fa1340
+<CMD> clearDrc
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 5.0
+INFO (POWER-1607): Updated clock 'default' to frequency 200MHz from internal.
+
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -vcd_scope {} -start {} -end {} -vcd_block {} ../../../tb/mac_core.vcd
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_powerup_analysis -mode accurate -ultrasim_simulation_mode ms
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//eth_core.rpt
+
+
+Extraction called for design 'eth_core' of instances=23400 and nets=25781 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design eth_core.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.6
+      Min Width        : 0.3
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.6
+      Min Width        : 0.3
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.6
+      Min Width        : 0.3
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.6
+      Min Width        : 0.3
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.6
+      Min Width        : 0.3
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 1
+      Min Width        : 0.5
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./eth_core_A4MV6z_10109.rcdb.d  -basic
+RC Mode: Detail [Basic CapTable, LEF Resistances]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 327.4M)
+Creating parasitic data file './eth_core_A4MV6z_10109.rcdb.d/header.seq' for storing RC.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M2_M1' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 10.001% (CPU Time= 0:00:00.2  MEM= 337.4M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M3_M2' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 20.0008% (CPU Time= 0:00:00.2  MEM= 337.5M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M4_M3' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M5_M4' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 30.0011% (CPU Time= 0:00:00.3  MEM= 337.5M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M6_M5' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 40.0009% (CPU Time= 0:00:00.4  MEM= 337.6M)
+Extracted 50.0013% (CPU Time= 0:00:00.4  MEM= 337.6M)
+Extracted 60.001% (CPU Time= 0:00:00.5  MEM= 337.6M)
+Extracted 70.0008% (CPU Time= 0:00:00.6  MEM= 337.6M)
+Extracted 80.0011% (CPU Time= 0:00:00.6  MEM= 337.6M)
+Extracted 90.0009% (CPU Time= 0:00:00.8  MEM= 337.6M)
+Extracted 100% (CPU Time= 0:00:00.9  MEM= 338.2M)
+Nr. Extracted Resistors     : 357929
+Nr. Extracted Ground Cap.   : 381913
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './eth_core_A4MV6z_10109.rcdb.d/header.seq' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:01.0  Real Time: 0:00:03.0  MEM: 328.258M)
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 346.3M, InitMEM = 346.3M)
+Number of Loop : 0
+Start delay calculation (mem=346.262M)...
+delayCal using detail RC...
+Opening parasitic data file './eth_core_A4MV6z_10109.rcdb.d/header.seq' for reading.
+RC Database In Completed (CPU Time= 0:00:00.1  MEM= 372.0M)
+Closing parasitic data file './eth_core_A4MV6z_10109.rcdb.d/header.seq'. 23996 times net's RC data read were performed.
+Delay calculation completed. (cpu=0:00:01.2 real=0:00:02.0 mem=370.430M 0)
+*** CDM Built up (cpu=0:00:02.6  real=0:00:05.0  mem= 370.4M) ***
+Start force assigning power rail voltages for view default_view_setup
+Finished assigning power rail voltages
+
+CPE found ground net: gnd
+CPE found power net: vdd  voltage: 0V
+
+Warning:
+  There are 2 power/gnd nets that are not connected
+gnd vdd ...
+Use 'globalNetConnect' to define rail connections.
+[PowermeterNetlistLib::InfoMergingRails]
+WARNING (POWER-2035): There are 2 power/gnd nets that are not connected
+gnd vdd ...
+Use 'globalNetConnect' to define rail connections.
+
+
+INFO (POWER-1606): Found clock 'clk' with frequency 333.333MHz from SDC file.
+
+
+Parsing VCD file ../../../tb/mac_core.vcd
+
+
+Starting Reading VCD variables
+2016-Nov-15 13:37:55 (2016-Nov-15 21:37:55 GMT)
+
+Finished Reading VCD variables
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT)
+   
+The vcd command required:
+   		0.62 user, 0.00 system, and 0.62 real seconds
+
+   Total number of value changes: 0.
+
+   Total simulation time: 5.145e-06s.
+
+   With this vcd command,  0 value changes and 5.14489e-06 second
+simulation time were counted for power consumption calculation.
+
+  Filename (activity)          : ../../../tb/mac_core.vcd
+  Found in design              : 0/225235
+  Coverage for file            : 0/24053 = 0%
+
+  225235 nets were found in the VCD file(s) but were not in
+  the design.  These nets are not reported because
+  'read_activity_file -report_missing_nets' is set to false (default).
+
+Propagating signal activity...
+
+
+Starting Levelizing
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT)
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 5%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 10%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 15%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 20%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 25%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 30%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 35%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 40%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 45%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 50%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 55%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 60%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 65%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 70%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 75%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 80%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 85%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 90%
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT): 95%
+
+Finished Levelizing
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT)
+
+Starting Activity Propagation
+2016-Nov-15 13:37:56 (2016-Nov-15 21:37:56 GMT)
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 5%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 10%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 15%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 20%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 25%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 30%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 35%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 40%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 45%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 50%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 55%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 60%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 65%
+
+Finished Activity Propagation
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT)
+
+Starting Calculating power
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT)
+
+Calculating power dissipation...
+
+ ... Calculating switching power
+  instance tx_core/axi_slave/awready_d_reg is not connected to any rail
+  instance tx_core/axi_slave/wready_d_reg is not connected to any rail
+  instance U1821 is not connected to any rail
+  instance U1820 is not connected to any rail
+  instance U1819 is not connected to any rail
+  only first five unconnected instances are listed...
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 5%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 10%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 15%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 20%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 25%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 30%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 35%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 40%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 45%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 50%
+ ... Calculating internal and leakage power
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 55%
+2016-Nov-15 13:37:57 (2016-Nov-15 21:37:57 GMT): 60%
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT): 65%
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT): 70%
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT): 75%
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT): 80%
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT): 85%
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT): 90%
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT): 95%
+
+Finished Calculating power
+2016-Nov-15 13:37:58 (2016-Nov-15 21:37:58 GMT)
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       376.9      68.37%
+Total Switching Power:       174.3      31.62%
+Total Leakage Power:    0.002902  0.0005265%
+Total Power:       551.2
+-----------------------------------------------------------------------------------------
+WARNING (POWER-2041): There are instances which are not connected to power or ground nets in this design. They are put into default power/ground rail uti files. The list of instance names can be obtained by using itaputil on the uti files.
+
+report_power consumed time (real time) 00:00:09 : increased peak memory
+(463M) by 54
+Output file is .//eth_core.rpt.
+<CMD> view_analysis_results
+<CMD> view_dynamic_waveform
+**ERROR: (ENCLIC-90):	This command does not have the necessary license to run, you must get access to one of the following licenses before you can run the command:  epsxl.
+Use 'setLicenseCheck -status' to see the current licenses in use and for more information.
+
+*** Memory Usage v0.159.2.9 (Current mem = 415.406M, initial mem = 50.625M) ***
+--- Ending "Encounter" (totcpu=0:01:04, real=0:14:54, mem=415.4M) ---

@@ -1,0 +1,3 @@
+#!/usr/bin/csh
+source design_ssc.csh
+sv_vcs ethernet_tb.sv | tee run_sim.log

@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Sat Nov 26 23:23:49 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Sat Nov 26 21:31:59 2016"
+[dumpfile_size] 5505102
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/axi_master_7.gtkw"
+[timestart] 245000
+[size] 1000 600
+[pos] 169 15
+*-14.615222 245000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[treeopen] ethernet_tb.tx.tx_core.axi_master.
+[sst_width] 229
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+ethernet_tb.clks.clk
+@22
+ethernet_tb.rd_data_ch.RDATA[63:0]
+ethernet_tb.tx.tx_core.axi_master.pcfifo_datain_0[15:0]
+ethernet_tb.tx.tx_core.axi_master.pcfifo_datain_1[15:0]
+ethernet_tb.tx.tx_core.axi_master.pcfifo_datain_2[15:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.pcfifo_push_0
+ethernet_tb.tx.tx_core.axi_master.pcfifo_push_1
+ethernet_tb.tx.tx_core.axi_master.pcfifo_push_2
+[pattern_trace] 1
+[pattern_trace] 0

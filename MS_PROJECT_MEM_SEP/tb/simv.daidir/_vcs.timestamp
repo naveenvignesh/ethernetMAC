@@ -1,0 +1,213 @@
+34       
+0 AXI_interface.sv
+0 rtl_struct.sv
+0 eth_core.sv
+0 eth_tx.sv
+0 dma_controller_tx.sv
+0 AXI_master.sv
+0 AXI_slave.sv
+0 CRC32_D8.sv
+0 CRC32_D16.sv
+0 CRC32_D24.sv
+0 CRC32_D32.sv
+0 CRC32_D40.sv
+0 CRC32_D48.sv
+0 CRC32_D56.sv
+0 CRC32_D64.sv
+0 CRC_block.sv
+0 eth_tx_crc.sv
+0 dma_fifo.sv
+0 rs_layer.sv
+0 prienc.sv
+0 QOS_arb.sv
+0 queue_selection.sv
+0 dma_fifo_exmem_crc.sv
+0 dma_fifo_exmem_pktd.sv
+0 dma_fifo_exmem_pktc.sv
+0 dma_fifo_exmem_swchaddr.sv
+0 dma_fifo_exmem_swchdata.sv
+0 dma_fifo_exmem_swchrsp.sv
+0 mem_model_crc.sv
+0 mem_model_pktd.sv
+0 mem_model_pktc.sv
+0 mem_model_swchaddr.sv
+0 mem_model_swchdata.sv
+0 mem_model_swchrsp.sv
+35
++cli+4
++define+SAIF_ANA+RTLSAIF
++incdir+../rtl
++itf+/apps/synopsys/VCMX_Fall_2012/linux/lib/vcsd.tab
++lint=TFIPC-L
++memcbk
++systemverilogext+.sv
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -O -I/apps/synopsys/VCMX_Fall_2012/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags= -m32
+-Mobjects= /apps/synopsys/VCMX_Fall_2012/linux/lib/libvirsim.so /apps/synopsys/VCMX_Fall_2012/linux/lib/librterrorinf.so /apps/synopsys/VCMX_Fall_2012/linux/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/apps/synopsys/VCMX_Fall_2012/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/apps/synopsys/VCMX_Fall_2012/linux/lib/ctype-stubs_32.a -ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-Xnotice
+-debug=4
+-debug_all
+-gen_obj
+-line
+-ntb_opts
+-sverilog
+/apps/synopsys/VCMX_Fall_2012/linux/bin/vcs1
+dtm
+ethernet_tb.sv
+84
+sysc_uni_pwd=/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb
+cdk_dir=/apps/cadence/IC50/tools/dfII/local
+XMODIFIERS=@im=ibus
+XDG_SESSION_ID=55
+XDG_RUNTIME_DIR=/run/user/467869371
+XDG_MENU_PREFIX=gnome-
+XDG_CURRENT_DESKTOP=GNOME
+VTE_VERSION=4403
+VNCDESKTOP=coe-ee-cad45.sjsuad.sjsu.edu:55 (010123386)
+VMR_MODE_FLAG=32
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_HOME=/apps/synopsys/VCMX_Fall_2012
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+VCSMX_HOME=/apps/synopsys/VCMX_Fall_2012
+USE_NCSU_CDK=
+UNAME=/bin/uname
+TOOL_HOME=/apps/synopsys/VCMX_Fall_2012/linux
+TK_LIBRARY=/apps/synopsys/VCMX_Fall_2012/etc/auxx/tcllib/tk8.4/library
+SYNOPSYS_SIM=/apps/synopsys/2000.12
+SYNOPSYS=/apps/synopsys
+STROOT=/apps/synopsys/TCAD
+STRELEASE=current
+STDB=/home/010123386@SJSUAD.SJSU.EDU/sentaurus
+SSH_TTY=/dev/pts/1
+SSH_CONNECTION=10.40.40.110 51414 130.65.179.185 22
+SSH_CLIENT=10.40.40.110 51414 22
+SSH_AUTH_SOCK=/run/user/467869371/keyring/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=9267
+SNPSLMS_LICENSE_FILE=27000@cadence3.engr.sjsu.edu:/apps/synopsys/license/current-license-key
+SKIP_CDS_DIALOG=
+SFLM_SERVER=cadence3
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/9116,unix/unix:/tmp/.ICE-unix/9116
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_QPA_PLATFORMTHEME=qgnomeplatform
+QT_IM_MODULE=ibus
+PRIMETIME_ROOT=/apps/synopsys/pt2000.11
+OVA_UUM=0
+OSTYPE=linux
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+KRB5CCNAME=KEYRING:persistent:467869371
+KDEDIRS=/usr
+IUS=/apps/cadence/INCISIV141
+ISEROOT=/apps/synopsys/TCAD/
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+IC=/apps/cadence/IC50
+HSP_HOME=/apps/synopsys/HSPICE/hspice
+HOSTTYPE=x86_64-linux
+HOSTNAME=coe-ee-cad45.sjsuad.sjsu.edu
+HOST=coe-ee-cad45.sjsuad.sjsu.edu
+HISTCONTROL=ignoredups
+GTK_IM_MODULE=gtk-im-context-simple
+GROUP=domain users
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+GIO_LAUNCHED_DESKTOP_FILE_PID=11495
+GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/xfce4-terminal.desktop
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-jzBSpWDY34,guid=2150fccd9111a87f5be4287e5833d672
+CVS_RSH=ssh
+COLORTERM=truecolor
+CLS_CSD_COMPATIBILITY_LOCKING=NO
+CLS_CDSD_COMPATIBILITY_LOCKING=NO
+CDS_VHDL=/apps/cadence/INCISIV141/tools/leapfrog
+CDS_SITE=/apps/cadence/IC50/tools/dfII/local
+CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=5280@cadence3.engr.sjsu.edu:/export/apps/cadence/license-current
+CDSLMD_LICENSE_FILE=5280@cadence3.engr.sjsu.edu:/export/apps/cadence/license-current
+CDS=/apps/cadence
+BASH_FUNC_scl()=() {  local CMD=$1;
+ if [ "$CMD" = "load" -o "$CMD" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+ARCH=linux
+0
+42
+1478074805 ../rtl/mem_model_swchrsp.sv
+1478069652 ../rtl/mem_model_swchdata.sv
+1478069439 ../rtl/mem_model_swchaddr.sv
+1478073989 ../rtl/mem_model_pktc.sv
+1478072915 ../rtl/mem_model_pktd.sv
+1478069057 ../rtl/mem_model_crc.sv
+1478066363 ../rtl/dma_fifo_exmem_swchrsp.sv
+1478066268 ../rtl/dma_fifo_exmem_swchdata.sv
+1478065773 ../rtl/dma_fifo_exmem_swchaddr.sv
+1478065460 ../rtl/dma_fifo_exmem_pktc.sv
+1478073023 ../rtl/dma_fifo_exmem_pktd.sv
+1478071673 ../rtl/dma_fifo_exmem_crc.sv
+1477784262 ../rtl/queue_selection.sv
+1477784263 ../rtl/QOS_arb.sv
+1477784263 ../rtl/prienc.sv
+1478142302 ../rtl/rs_layer.sv
+1477784264 ../rtl/dma_fifo.sv
+1478068937 ../rtl/eth_tx_crc.sv
+1477784263 ../rtl/CRC_block.sv
+1477784265 ../rtl/CRC32_D64.sv
+1477784265 ../rtl/CRC32_D56.sv
+1477784265 ../rtl/CRC32_D48.sv
+1477784265 ../rtl/CRC32_D40.sv
+1477784265 ../rtl/CRC32_D32.sv
+1477784265 ../rtl/CRC32_D24.sv
+1477784265 ../rtl/CRC32_D16.sv
+1477784265 ../rtl/CRC32_D8.sv
+1479178627 ../rtl/AXI_slave.sv
+1478073450 ../rtl/AXI_master.sv
+1477784263 ../rtl/dma_controller_tx.sv
+1478074623 ../rtl/eth_tx.sv
+1478074540 ../rtl/eth_core.sv
+1477784263 ../rtl/rtl_struct.sv
+1478142756 ../rtl/AXI_interface.sv
+1478144302 eth_tx_protocol_check.sv
+1478122848 axi_slave_model.sv
+1478056737 axi_master_model.sv
+1477784287 TB_CRC_block.sv
+1477995058 ethernet_frame_pkg.sv
+1478075046 files.sv
+1478848992 ethernet_tb.sv
+1322023113 /apps/synopsys/VCMX_Fall_2012/linux/lib/vcsd.tab
+4
+0 
+1322023697 /apps/synopsys/VCMX_Fall_2012/linux/lib/libvirsim.so
+1322023323 /apps/synopsys/VCMX_Fall_2012/linux/lib/librterrorinf.so
+1322023249 /apps/synopsys/VCMX_Fall_2012/linux/lib/libsnpsmalloc.so
+1480195915 simv.daidir

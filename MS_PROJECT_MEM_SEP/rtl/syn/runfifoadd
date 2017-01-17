@@ -1,0 +1,525 @@
+#!/usr/bin/python
+
+import sys
+import time
+import os
+import subprocess
+import socket
+import argparse
+from string import find
+from datetime import date
+
+success="Luck smiled on you this day, it worked :)"
+
+class student:
+  def __init__(self):
+    name=""
+    last4=""
+
+files = []
+students = []
+resfile=0
+
+def getfnx():
+  strx=raw_input("verilog file name with .v (enter if done) ").strip()
+  return strx
+
+def getfiles(fn):
+  if(os.path.isfile(fn)):
+    fs = open(fn,"r")
+    for ln in fs.readlines():
+      ln = ln.strip()
+      files.append(ln)
+    fs.close()
+  else:
+    fs = open(fn,"w")
+    print("\n\nEnter the file names in descending hierarchy order.")
+    while(True):
+      strx = getfnx()
+      if(strx==""):
+        break
+      fs.write("{0}\n".format(strx))
+      files.append(strx)
+    fs.close()
+    
+def getstudents(fn):
+  if(os.path.isfile(fn)):
+    fs = open(fn,"r")
+    for ln in fs.readlines():
+      recs=ln.split("^")
+      stud = student()
+      stud.name=recs[1]
+      stud.last4=recs[2]
+      students.append(stud)
+    fs.close()
+  else:
+    fs = open(fn,"w")
+    namex = raw_input( "\n\nEnter student Name ").strip()
+    last4 = raw_input("Enter the last 4 of the SJSU ID ").strip()
+    fs.write("^{0}^{1}^\n".format(namex,last4))
+    stud = student()
+    stud.name = namex
+    stud.last4 = last4
+    students.append(stud)
+    fs.close()
+
+
+  
+###################################################
+# create the test bench                           #
+###################################################
+def maketb(tbname,debug,mgates,clkperiod):
+  ft = open(tbname,"w")
+  ft.write("""// This is a simple testbench for the fifo adder
+//
+//
+`timescale 1ns/10ps
+""")
+  ft.write("// Generated on ")
+  ft.write(str(time.asctime()) )
+  ft.write("/n")
+  if(mgates):
+    ft.write("// Gate level simulation test bench only\n")
+  ft.write("// Generated for student\n")
+  for qq in students:
+    ft.write("//    {0} {1}\n".format(qq.name,qq.last4))
+  ft.write("""
+
+module tbfifoadd();
+
+
+
+reg bad;
+reg clk,rst;
+reg pushina,pushinb;
+reg [31:0] dataina,datainb;
+wire pushout;
+reg stopin;
+wire [31:0] dataout;
+reg [31:0] origdataout;
+reg origpushout;
+reg [2:0] statea,stateb;
+integer outa,outb;
+
+
+int tnum=0;
+
+reg [31:0] expected[$];
+reg [31:0] expr;
+reg [31:0] fifoa[$];
+reg [31:0] fifob[$];
+
+
+reg debug=""")
+  if(debug):
+    ft.write("1;")
+  else:
+    ft.write("0;")
+  ft.write("""
+default clocking clk1 @(posedge(clk));
+
+endclocking
+
+always @(clk1) begin
+  #1;
+  if(statea==0 || stateb == 0) begin
+    stopin=1;
+  end else begin
+    stopin = ($random()&32'hff > 180)?1:0; 
+  end
+end
+
+always @(clk1) begin
+ #1;
+ case(statea)
+   0: // Fill the fifo
+     begin
+       if(outa < 30 && fifoa.size() > 0 && $random()&7>2) begin
+         dataina = fifoa.pop_front();
+         pushina=1;
+         outa += 1;
+       end else begin
+         pushina=0;
+         if(outa >= 30) statea=1;
+       end
+     end
+   1: // empty this one
+     begin
+       if(outa == 0) statea=2;
+     end
+   2: // randomly do it
+     begin
+       if($random()&32'hff > 90 && fifoa.size() > 0 && outa < 30) begin
+         dataina = fifoa.pop_front();
+         pushina=1;
+         outa += 1;
+       end else begin
+         pushina=0;
+       end       
+     end
+ endcase
+ case(stateb)
+   0: // Fill the fifo
+     begin
+       if(outb < 30 && fifob.size() > 0 && $random()&7>1) begin
+         datainb = fifob.pop_front();
+         pushinb=1;
+         outb += 1;
+       end else begin
+         pushinb=0;
+         if(outb >= 30) stateb=1;
+       end
+     end
+   1: // empty this one
+     begin
+       if(outb == 0) stateb=2;
+     end
+   2: // randomly do it
+     begin
+       if($random()&32'hff > 90 && fifob.size() > 0 && outb < 30) begin
+         datainb = fifob.pop_front();
+         pushinb=1;
+         outb += 1;
+       end else begin
+         pushinb=0;
+       end
+       
+     end
+ endcase
+
+end
+
+task doatest;
+reg [31:0] va,vb;
+begin
+  va = $random();
+  vb = $random();
+  fifoa.push_back(va);
+  fifob.push_back(vb);
+  expected.push_back(va+vb);
+end
+endtask
+
+
+initial begin
+  if(debug) begin
+    $dumpfile("fifoadd.vcd");
+    $dumpvars(9,tbfifoadd);
+  end
+  bad=0;
+  clk=1;
+  pushina=0;
+  pushinb=0;
+  stopin=0;
+  statea=0;
+  stateb=0;
+  outa=0;
+  outb=0;
+""")
+  ft.write("  forever #{0} clk=~clk; // calc clock\n".format(float(clkperiod)/2.0))
+  ft.write("""end
+
+
+task death(input string s);
+  begin
+    bad=1;
+    $display("\\n\\n\\n=-=-=-=-=-=-=-=-ERROR-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+    $display(s);
+    $display("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\\n\\n\\n");
+    #10;
+    $finish;
+  end
+endtask
+
+always @(clk1) begin
+   origdataout = dataout;
+   origpushout = pushout;
+   #0.5;
+   if(origdataout != dataout) begin
+     death("no dataout hold time");
+   end
+   if(origpushout != pushout) begin
+     death("no pushout hold time");
+   end
+   if( ! rst) begin
+     if(pushout===1'bx) begin
+       death("pushout is an 'X'");
+     end
+     if(pushout===1 && stopin==0) begin
+       if(expected.size() < 1) begin
+         death("You pushed when I wasn't expecting any output");
+       end
+       expr = expected.pop_front();
+       if(expr !== dataout || expr != dataout) begin
+         bad=1;
+         $display("\\n\\n\\n Expecting %h got %h",expr,dataout);
+         death("Results error");
+       end
+       outa = outa-1;
+       outb = outb-1;
+     end
+   end
+   
+end
+
+initial begin
+  rst=1;
+  ##3;
+  #1 rst=0;
+  ##2 #1;
+""")
+  if(mgates):
+    ft.write("  repeat(500) doatest;\n");
+  else:
+    ft.write("  repeat(250000) doatest;\n");
+  ft.write("""  while( fifoa.size() > 0 && fifob.size() > 0) ##1;
+  ##2000;
+  if(expected.size() > 0) begin
+    death("Test finished, and you didn't push everything");
+  end
+""")
+  ft.write("""
+  $display("\\n\\n\\n{0}\\n\\n\\n");
+""".format(success))
+  ft.write("""
+  $finish;
+end
+
+fifoadd fa(clk,rst,pushina,dataina,pushinb,datainb,
+  pushout,stopin,dataout);
+
+
+
+endmodule : tbfifoadd
+""") 
+  ft.close()
+
+###############################
+# copies a file if needed     #
+###############################
+def copyifneeded(localfile,remotefile):
+  if(os.path.isfile(localfile)):
+    return
+  print("\nCopying {0} to local directory".format(str(localfile)))
+  cmd = ["cp", str(remotefile), str(localfile) ]
+  subprocess.call(cmd)
+####################################
+# checks to see if a file contains #
+# any substrings passed            #
+####################################
+def filehasany(fn,stx):
+  rv = False
+  if(os.path.isfile(fn)):
+    fw = open(fn,"r")
+    for ln in fw.readlines():
+      for sub in stx:
+        if( find(ln.lower(),sub)>= 0 ):
+          print "-->",ln.strip(),"<--"
+          rv=True
+  return rv
+
+###############################
+# checks to see if a file has #
+# a string                    #
+###############################
+def filehas(fn,stx):
+  if(os.path.isfile(fn)):
+    fw = open(fn,"r")
+    for ln in fw.readlines():
+      if( find(ln,stx)>=0 ):
+        print "-->",ln.strip(),"<--"
+        fw.close()
+        return True
+    fw.close()
+  return False
+##############################
+# run vcs simulation         #
+##############################
+def runvcs(debopt):
+  ff = open("files.f","w")
+  ff.write("tbfifoadd.sv\n")
+  for lx in reversed(files):
+    ff.write("{0}\n".format(lx))
+  ff.close()
+  deb=1 if(debopt) else 0
+  maketb("tbfifoadd.sv",deb,False,10)
+  
+  subprocess.call(["rm","-rf","simres.txt","simv"])
+  subprocess.call(["csh","-c","./sv_vcs -f files.f | tee simres.txt"])
+  if(filehas("simres.txt",success)):
+    if(debopt):
+      resfile.write("debug {0} \n".format(debopt))
+    resfile.write("VCS simulation worked\n");
+    print "\n\n\n------ VCS simulation worked \n\n\n"
+  else:
+    resfile.write("VCS FAILED TO WORK\n")
+    print "\n\n\nVCS Failed to work\n\n"
+    resfile.close()
+    exit()
+##############################
+# run ncverilog simulation   #
+##############################
+def runnc(debopt):
+  ff = open("files.f","w")
+  ff.write("tbfifoadd.sv\n")
+  for lx in reversed(files):
+    ff.write("{0}\n".format(lx))
+  ff.close()
+  deb=1 if(debopt) else 0
+  maketb("tbfifoadd.sv",deb,False,10)
+  print "\n\n    Starting NC verilog \n\n"
+  subprocess.call(["rm","-rf","simres.txt"])
+  subprocess.call(["csh","-c","./sv_nc -f files.f | tee simres.txt"])
+  if(filehas("simres.txt",success)):
+    if(debopt):
+      resfile.write("debug {0} \n".format(debopt))
+    resfile.write("NCverilog simulation worked\n");
+    print "\n\n\n------ NCverilog simulation worked \n\n\n"
+  else:
+    resfile.write("NCverilog FAILED TO WORK\n")
+    print "\n\n\nNCVerilog failed to work\n\n"
+    resfile.close()
+    exit()
+##############################
+# run ncverilog gate sim     #
+##############################
+def rungates(debopt,clkperiod):
+  ff = open("files.f","w")
+  ff.write("tbfifoadd.sv\nfifoadd_gates.v")
+  ff.close()
+  deb=1 if(debopt) else 0
+  maketb("tbfifoadd.sv",deb,True,clkperiod*2.5)
+  print "\n\n    Starting NC verilog gate level simulation\n\n"
+  subprocess.call(["rm","-rf","simres.txt"])
+  subprocess.call(["csh","-c","./sv_ncgates -f files.f | tee simres.txt"])
+  if(filehas("simres.txt",success)):
+    if(debopt):
+      resfile.write("debug {0}\n".format(debopt))
+    resfile.write("Gate level simulation worked\n");
+    print "\n\n\n------ Gate level simulation worked \n\n\n"
+  else:
+    resfile.write("Gates FAILED TO WORK\n")
+    print "\n\n\nGates failed to work\n\n"
+    resfile.close()
+    exit()
+#####################################
+# makes a synthesis script of the things
+#####################################
+def makeSynScript(fn,clkx):
+  clkperiod = float(clkx);
+  fs = open(fn,"w")
+  fs.write("""set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25}
+""")
+  for fnx in reversed(files):
+    if(not (find(fnx,"DW02")>=0) ):
+      fs.write("read_verilog {0}\n".format(fnx))
+      fs.write("create_clock clk -name clk -period {0}\n".format(clkperiod*0.75))
+      fs.write("""set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clk]] [get_port rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+""")
+    fs.write("set_output_delay 0.3 -clock clk [all_outputs]\n")
+    fs.write("compile -map_effort high\n")
+    fs.write("create_clock clk -name clk -period {0}\n".format(clkperiod))
+    fs.write("""
+update_timing
+report_timing -max_paths 3
+""")
+  fs.write("""write -hierarchy -format verilog -output fifoadd_gates.v
+""")
+  fs.write("quit\n")
+  fs.close()
+    
+#####################################
+# run the synopsys synthesizer      #
+#####################################
+def runsynthesis(clkperiod):
+  makeSynScript("synthesis.script",clkperiod)
+  fq = open("sss","w")
+  fq.write("""#!/usr/bin/csh
+source design_ssc.csh
+which dc_shell
+dc_shell -f synthesis.script | tee synres.txt
+""")
+  fq.close()
+  subprocess.call(["chmod","+x","sss"])
+  subprocess.call(["rm","-f","synres.txt"])
+  subprocess.call(["./sss"])
+  if( not os.path.isfile("synres.txt") ):
+    resfile.write("///// Synthesis failed to produce results /////\n")
+    print "\n\nNo synthesis results\n\n"
+    exit()
+  if( filehasany("synres.txt",["error","latch","violated","timing arc"]) ):
+    resfile.write("///// Synthesis failed /////\n");
+    print "\n\nsynthesis failed\n\n"
+    exit()
+  resfile.write("Synthesis finished OK\n")
+####################################
+# The main routine                 #
+####################################
+def mainx():
+  clkperiod=3.3
+  resfn="results.txt"
+
+  parser = argparse.ArgumentParser(description='200/300 Mhz homework')
+  parser.add_argument("-s","--synthesis",dest="synthesis",default=False,help="only run synthesis",action="store_true");
+  parser.add_argument("--nogates",dest="nogates",default=False,help="No gate level simulation", action="store_true")
+  parser.add_argument("-d","--debug",dest="debug",default=False,help="Debug mode",action="store_true")
+  parser.add_argument("-g","--gates",dest="gates",default=False,help="just simulate gates",action="store_true")
+  parser.add_argument("clkperiod",default=5)
+  parser.add_argument("resultsFileName",default="results.txt")
+  args = parser.parse_args()
+  print args
+#  return
+  if(find(args.resultsFileName,".v")>0 or args.resultsFileName.find(".sv")>0):
+    print("the second argument should be the result name\n")
+    print("Not a design file name")
+    return
+  resfn=args.resultsFileName
+  clkperiod=float(args.clkperiod)
+  global resfile
+  resfile = open(resfn,"w")
+  resfile.write("fifoadd script run started on {0}\n".format(str(time.asctime())))
+  resfile.write("run on machine {0}\n\n".format(socket.gethostname()))
+  resfile.write("Run with a clock period of {0}\n".format(clkperiod));
+  
+  getstudents("names.txt")
+  print "student names"
+  resfile.write("student names\n");
+  for sx in students:
+    print " ",sx.name,sx.last4
+    resfile.write("  {0}  {1}\n".format(sx.name,sx.last4))
+  getfiles("files.txt")
+  print "user design files"
+  for sx in files:
+    print " ",sx
+  copyifneeded("sv_vcs","/home/morris/fifoadd/sv_vcs")
+  copyifneeded("sv_nc","/home/morris/fifoadd/sv_nc")
+  copyifneeded("sv_ncgates","/home/morris/fifoadd/sv_ncgates")
+  copyifneeded("design_ssc.csh","/home/morris/fifoadd/design_ssc.csh")
+  print "options syn {0} gates {1}".format(args.synthesis,args.gates)
+  resfile.write( "options syn {0} gates {1}\n".format(args.synthesis,args.gates))
+  if(not (args.synthesis or args.gates) ):
+    runvcs(args.debug)
+    runnc(args.debug)
+  if( not (args.gates) ):
+    runsynthesis(clkperiod)
+  if( not (args.nogates) ):
+    rungates(args.debug,clkperiod)
+  if(args.synthesis or args.gates or args.nogates):
+    resfile.write("--->> Partial run, do not submit for credit <<--\n")
+    print "--->> Partial run, do not submit for credit <<--\n"
+    resfile.close()
+    exit()
+  resfile.write("Completed the fifoadd run\n")
+  print("\n\n\nCompleted the fifoadd run\n\n")
+  resfile.close()
+
+mainx()

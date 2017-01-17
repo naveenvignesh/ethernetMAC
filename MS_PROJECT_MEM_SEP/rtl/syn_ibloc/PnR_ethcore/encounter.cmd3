@@ -1,0 +1,39 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Mon Nov 14 13:33:29 2016                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v09.14-s273_1 (32bit) 02/17/2011 18:35 (Linux 2.6)
+#@(#)CDS: NanoRoute v09.14-s029 NR110207-1105/USR65-UB (database version 2.30, 112.2.1) {superthreading v1.15}
+#@(#)CDS: CeltIC v09.14-s097_1 (32bit) 02/08/2011 02:24:38 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: AAE 09.14-s001 (32bit) 02/17/2011 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CTE 09.14-s140_1 (32bit) Feb  8 2011 01:13:15 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CPE v09.14-s001
+
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign eth_core.enc.dat eth_core
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView place
+setDrawView ameba
+setDrawView place
+setDrawView ameba
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 3.2
+read_activity_file -reset
+read_activity_file -format VCD -vcd_scope {} -start {} -end {} -vcd_block {} ../../../tb/mac_core.vcd
+set_power -reset
+set_powerup_analysis -reset
+set_powerup_analysis -mode accurate -ultrasim_simulation_mode ms
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//eth_core.rpt

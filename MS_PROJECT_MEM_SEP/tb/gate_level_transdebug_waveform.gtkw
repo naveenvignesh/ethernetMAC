@@ -1,0 +1,74 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Wed Nov  2 23:18:17 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Wed Nov  2 23:16:59 2016"
+[dumpfile_size] 5495728
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/gate_level_transdebug_waveform.gtkw"
+[timestart] 943200
+[size] 1160 600
+[pos] 0 -1
+*-14.607679 965000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.eth_tx_check.
+[treeopen] ethernet_tb.TX.
+[treeopen] ethernet_tb.TX.\tx_core/axi_master.
+[treeopen] ethernet_tb.TX.\tx_core/axi_master.\pfifo_datain_0_d_reg[0].
+[sst_width] 385
+[signals_width] 318
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@22
+ethernet_tb.mem_model_pdfifo0.AWIDTH
+ethernet_tb.mem_model_pdfifo0.DWIDTH
+ethernet_tb.mem_model_pdfifo0.MEM_DEPTH
+ethernet_tb.mem_model_pdfifo0.rdata[63:0]
+ethernet_tb.mem_model_pdfifo0.wdata[63:0]
+@28
+ethernet_tb.mem_model_pdfifo0.write
+ethernet_tb.TX.\clks.clk
+ethernet_tb.xgmii_tx.TXCLK
+@22
+ethernet_tb.xgmii_tx.TXC[3:0]
+@c00023
+ethernet_tb.xgmii_tx.TXD[31:0]
+@28
+(0)ethernet_tb.xgmii_tx.TXD[31:0]
+(1)ethernet_tb.xgmii_tx.TXD[31:0]
+(2)ethernet_tb.xgmii_tx.TXD[31:0]
+(3)ethernet_tb.xgmii_tx.TXD[31:0]
+(4)ethernet_tb.xgmii_tx.TXD[31:0]
+(5)ethernet_tb.xgmii_tx.TXD[31:0]
+(6)ethernet_tb.xgmii_tx.TXD[31:0]
+(7)ethernet_tb.xgmii_tx.TXD[31:0]
+(8)ethernet_tb.xgmii_tx.TXD[31:0]
+(9)ethernet_tb.xgmii_tx.TXD[31:0]
+(10)ethernet_tb.xgmii_tx.TXD[31:0]
+(11)ethernet_tb.xgmii_tx.TXD[31:0]
+(12)ethernet_tb.xgmii_tx.TXD[31:0]
+(13)ethernet_tb.xgmii_tx.TXD[31:0]
+(14)ethernet_tb.xgmii_tx.TXD[31:0]
+(15)ethernet_tb.xgmii_tx.TXD[31:0]
+(16)ethernet_tb.xgmii_tx.TXD[31:0]
+(17)ethernet_tb.xgmii_tx.TXD[31:0]
+(18)ethernet_tb.xgmii_tx.TXD[31:0]
+(19)ethernet_tb.xgmii_tx.TXD[31:0]
+(20)ethernet_tb.xgmii_tx.TXD[31:0]
+(21)ethernet_tb.xgmii_tx.TXD[31:0]
+(22)ethernet_tb.xgmii_tx.TXD[31:0]
+(23)ethernet_tb.xgmii_tx.TXD[31:0]
+(24)ethernet_tb.xgmii_tx.TXD[31:0]
+(25)ethernet_tb.xgmii_tx.TXD[31:0]
+(26)ethernet_tb.xgmii_tx.TXD[31:0]
+(27)ethernet_tb.xgmii_tx.TXD[31:0]
+(28)ethernet_tb.xgmii_tx.TXD[31:0]
+(29)ethernet_tb.xgmii_tx.TXD[31:0]
+(30)ethernet_tb.xgmii_tx.TXD[31:0]
+(31)ethernet_tb.xgmii_tx.TXD[31:0]
+@1401201
+-group_end
+@22
+ethernet_tb.eth_tx_check.rec_state[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

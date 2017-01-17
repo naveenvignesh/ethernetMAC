@@ -1,0 +1,2 @@
+#!/usr/bin/csh
+sv_ncgates ../../tb/ethernet_tb.sv eth_core_netlist.v 

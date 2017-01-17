@@ -1,0 +1,10 @@
+setAnalysisMode -analysisType single -asyncChecks async -checkType setup -clkSrcPath true -clockPropagation sdcControl -skew true
+setTrialRouteMode -handlePreroute true -keepMarkedOptRoutes true
+setOptMode -addPortAsNeeded true -congOpt false -drcMargin 0 -effort high -fixDrc true -restruct true -route noIncr -setupTargetSlack 0 -topoMap true
+setExtractRCMode  -engine detail -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 -assumeMetFill 1
+setDelayCalMode -engine default
+setNanoRouteMode -quiet -drouteStartIteration 0
+setNanoRouteMode -quiet -envNumberFailLimit 11
+setNanoRouteMode -quiet -routeExpSignatureEco true
+
+setIlmMode -highFanoutPort true -loopBack false 

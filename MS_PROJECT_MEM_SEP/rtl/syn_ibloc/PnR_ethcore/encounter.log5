@@ -1,0 +1,409 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 9.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : liboaDesign.so: cannot open shared object file: No such file or directory
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2010.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.14-s273_1 (32bit) 02/17/2011 18:35 (Linux 2.6)
+@(#)CDS: NanoRoute v09.14-s029 NR110207-1105/USR65-UB (database version 2.30, 112.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v09.14-s097_1 (32bit) 02/08/2011 02:24:38 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 09.14-s001 (32bit) 02/17/2011 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 09.14-s140_1 (32bit) Feb  8 2011 01:13:15 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v09.14-s001
+--- Starting "Encounter v09.14-s273_1" on Tue Nov 15 13:45:29 2016 (mem=50.6M) ---
+--- Running on coe-ee-cad45.sjsuad.sjsu.edu (x86_64 w/Linux 4.8.4-200.fc24.x86_64) ---
+This version was compiled on Thu Feb 17 18:35:02 PST 2011.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reading config file - eth_core.enc.dat/eth_core.conf
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_POLY', 
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+*** End library_loading (cpu=0.00min, mem=0.2M, fe_cpu=0.06min, fe_mem=283.7M) ***
+eth_core
+**WARN: (ENCOPT-3465):	The buffer cells were automatically identified. The command setBufFootPrint is ignored. If you want to force the tool to honor this setting, you have to load a footprint file through the loadFootPrint command.
+**WARN: (ENCOPT-3466):	The inverter cells were automatically identified. The command setInvFootPrint is ignored. If you want to force the tool to honor this setting, you have to load a footprint file through the loadFootPrint command.
+**WARN: (ENCOPT-3467):	The delay cells were automatically identified. The command setDelayFootPrint is ignored. If you want to force the tool to honor this setting, you have to load a footprint file through the loadFootPrint command.
+Loading preference file eth_core.enc.dat/enc.pref.tcl ...
+Loading mode file eth_core.enc.dat/eth_core.mode ...
+**WARN: (ENCEXT-1082):	Option '-engine detail' is obsolete. Use '-engine postRoute [-effortLevel low]' to set extraction engine, which is based on recommended convention '-engine postRoute [-effortLevel <low|medium|high|signoff>]'. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script and configuration file to use recommended convention.
+**WARN: (ENCEXT-3410):	Option -assumeMetalFill is recommended only in default extraction mode. It will use the basic cap table instead of extnded cap table in detail or TQRC/IQRC mode.
+loading place ...
+loading route ...
+**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M2. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M3. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M4. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M5. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M6. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M7. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M8. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M9. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M10. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> violationBrowser -all -no_display_false
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify
+<CMD_INTERNAL> violationBrowserHilite -tool Verify -color #fa1340
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify
+<CMD_INTERNAL> violationBrowserHilite -tool Verify -color #fa1340
+<CMD> zoomBox 88.04 225.695 89.04 226.695
+<CMD> zoomBox 88.04 225.695 89.04 226.695
+<CMD> zoomBox 88.04 225.695 89.04 226.695
+<CMD> fit
+<CMD> zoomBox 20.02 230.635 21.02 231.635
+<CMD> zoomBox 20.02 230.635 21.02 231.635
+<CMD> zoomBox 20.02 230.635 21.02 231.635
+<CMD> zoomBox 88.04 225.695 89.04 226.695
+<CMD> zoomBox 88.04 225.695 89.04 226.695
+<CMD> zoomBox 88.04 225.695 89.04 226.695
+<CMD> fit
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  }
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  }
+<CMD_INTERNAL> violationBrowserHilite -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  } -color #fa1340
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  }
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  }
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  }
+<CMD_INTERNAL> violationBrowserUnHilite -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  }
+<CMD_INTERNAL> violationBrowserDelete -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)} -violation {  M1  FECTS_clks_clk___L4_N56    (88.540, 226.195) (88.540, 226.195)  }
+Deleted 1 violation(s).
+<CMD_INTERNAL> violationBrowserDelete -tool Verify -type Connectivity -subtype {Antenna (DanglingWire)}
+Deleted 999 violation(s).
+<CMD> zoomBox 32.905 52.847 33.975 53.865
+<CMD> zoomBox 32.905 52.847 33.975 53.865
+<CMD> zoomBox 32.905 52.847 33.975 53.865
+<CMD> fit
+<CMD> zoomBox 371.345 119.893 372.415 120.9
+<CMD> zoomBox 371.345 119.893 372.415 120.9
+<CMD> zoomBox 371.345 119.893 372.415 120.9
+<CMD> fit
+<CMD_INTERNAL> violationBrowserDelete -tool Verify -type Geometry -subtype Spacing
+Deleted 350 violation(s).
+<CMD_INTERNAL> violationBrowserDelete -tool Verify -type Short -subtype Short
+Deleted 650 violation(s).
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 5.0
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -vcd_scope {} -start {} -end {} -vcd_block {} ../../../tb/mac_core.vcd
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_powerup_analysis -mode accurate -ultrasim_simulation_mode ms
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//eth_core.rpt
+
+
+Extraction called for design 'eth_core' of instances=406425 and nets=34850 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design eth_core.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.6
+      Min Width        : 0.065
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.6
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.6
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.6
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.6
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.6
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 9 - M9
+      Thickness        : 0.6
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+* Layer Id             : 10 - M10
+      Thickness        : 1
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./eth_core_TyoXDA_11745.rcdb.d  -basic -newAssumeMetFill
+Assumed metal fill uses the following parameters:
+              Active Spacing      Min. Width
+                [microns]         [microns]
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M1 is not specified, it will use  0.600 microns.
+  Layer M1        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M2 is not specified, it will use  0.600 microns.
+  Layer M2        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M3 is not specified, it will use  0.600 microns.
+  Layer M3        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M4 is not specified, it will use  0.600 microns.
+  Layer M4        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M5 is not specified, it will use  0.600 microns.
+  Layer M5        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M6 is not specified, it will use  0.600 microns.
+  Layer M6        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M7 is not specified, it will use  0.600 microns.
+  Layer M7        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M8 is not specified, it will use  0.600 microns.
+  Layer M8        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M9 is not specified, it will use  0.600 microns.
+  Layer M9        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M10 is not specified, it will use  0.600 microns.
+  Layer M10        0.600             0.400 
+RC Mode: Detail [Assume Metal Fill, LEF Resistances]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 408.3M)
+Creating parasitic data file './eth_core_TyoXDA_11745.rcdb.d/header.seq' for storing RC.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M2_M1_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 10.0004% (CPU Time= 0:00:00.3  MEM= 426.6M)
+Extracted 20.0006% (CPU Time= 0:00:00.5  MEM= 432.1M)
+Extracted 30.0004% (CPU Time= 0:00:00.7  MEM= 436.4M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M3_M2_viaC' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 40.0006% (CPU Time= 0:00:00.9  MEM= 439.7M)
+Extracted 50.0004% (CPU Time= 0:00:01.2  MEM= 441.8M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M4_M3_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M5_M4_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M6_M5_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M7_M6_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M8_M7_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M9_M8_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M10_M9_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 60.0006% (CPU Time= 0:00:01.6  MEM= 442.3M)
+Extracted 70.0004% (CPU Time= 0:00:01.7  MEM= 442.3M)
+Extracted 80.0006% (CPU Time= 0:00:02.0  MEM= 442.3M)
+Extracted 90.0004% (CPU Time= 0:00:02.2  MEM= 442.3M)
+Extracted 100% (CPU Time= 0:00:02.7  MEM= 442.3M)
+Nr. Extracted Resistors     : 612839
+Nr. Extracted Ground Cap.   : 646395
+Nr. Extracted Coupling Cap. : 1686644
+Opening parasitic data file './eth_core_TyoXDA_11745.rcdb.d/header.seq' for reading.
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 410.8M)
+Creating parasitic data file './eth_core_TyoXDA_11745.rcdb_Filter.rcdb.d/header.seq' for storing RC.
+Closing parasitic data file './eth_core_TyoXDA_11745.rcdb.d/header.seq'. 34056 times net's RC data read were performed.
+Opening parasitic data file './eth_core_TyoXDA_11745.rcdb.d/header.seq' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:03.8  Real Time: 0:00:06.0  MEM: 409.242M)
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.1, MEM = 427.9M, InitMEM = 427.9M)
+Number of Loop : 0
+Start delay calculation (mem=427.867M)...
+delayCal using detail RC...
+Opening parasitic data file './eth_core_TyoXDA_11745.rcdb.d/header.seq' for reading.
+RC Database In Completed (CPU Time= 0:00:00.3  MEM= 468.3M)
+Closing parasitic data file './eth_core_TyoXDA_11745.rcdb.d/header.seq'. 34056 times net's RC data read were performed.
+Delay calculation completed. (cpu=0:00:02.0 real=0:00:02.0 mem=471.152M 0)
+*** CDM Built up (cpu=0:00:06.5  real=0:00:09.0  mem= 471.2M) ***
+Start force assigning power rail voltages for view default_view_setup
+Finished assigning power rail voltages
+
+CPE found ground net: gnd
+CPE found power net: vdd  voltage: 1.1V
+INFO (POWER-1606): Found clock 'clk' with frequency 370.37MHz from SDC file.
+
+
+Parsing VCD file ../../../tb/mac_core.vcd
+
+
+Starting Reading VCD variables
+2016-Nov-15 13:54:39 (2016-Nov-15 21:54:39 GMT)
+
+Finished Reading VCD variables
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT)
+   
+The vcd command required:
+   		1.30 user, 0.00 system, and 1.30 real seconds
+
+   Total number of value changes: 0.
+
+   Total simulation time: 5.145e-06s.
+
+   With this vcd command,  0 value changes and 5.14489e-06 second
+simulation time were counted for power consumption calculation.
+
+  Filename (activity)          : ../../../tb/mac_core.vcd
+  Found in design              : 0/225235
+  Coverage for file            : 0/34118 = 0%
+
+  225235 nets were found in the VCD file(s) but were not in
+  the design.  These nets are not reported because
+  'read_activity_file -report_missing_nets' is set to false (default).
+
+Propagating signal activity...
+
+
+Starting Levelizing
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT)
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 5%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 10%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 15%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 20%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 25%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 30%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 35%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 40%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 45%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 50%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 55%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 60%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 65%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 70%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 75%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 80%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 85%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 90%
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT): 95%
+
+Finished Levelizing
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT)
+
+Starting Activity Propagation
+2016-Nov-15 13:54:40 (2016-Nov-15 21:54:40 GMT)
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 5%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 10%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 15%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 20%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 25%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 30%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 35%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 40%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 45%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 50%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 55%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 60%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 65%
+
+Finished Activity Propagation
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT)
+
+Starting Calculating power
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT)
+
+Calculating power dissipation...
+
+ ... Calculating switching power
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 5%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 10%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 15%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 20%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 25%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 30%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 35%
+2016-Nov-15 13:54:41 (2016-Nov-15 21:54:41 GMT): 40%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 45%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 50%
+ ... Calculating internal and leakage power
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 55%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 60%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 65%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 70%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 75%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 80%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 85%
+2016-Nov-15 13:54:42 (2016-Nov-15 21:54:42 GMT): 90%
+2016-Nov-15 13:54:43 (2016-Nov-15 21:54:43 GMT): 95%
+
+Finished Calculating power
+2016-Nov-15 13:54:43 (2016-Nov-15 21:54:43 GMT)
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        57.2      66.18%
+Total Switching Power:       28.48      32.95%
+Total Leakage Power:      0.7501     0.8677%
+Total Power:       86.44
+-----------------------------------------------------------------------------------------
+report_power consumed time (real time) 00:00:14 : increased peak memory
+(541M) by 70
+Output file is .//eth_core.rpt.
+
+*** Memory Usage v0.159.2.9 (Current mem = 514.168M, initial mem = 50.625M) ***
+--- Ending "Encounter" (totcpu=0:01:16, real=0:14:10, mem=514.2M) ---

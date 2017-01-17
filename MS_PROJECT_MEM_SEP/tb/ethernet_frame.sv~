@@ -1,0 +1,64 @@
+//typedef packed struct frame {
+//   logic [47:0]      DA;
+//   logic [47:0]      SA;
+//   logic [31:0]      TAG;
+//   logic [15:0]      ETHER_TYPE;
+//   logic [7:0]       PAYLOAD[];
+//   logic [31:0]      CRC;
+//   
+//} etherframe;
+
+class ethernet_frame;
+   rand logic [47:0]  DA;
+   rand logic [47:0]  SA;
+   //rand logic [31:0]  TAG;
+   rand logic [15:0]  ETHER_TYPE;
+   rand logic [7:0]   PAYLOAD[];
+   logic      [31:0]  CRC;
+   logic 	      ethernet_poly;
+   rand logic [14:0]  payload_size; 
+   //logic pack_frame;
+
+   constraint on_payload_size {payload_size > 63 && payload_size < 1523;}
+   constraint on_payload      {PAYLOAD.size()==payload_size;}
+
+   function new ();
+        ethernet_poly = 32'hedb88320;
+        
+   endfunction // new
+   
+   function void clc_CRC();
+
+   endfunction // clac_CRC
+  
+   function void print();
+      $display("=-=-=-=-=-=-=-=-=-=-=-=ETHERNET FRAME=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+      $display("DA:",this.DA);
+      $display("DA:",this.SA);
+      $display("DA:",this.ETHER_TYPE);
+      for(integer i=0;i<payload_size;i++) begin
+	 $write(this.PAYLOAD[i]);
+      end
+      $display("CRC:",this.CRC);
+      
+   endfunction // print
+   
+   
+  
+
+   function void build_frame(); 
+   endfunction // build_frame 
+
+	       
+endclass // ethernet_frame
+
+module ethernet_frame_gen();
+
+ 
+   initial begin 
+   ethernet_frame eth_frame = new();
+   assert(eth_frame.randomize());
+   eth_frame.print();
+   $finish;
+   end 
+endmodule // ethernet_frame

@@ -1,0 +1,63 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Wed Nov  2 21:51:25 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Wed Nov  2 21:41:43 2016"
+[dumpfile_size] 11883769
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/gate_level_hold_time_fix_waveform.gtkw"
+[timestart] 0
+[size] 1160 600
+[pos] -1 -1
+*-19.607679 255000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.TX.
+[treeopen] ethernet_tb.TX.\tx_core/axi_master.
+[treeopen] ethernet_tb.TX.\tx_core/axi_master.\pfifo_datain_0_d_reg[0].
+[sst_width] 385
+[signals_width] 278
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@22
+ethernet_tb.memif_crcf0.AWIDTH
+ethernet_tb.memif_crcf0.DWIDTH
+ethernet_tb.memif_crcf0.f0_raddr[3:0]
+ethernet_tb.memif_crcf0.f0_rdata[31:0]
+ethernet_tb.memif_crcf0.f0_waddr[3:0]
+ethernet_tb.memif_crcf0.f0_wdata[31:0]
+@28
+ethernet_tb.memif_crcf0.f0_write
+@22
+ethernet_tb.memif_crcf1.AWIDTH
+ethernet_tb.memif_crcf1.DWIDTH
+ethernet_tb.memif_crcf1.f0_raddr[3:0]
+ethernet_tb.memif_crcf1.f0_rdata[31:0]
+ethernet_tb.memif_crcf1.f0_waddr[3:0]
+ethernet_tb.memif_crcf1.f0_wdata[31:0]
+@28
+ethernet_tb.memif_crcf1.f0_write
+@22
+ethernet_tb.memif_crcf2.AWIDTH
+ethernet_tb.memif_crcf2.DWIDTH
+ethernet_tb.memif_crcf2.f0_raddr[3:0]
+ethernet_tb.memif_crcf2.f0_rdata[31:0]
+ethernet_tb.memif_crcf2.f0_waddr[3:0]
+ethernet_tb.memif_crcf2.f0_wdata[31:0]
+@28
+ethernet_tb.memif_crcf2.f0_write
+@22
+ethernet_tb.rd_data_ch.RDATA[63:0]
+ethernet_tb.tb_axi_slave.mem_addr_d[31:0]
+@28
+ethernet_tb.TX.\clks.clk
+@22
+ethernet_tb.rd_data_ch.RID[3:0]
+@28
+ethernet_tb.rd_data_ch.RLAST
+ethernet_tb.rd_data_ch.RREADY
+ethernet_tb.rd_data_ch.RRESP[1:0]
+ethernet_tb.rd_data_ch.RUSER
+@29
+ethernet_tb.rd_data_ch.RVALID
+[pattern_trace] 1
+[pattern_trace] 0

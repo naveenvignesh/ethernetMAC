@@ -1,0 +1,1948 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 9.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : liboaDesign.so: cannot open shared object file: No such file or directory
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2010.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.14-s273_1 (32bit) 02/17/2011 18:35 (Linux 2.6)
+@(#)CDS: NanoRoute v09.14-s029 NR110207-1105/USR65-UB (database version 2.30, 112.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v09.14-s097_1 (32bit) 02/08/2011 02:24:38 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 09.14-s001 (32bit) 02/17/2011 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 09.14-s140_1 (32bit) Feb  8 2011 01:13:15 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v09.14-s001
+--- Starting "Encounter v09.14-s273_1" on Tue Nov  8 16:30:58 2016 (mem=50.6M) ---
+--- Running on coe-ee-cad45.sjsuad.sjsu.edu (x86_64 w/Linux 4.7.9-200.fc24.x86_64+debug) ---
+This version was compiled on Thu Feb 17 18:35:02 PST 2011.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD_INTERNAL> setUIVar rda_Input ui_gndnet gnd
+<CMD_INTERNAL> setUIVar rda_Input ui_timingcon_file ../eth_core_netlist.sdc
+<CMD_INTERNAL> setUIVar rda_Input ui_leffile ../../../../new_lib/FreePDK45/osu_soc/lib/files/gscl45nm.lef
+<CMD_INTERNAL> setUIVar rda_Input ui_netlist ../eth_core_netlist.v
+<CMD_INTERNAL> setUIVar rda_Input ui_timelib,max ../../../../new_lib/FreePDK45/osu_soc/lib/files/gscl45nm.tlf
+<CMD_INTERNAL> setUIVar rda_Input ui_topcell eth_core
+<CMD_INTERNAL> setUIVar rda_Input ui_pwrnet vdd
+<CMD> commitConfig
+
+Loading Lef file ../../../../new_lib/FreePDK45/osu_soc/lib/files/gscl45nm.lef...
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_POLY', 
+Set DBUPerIGU to M2 pitch 380.
+Initializing default via types and wire widths ...
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Tue Nov  8 16:32:47 2016
+viaInitial ends at Tue Nov  8 16:32:47 2016
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../eth_core_netlist.v'
+Inserting temporary buffers to remove assignment statements.
+
+*** Memory Usage v0.159.2.9 (Current mem = 267.770M, initial mem = 50.625M) ***
+*** End netlist parsing (cpu=0:00:00.6, real=0:00:00.0, mem=267.8M) ***
+Set top cell to eth_core.
+Reading max timing library '../../../../new_lib/FreePDK45/osu_soc/lib/files/gscl45nm.tlf' ...
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+ read 31 cells in library 'gscl45nm' 
+**WARN: (ENCTS-302):	Min timing libraries are not specified, while max timing libraries are specified in configuration file. This may cause issues in hold analysis. Use rda_Input(ui_timelib) instead of rda_Input(ui_timelib,max) for timing library specification, or use setTimingLibrary command to set min timing libraries. By default max timing libraries will be used for hold analysis.
+*** End library_loading (cpu=0.00min, mem=0.1M, fe_cpu=0.30min, fe_mem=267.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell eth_core ...
+*** Netlist is unique.
+Set DBUPerIGU to techSite CoreSite width 760.
+** info: there are 39 modules.
+** info: there are 31476 stdCell insts.
+
+*** Memory Usage v0.159.2.9 (Current mem = 280.590M, initial mem = 50.625M) ***
+*info - Done with setDoAssign with 209 assigns removed and 0 assigns could not be removed.
+CTE reading timing constraint file '../eth_core_netlist.sdc' ...
+INFO (CTE): constraints read successfully
+WARNING (CTE-25): Line: 8 of File ../eth_core_netlist.sdc : Skipped unsupported command: set_units
+
+
+*** Read timing constraints (cpu=0:00:00.1 mem=286.2M) ***
+Total number of combinational cells: 25
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF1 CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 190 (guessed)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 0.1 ps.
+PreRoute Cap Scale Factor :        1.00
+PreRoute Res Scale Factor :        1.00
+PostRoute Cap Scale Factor :       1.00
+PostRoute Res Scale Factor :       1.00
+PostRoute XCap Scale Factor :      1.00
+
+PreRoute Clock Cap Scale Factor :  1.00	[Derived from postRoute_cap (effortLevel low)]
+PreRoute Clock Res Scale Factor :  1.00	[Derived from postRoute_res (effortLevel low)]
+PostRoute Clock Cap Scale Factor : 1.00	[Derived from postRoute_cap (effortLevel low)]
+PostRoute Clock Res Scale Factor : 1.00	[Derived from postRoute_res (effortLevel low)]
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.999262124065 0.7 20.0 20.0 20.0 20.0
+Adjusting Core to Left to: 20.1400. Core to Bottom to: 20.1400.
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 190 (guessed)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> addRing -spacing_bottom 0.8 -width_left 9 -width_bottom 9 -width_top 9 -spacing_top 0.8 -layer_bottom metal1 -stacked_via_top_layer metal10 -width_right 9 -around core -jog_distance 0.855 -offset_bottom 0.855 -layer_top metal1 -threshold 0.855 -offset_left 0.855 -spacing_right 0.8 -spacing_left 0.8 -offset_right 0.855 -offset_top 0.855 -layer_right metal2 -nets {gnd vdd } -stacked_via_bottom_layer metal1 -layer_left metal2
+
+The power planner created 8 wires.
+<CMD> addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal1 -number_of_sets 15 -stacked_via_top_layer metal10 -padcore_ring_top_layer_limit metal3 -spacing 0.8 -merge_stripes_value 0.855 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 5 -nets {gnd vdd } -stacked_via_bottom_layer metal1
+**WARN: (ENCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+**WARN: (ENCPP-354):	The power planner did not generate Vertical stripe at 22.64 either because the stripe merged with rings, 
+	or because stripe could not be connected to any legal targets.
+Stripe generation is complete; vias are now being generated.
+The power planner created 29 wires.
+<CMD> getMultiCpuUsage -localCpu
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 307.3M, InitMEM = 307.3M)
+Number of Loop : 0
+Start delay calculation (mem=307.332M)...
+Delay calculation completed. (cpu=0:00:00.5 real=0:00:00.0 mem=313.336M 0)
+*** CDM Built up (cpu=0:00:01.0  real=0:00:01.0  mem= 313.3M) ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+*summary: 5520 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:01.7) ***
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v0.892.2.20 (mem=315.0M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.0 mem=315.0M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.0 mem=315.0M) ***
+Options: timingDriven ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=25956 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=26606 #term=82572 #term/net=3.10, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=1153
+stdCell: 25956 single + 0 double + 0 multi
+Total standard cell length = 39.8229 (mm), area = 0.0984 (mm^2)
+Design contains fractional 20 cells.
+Average module density = 1.082.
+Density for the design = 1.082.
+       = stdcell_area 104797 (98362 um^2) / alloc_area 96831 (90886 um^2).
+Pin Density = 0.788.
+            = total # of pins 82572 / total Instance area 104797.
+Iteration  1: Total net bbox = 2.976e-08 (7.30e-09 2.25e-08)
+              Est.  stn bbox = 2.976e-08 (7.30e-09 2.25e-08)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 327.1M
+Iteration  2: Total net bbox = 2.976e-08 (7.30e-09 2.25e-08)
+              Est.  stn bbox = 2.976e-08 (7.30e-09 2.25e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 327.1M
+Iteration  3: Total net bbox = 5.980e+02 (5.38e+02 6.00e+01)
+              Est.  stn bbox = 5.980e+02 (5.38e+02 6.00e+01)
+              cpu = 0:00:00.4 real = 0:00:01.0 mem = 327.1M
+Iteration  4: Total net bbox = 1.430e+05 (7.60e+04 6.69e+04)
+              Est.  stn bbox = 1.430e+05 (7.60e+04 6.69e+04)
+              cpu = 0:00:04.0 real = 0:00:04.0 mem = 327.1M
+Iteration  5: Total net bbox = 2.923e+05 (1.50e+05 1.42e+05)
+              Est.  stn bbox = 2.923e+05 (1.50e+05 1.42e+05)
+              cpu = 0:00:03.1 real = 0:00:03.0 mem = 327.1M
+Iteration  6: Total net bbox = 2.970e+05 (1.48e+05 1.49e+05)
+              Est.  stn bbox = 2.970e+05 (1.48e+05 1.49e+05)
+              cpu = 0:00:03.9 real = 0:00:04.0 mem = 328.2M
+Iteration  7: Total net bbox = 3.935e+05 (1.89e+05 2.04e+05)
+              Est.  stn bbox = 4.430e+05 (2.11e+05 2.32e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 320.9M
+Iteration  8: Total net bbox = 3.987e+05 (1.91e+05 2.07e+05)
+              Est.  stn bbox = 4.484e+05 (2.14e+05 2.35e+05)
+              cpu = 0:00:03.3 real = 0:00:03.0 mem = 320.6M
+Iteration  9: Total net bbox = 4.158e+05 (1.93e+05 2.23e+05)
+              Est.  stn bbox = 4.714e+05 (2.18e+05 2.54e+05)
+              cpu = 0:00:02.4 real = 0:00:02.0 mem = 320.6M
+Iteration 10: Total net bbox = 4.258e+05 (1.97e+05 2.29e+05)
+              Est.  stn bbox = 4.816e+05 (2.22e+05 2.60e+05)
+              cpu = 0:00:03.2 real = 0:00:04.0 mem = 320.6M
+Iteration 11: Total net bbox = 4.141e+05 (1.97e+05 2.17e+05)
+              Est.  stn bbox = 4.701e+05 (2.22e+05 2.48e+05)
+              cpu = 0:00:02.3 real = 0:00:02.0 mem = 323.3M
+Iteration 12: Total net bbox = 4.166e+05 (1.98e+05 2.18e+05)
+              Est.  stn bbox = 4.727e+05 (2.23e+05 2.49e+05)
+              cpu = 0:00:03.3 real = 0:00:03.0 mem = 321.2M
+Iteration 13: Total net bbox = 4.265e+05 (2.04e+05 2.22e+05)
+              Est.  stn bbox = 4.835e+05 (2.29e+05 2.54e+05)
+              cpu = 0:00:09.5 real = 0:00:10.0 mem = 324.6M
+Iteration 14: Total net bbox = 4.265e+05 (2.04e+05 2.22e+05)
+              Est.  stn bbox = 4.835e+05 (2.29e+05 2.54e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 324.6M
+Iteration 15: Total net bbox = 4.443e+05 (2.18e+05 2.26e+05)
+              Est.  stn bbox = 5.017e+05 (2.44e+05 2.58e+05)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 324.6M
+*** cost = 4.443e+05 (2.18e+05 2.26e+05) (cpu for global=0:00:35.6) real=0:00:36.0***
+Core Placement runtime cpu: 0:00:25.0 real: 0:00:26.0
+Design contains fractional 20 cells.
+Starting refinePlace ...
+**ERROR: (ENCSP-2002):	Density too high (105.3%). Stopping detail placement.
+Total net length = 4.446e+05 (2.179e+05 2.266e+05) (ext = 7.956e+04)
+*** End of Placement (cpu=0:00:36.5, real=0:00:37.0, mem=324.5M) ***
+Design contains fractional 20 cells.
+default core: bins with density >  0.75 = 95.3 % ( 244 / 256 )
+*** Free Virtual Timing Model ...(mem=316.5M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:39, real = 0: 0:39, mem = 310.5M **
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> clearGlobalNets
+<CMD> globalNetConnect vdd -type net -net 1'b1
+**ERROR: (ENCDB-1225):	Cannot find net '1'b1' in the design.
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal10 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer metal1 -allowLayerChange 1 -targetViaTopLayer metal10 -crossoverViaTopLayer metal10 -targetViaBottomLayer metal1 -nets { gnd vdd }
+*** Begin SPECIAL ROUTE on Tue Nov  8 16:39:36 2016 ***
+Sroute/fcroute version 8.1.46 promoted on 02/17/2009.
+SPECIAL ROUTE ran on directory: /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_nscu/PnR
+SPECIAL ROUTE ran on machine: coe-ee-cad45.sjsuad.sjsu.edu (Linux 4.7.9-200.fc24.x86_64+debug x86_64 3.85Ghz)
+
+Begin option processing ...
+(from .sroute_5719.conf) srouteConnectPowerBump set to false
+(from .sroute_5719.conf) routeSelectNet set to "gnd vdd"
+(from .sroute_5719.conf) routeSpecial set to true
+(from .sroute_5719.conf) srouteCrossoverViaTopLayer set to 10
+(from .sroute_5719.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_5719.conf) srouteFollowPadPin set to true
+(from .sroute_5719.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_5719.conf) sroutePadPinAllPorts set to true
+(from .sroute_5719.conf) sroutePreserveExistingRoutes set to true
+(from .sroute_5719.conf) srouteTopLayerLimit set to 10
+(from .sroute_5719.conf) srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 510.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 22 layers, 10 routing layers, 1 overlap layer
+Read in 33 macros, 24 used
+Read in 25956 components
+  25956 core components: 0 unplaced, 25956 placed, 0 fixed
+Read in 1208 physical pins
+  1208 physical pins: 0 unplaced, 1208 placed, 0 fixed
+Read in 56 logical pins
+Read in 1192 nets
+Read in 2 special nets, 2 routed
+Read in 1208 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Net vdd does not have standard cells to be routed. Please check net list.
+**WARN: (ENCSR-1254):	Net vdd does not have block pins to be routed. Please check net list.
+**WARN: (ENCSR-1255):	Net vdd does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (ENCSR-1256):	Net vdd does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net vdd does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (ENCSR-1253):	Net gnd does not have standard cells to be routed. Please check net list.
+**WARN: (ENCSR-1254):	Net gnd does not have block pins to be routed. Please check net list.
+**WARN: (ENCSR-1255):	Net gnd does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (ENCSR-1256):	Net gnd does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net gnd does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS vdd
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS vdd
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS gnd
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS gnd
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 320
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 160
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 525.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 1208 io pins ...
+ Updating DB with 18 via definition ...
+
+sroute post-processing starts at Tue Nov  8 16:39:37 2016
+The viaGen is rebuilding shadow vias for net gnd.
+sroute post-processing ends at Tue Nov  8 16:39:37 2016
+
+sroute post-processing starts at Tue Nov  8 16:39:37 2016
+The viaGen is rebuilding shadow vias for net vdd.
+sroute post-processing ends at Tue Nov  8 16:39:37 2016
+**WARN: (ENCPP-589):	The power planner detected wires that are close to the standard cell area.
+**WARN: (ENCPP-590):	Turn on violation markers and run verifyGeometry to display violation details.
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:1
+sroute: Total Memory used = 4.97 megs
+sroute: Total Peak Memory used = 315.43 megs
+<CMD> setNanoRouteMode -routeAllowPowerGroundPin true
+<CMD> addCTSCellList CLKBUF1
+**WARN: (ENCCK-7003):	Command "addCTSCellList" is obsolete. Use "specifyClockTree -update {AutoCTSRootPin clkname Buffer bufferlist ...}" as an alternative. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove "addCTSCellList" from your script.
+<CMD> clockDesign -genSpecOnly Clock.ctstch
+<clockDesign INFO> 'setCTSMode -routeClkNet true' is set inside clockDesign.
+
+<clockDesign CMD> createClockTreeSpec -output Clock.ctstch -bufferList CLKBUF1
+Checking spec file integrity...
+
+******* createClockTreeSpec begin *******
+Options:  -output Clock.ctstch -bufferList CLKBUF1 
+CTE Mode
+New Clock Spec Generation is ON.
+New CTE tracing is ON.
+Handle Multi Mode on mixed active views: default_view_hold default_view_setup.
+Total 1 clock roots are extracted.
+createClockTreeSpec invoking cleanupSpecifyClockTree
+Checking spec file integrity...
+
+Reading clock tree spec file 'Clock.ctstch' ...
+
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.208861(V=0.194667 H=0.223055) (ff/um) [0.00010443]
+Est. Res                : 2.67857(V=1.78571 H=3.57143)(ohm/um) [0.00133929]
+Est. Via Res            : 0(ohm) [0]
+Est. Via Cap            : 0(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.219(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.075(um) p=0.19(um) es=0.31(um) cap=0.222(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.223(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.181(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.151(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+
+**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M2. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M3. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M4. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M5. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M6. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M7. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M8. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M9. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M10. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.208861(V=0.194667 H=0.223055) (ff/um) [0.00010443]
+Est. Res                : 2.67857(V=1.78571 H=3.57143)(ohm/um) [0.00133929]
+Est. Via Res            : 0(ohm) [0]
+Est. Via Cap            : 0(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.219(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.075(um) p=0.19(um) es=0.31(um) cap=0.222(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.223(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.181(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.151(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clks.clk
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      YES
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=325.7M) ***
+*** End createClockTreeSpec (cpu=0:00:00.4, real=0:00:00.0, mem=325.7M) ***
+<CMD> addCTSCellList CLKBUF1
+**WARN: (ENCCK-7003):	Command "addCTSCellList" is obsolete. Use "specifyClockTree -update {AutoCTSRootPin clkname Buffer bufferlist ...}" as an alternative. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove "addCTSCellList" from your script.
+<CMD> clockDesign -genSpecOnly Clock.ctstch
+<clockDesign INFO> 'setCTSMode -routeClkNet true' is set inside clockDesign.
+
+<clockDesign CMD> createClockTreeSpec -output Clock.ctstch -bufferList CLKBUF1
+Checking spec file integrity...
+
+******* createClockTreeSpec begin *******
+Options:  -output Clock.ctstch -bufferList CLKBUF1 
+CTE Mode
+New Clock Spec Generation is ON.
+New CTE tracing is ON.
+Handle Multi Mode on mixed active views: default_view_hold default_view_setup.
+Total 1 clock roots are extracted.
+createClockTreeSpec invoking cleanupSpecifyClockTree
+Checking spec file integrity...
+
+Reading clock tree spec file 'Clock.ctstch' ...
+
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.208861(V=0.194667 H=0.223055) (ff/um) [0.00010443]
+Est. Res                : 2.67857(V=1.78571 H=3.57143)(ohm/um) [0.00133929]
+Est. Via Res            : 0(ohm) [0]
+Est. Via Cap            : 0(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.219(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.075(um) p=0.19(um) es=0.31(um) cap=0.222(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.223(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.181(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.151(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+
+**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M2. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M3. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M4. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M5. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M6. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M7. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M8. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M9. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M10. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.208861(V=0.194667 H=0.223055) (ff/um) [0.00010443]
+Est. Res                : 2.67857(V=1.78571 H=3.57143)(ohm/um) [0.00133929]
+Est. Via Res            : 0(ohm) [0]
+Est. Via Cap            : 0(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.219(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.075(um) p=0.19(um) es=0.31(um) cap=0.222(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.223(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.181(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.151(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clks.clk
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      YES
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=325.7M) ***
+*** End createClockTreeSpec (cpu=0:00:00.1, real=0:00:00.0, mem=325.7M) ***
+<CMD> clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+<clockDesign INFO> 'setCTSMode -routeClkNet true' is set inside clockDesign.
+
+<clockDesign CMD> cleanupSpecifyClockTree
+<clockDesign CMD> specifyClockTree -file Clock.ctstch
+Checking spec file integrity...
+
+Reading clock tree spec file 'Clock.ctstch' ...
+
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.208861(V=0.194667 H=0.223055) (ff/um) [0.00010443]
+Est. Res                : 2.67857(V=1.78571 H=3.57143)(ohm/um) [0.00133929]
+Est. Via Res            : 0(ohm) [0]
+Est. Via Cap            : 0(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.219(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.075(um) p=0.19(um) es=0.31(um) cap=0.222(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.223(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.181(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.151(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+
+**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M2. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M3. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M4. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M5. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M6. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M7. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M8. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M9. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M10. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.208861(V=0.194667 H=0.223055) (ff/um) [0.00010443]
+Est. Res                : 2.67857(V=1.78571 H=3.57143)(ohm/um) [0.00133929]
+Est. Via Res            : 0(ohm) [0]
+Est. Via Cap            : 0(ff)
+M1(H) w=0.065(um) s=0.065(um) p=0.19(um) es=0.315(um) cap=0.219(ff/um) res=5.85(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.07(um) s=0.075(um) p=0.19(um) es=0.31(um) cap=0.222(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M3(H) w=0.07(um) s=0.07(um) p=0.19(um) es=0.31(um) cap=0.223(ff/um) res=3.57(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M4(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M5(H) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M6(V) w=0.14(um) s=0.14(um) p=0.285(um) es=0.43(um) cap=0.195(ff/um) res=1.79(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.855(um) es=1.31(um) cap=0.16(ff/um) res=0.625(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M9(H) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.181(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M10(V) w=0.8(um) s=0.8(um) p=1.71(um) es=2.62(um) cap=0.151(ff/um) res=0.262(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+
+
+****** AutoClockRootPin ******
+AutoClockRootPin 1: clks.clk
+# NoGating         NO
+# SetDPinAsSync    NO
+# SetIoPinAsSync   NO
+# SetAsyncSRPinAsSync   NO
+# SetTriStEnPinAsSync   NO
+# SetBBoxPinAsSync   NO
+# RouteClkNet      YES
+# PostOpt          YES
+# RouteType        FE_CTS_DEFAULT
+# LeafRouteType    FE_CTS_DEFAULT_LEAF
+
+***** !! NOTE !! *****
+
+CTS treats D-pins and I/O pins as non-synchronous pins by default.
+If you want to change the behavior, you need to use the SetDPinAsSync
+or SetIoPinAsSync statement in the clock tree specification file,
+or use the setCTSMode -traceDPinAsLeaf {true|false} command,
+or use the setCTSMode -traceIoPinAsLeaf {true|false} command
+before specifyClockTree command.
+
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=325.7M) ***
+<clockDesign CMD> changeClockStatus -all -fixedBuffers
+Redoing specifyClockTree ...
+**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M2. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M3. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M4. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M5. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M6. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M7. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M8. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M9. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M10. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}Checking spec file integrity...
+
+changeClockStatus Option :  -all -fixedBuffers 
+*** Changed status on (3566) instances, and (0) nets in Clock clks.clk.
+*** End changeClockStatus (cpu=0:00:00.1, real=0:00:00.0, mem=325.7M) ***
+<clockDesign CMD> deleteClockTree -all
+Redoing specifyClockTree ...
+**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M2. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (ENCCK-7108):	RouteType 'FE_CTS_DEFAULT_LEAF' has no via cells defined for layer M3. Using vias from default RouteType 'FE_CTS_DEFAULT'.
+
+{DETAILMESSAGE}**WARN: (EMS-62):	Message <ENCCK-7108> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the set_message_limit <number> (setMessagLimit <number>) command.
+The message limit can be removed by using the unset_message_limit
+(unsetMessageLimit) command. Note that setting a very large number using
+the set_message_limit (setMessageLimit) command or removing the message
+limit using the unset_message_limit (unsetMessageLimit) command can
+significantly increase the log file size.
+Checking spec file integrity...
+
+deleteClockTree Option :  -all 
+*** Removed (0) buffers and (0) inverters in Clock clks.clk.
+***** Delete Clock Tree Finished (CPU Time: 0:00:00.0  MEM: 325.699M)
+*** End deleteClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=325.7M) ***
+<clockDesign CMD> ckSynthesis -report clock_report/clock.report -forceReconvergent -breakLoop
+Redoing specifyClockTree ...
+Checking spec file integrity...
+
+
+ckSynthesis Option :  -report clock_report/clock.report -forceReconvergent -breakLoop 
+***** Allocate Placement Memory Finished (MEM: 325.699M)
+
+Start to trace clock trees ...
+*** Begin Tracer (mem=325.7M) ***
+Tracing Clock clks.clk ...
+*** End Tracer (mem=327.1M) ***
+***** Allocate Obstruction Memory  Finished (MEM: 326.379M)
+
+#############################################################################
+#
+# Pre-Synthesis Checks and Parameters
+#
+#############################################################################
+
+
+Types of Check                                    :          Enabled|Disabled
+----------------------------------------------------------------------------
+
+Check cell drive strength                         :          disabled
+Check root input transition                       :          disabled
+Check pin capacitance                             :          disabled
+Check multiple path through MUX                   :          disabled
+Check gating depth                                :          disabled
+Check placement near clock pins                   :          disabled
+Check route blockages over clock pins             :          disabled
+Report FIXED, DontUse and DontTouch               :          disabled
+clock gating checks                               :          disabled
+MacroModel checks                                 :          disabled
+
+Parameters of checking :
+CTS uses following values to determine if diagnostic checks are successful.
+Use setCTSMode to change default values.
+----------------------------------------------------------------------------
+
+1) Pin capacitance check
+   Threshold for MaxCap check                     :          90% of constraint (default)
+2) Gating depth check
+   Maximum gating depth                           :          10 levels (default)
+3) Clock gating location check
+   Allowed clock gate detour                      :          275.5(um) (default)
+   Allowed clock gate sinks' BBOx overlap ratio   :          0.5 (default)
+4) Macromodel check
+   MacroModel max delay threshold                 :          0.9 (default)
+   MacroModel max skew threshold                  :          0.9 (default)
+   MacroModel variance step size                  :          100ps  (default)
+
+
+****** Clock (clks.clk) Diagnostic check Parameters
+Assumed driver input transition                   :          23.3(ps) (derived from CLKBUF1)
+Threshold for MaxBufTran check                    :          180(ps) derived from 90% (default) MaxBufTran constraint
+Threshold for MaxSinkTran check                   :          180(ps) derived from 90% (default) MaxSinkTran constraint
+Root Input Transition                             :          [0.1(ps) 0.1(ps)]
+
+
+
+#############################################################################
+#
+# Summary of Pre-Synthesis Checks
+#
+#############################################################################
+
+
+Types of Check                                    :          Number of warnings
+----------------------------------------------------------------------------
+
+Check cell drive strength                         :          0(disabled)
+Check root input transition                       :          0(disabled)
+Check pin capacitance                             :          0(disabled)
+Check multiple path through MUX                   :          0(disabled)
+Check gating depth                                :          0(disabled)
+Check placement near clock pins                   :          0(disabled)
+Check route blockages over clock pins             :          0(disabled)
+Report FIXED, DontUse and DontTouch               :          0(disabled)
+clock gating checks                               :          0(disabled)
+MacroModel checks                                 :          0(disabled)
+
+
+#############################################################################
+#
+# During-Synthesis Checks and Parameters
+#
+#############################################################################
+
+
+Types of Check                                    :          Enabled|Disabled
+----------------------------------------------------------------------------
+
+Check RefinePlacement move distance               :          disabled
+Check route layer follows preference              :          disabled
+Check route follows guide                         :          disabled
+clock gating checks                               :          disabled
+
+Parameters of checking :
+CTS uses following values to determine if diagnostic checks are successful.
+Use setCTSMode to change default values.
+----------------------------------------------------------------------------
+
+1) Route layer follows preference check
+   Minimum preferred layer utilization            :          80% (default)
+   Minimum length to check threshold              :          11.4(um) (default)
+2) Route follows guide check
+   Deviation in length from route guide           :          25% (default)
+   Minimum length to check threshold              :          11.4(um) (default)
+   Delay threshold                                :          10(ps) (default)
+3) Saving intermediate database
+   Save long-running subtrees time                :          0(min) (default)
+   Maximum number of saved databases              :          1 (default)
+4) Clock gating location check
+   Allowed clock gate detour                      :          275.5(um) (default)
+
+
+****** Clock (clks.clk) Diagnostic check Parameters
+Assumed driver input transition                   :          23.3(ps) (derived from CLKBUF1)
+Threshold for MaxBufTran check                    :          180(ps) derived from 90% (default) MaxBufTran constraint
+Threshold for MaxSinkTran check                   :          180(ps) derived from 90% (default) MaxSinkTran constraint
+Movement threshold                                :          10.821750(um) (derived 5% of MaxBuf strength)
+Root Input Transition                             :          [0.1(ps) 0.1(ps)]
+
+
+
+****** Clock Tree (clks.clk) Structure
+Max. Skew           : 60(ps)
+Max. Sink Transition: 200(ps)
+Max. Buf Transition : 200(ps)
+Max. Delay          : 10(ps)
+Min. Delay          : 0(ps)
+Buffer              : (CLKBUF1) 
+Nr. Subtrees                    : 1
+Nr. Sinks                       : 3566
+Nr.          Rising  Sync Pins  : 3566
+Nr. Inverter Rising  Sync Pins  : 0
+Nr.          Falling Sync Pins  : 0
+Nr. Inverter Falling Sync Pins  : 0
+***********************************************************
+SubTree No: 0
+
+Input_Pin:  (NULL)
+Output_Pin: (clks.clk)
+Output_Net: (clks.clk)   
+**** CK_START: TopDown Tree Construction for clks.clk (3566-leaf) (mem=326.4M)
+
+Find 0 route_obs, 0 place_obs, 0 cut_obs  1 fence channel(s), 
+ 1 channel(s).
+Phase 1 (2) Starts......
+Phase 2 Starts......
+Total 4 topdown clustering. 
+Trig. Edge Skew=49[502,551*] N3566 B111 G1 A111(111.0) L[5,5] score=76426 cpu=0:00:23.0 mem=335M 
+
+**** CK_END: TopDown Tree Construction for clks.clk (cpu=0:00:23.7, real=0:00:24.0, mem=335.3M)
+Memory increase =9M
+
+
+
+**** CK_START: Update Database (mem=335.3M)
+111 Clock Buffers/Inverters inserted.
+**** CK_END: Update Database (cpu=0:00:00.0, real=0:00:00.0, mem=336.1M)
+***** Start Refine Placement.....
+Starting refinePlace ...
+**ERROR: (ENCSP-2002):	Density too high (100.1%). Stopping detail placement.
+***** Refine Placement Finished (CPU Time: 0:00:00.1  MEM: 330.969M)
+
+#
+# Mode                : Setup
+# Library Name        : gscl45nm
+# Operating Condition : typical
+# Process             : 1
+# Voltage             : 1.1
+# Temperature         : 27
+#
+********** Clock clks.clk Pre-Route Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 3566
+Nr. of Buffer                  : 111
+Nr. of Level (including gates) : 4
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): tx_core/tx_crc/crcpkt1/crc_reg[9]/CLK 553.4(ps)
+Min trig. edge delay at sink(R): tx_core/tx_crc/crcpkt2/crcin8_d_reg[16]/CLK 502.3(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 502.3~553.4(ps)        0~10(ps)            
+Fall Phase Delay               : 441~480.5(ps)          0~10(ps)            
+Trig. Edge Skew                : 51.1(ps)               60(ps)              
+Rise Skew                      : 51.1(ps)               
+Fall Skew                      : 39.5(ps)               
+Max. Rise Buffer Tran.         : 151.3(ps)              200(ps)             
+Max. Fall Buffer Tran.         : 91.4(ps)               200(ps)             
+Max. Rise Sink Tran.           : 174.1(ps)              200(ps)             
+Max. Fall Sink Tran.           : 106.6(ps)              200(ps)             
+Min. Rise Buffer Tran.         : 67(ps)                 0(ps)               
+Min. Fall Buffer Tran.         : 40.5(ps)               0(ps)               
+Min. Rise Sink Tran.           : 121.5(ps)              0(ps)               
+Min. Fall Sink Tran.           : 72.9(ps)               0(ps)               
+
+
+Clock Analysis (CPU Time 0:00:00.1)
+
+
+
+globalDetailRoute
+
+#Start globalDetailRoute on Tue Nov  8 16:41:25 2016
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 330.00 (Mb)
+#WARNING (NRIG-39)  NanoRoute cannot route to pin w_rspch.BRESP[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin w_rspch.BRESP[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARID[3] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARID[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARLEN[3] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARLEN[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARLEN[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARLEN[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARSIZE[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARSIZE[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARSIZE[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARBURST[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARLOCK[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARLOCK[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARCACHE[3] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARCACHE[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARCACHE[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARCACHE[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39)  NanoRoute cannot route to pin m_r_ach.ARPROT[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39 Repeated 20 times. Will be suppressed.)  NanoRoute cannot route to pin m_r_ach.ARPROT[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (EMS-27) Message (NRIG-39) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#WARNING (NRDB-2005) SPECIAL_NET vdd has special wires but no definition for instance-pin connection. This will cause routability problems later.
+#WARNING (NRDB-2005) SPECIAL_NET gnd has special wires but no definition for instance-pin connection. This will cause routability problems later.
+#WARNING (NRDB-976) The step 0.280000 for preferred direction tracks is smaller than the pitch 0.285000 for LAYER metal4. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 0.280000 for preferred direction tracks is smaller than the pitch 0.285000 for LAYER metal6. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 0.840000 for preferred direction tracks is smaller than the pitch 0.855000 for LAYER metal8. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 1.680000 for preferred direction tracks is smaller than the pitch 1.710000 for LAYER metal10. This will cause routability problems for NanoRoute.
+#NanoRoute Version v09.14-s029 NR110207-1105/USR65-UB
+#WARNING (NREX-28) The height of the first routing layer metal1 is 0.000000. It should be larger than 0.000000
+#WARNING (NREX-29) The metal thickness of routing layer metal1 is 0.000000. It should be larger than 0.0. Add this to the technology information for better accuracy.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers heigher than routing layer metal1
+#WARNING (NREX-4) No Extended Cap Table was imported. Not enough process information was provided either and default Extended Cap Table database will be used.
+#Merging special wires...
+#reading routing guides ......
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Auto generating G-grids with size=15 tracks, using layer metal2's pitch = 0.145.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Tue Nov  8 16:41:26 2016
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Tue Nov  8 16:41:26 2016
+#
+#  Resource Analysis:
+#
+#               Routing  #Total     %Gcell
+#  Layer      Direction   Gcell     Blocked
+#  ------------------------------------------
+#  Metal 1        H       39601      59.75%
+#  Metal 2        V       39601      28.09%
+#  Metal 3        H       39601       0.00%
+#  Metal 4        V       39601       0.00%
+#  Metal 5        H       39601       0.00%
+#  Metal 6        V       39601       0.00%
+#  Metal 7        H       39601       0.00%
+#  Metal 8        V       39601       0.00%
+#  Metal 9        H       39601       0.01%
+#  Metal 10       V       39601       0.06%
+#  ------------------------------------------
+#  Total                 396010       8.79%
+#
+#  112 nets (0.39%) with 1 preferred extra spacing.
+#
+#
+#Routing guide is on.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 359.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 361.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 361.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 361.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 112
+#Total wire length = 21104 um.
+#Total half perimeter of net bounding box = 10701 um.
+#Total wire length on LAYER metal1 = 0 um.
+#Total wire length on LAYER metal2 = 39 um.
+#Total wire length on LAYER metal3 = 11082 um.
+#Total wire length on LAYER metal4 = 9983 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 10419
+#Up-Via Summary (total 10419):
+#           
+#-----------------------
+#  Metal 1         3374
+#  Metal 2         3660
+#  Metal 3         3385
+#-----------------------
+#                 10419 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 6.00 (Mb)
+#Total memory = 358.00 (Mb)
+#Peak memory = 393.00 (Mb)
+#
+#Start Detail Routing.
+#start initial detail routing ...
+# ECO: 1.8% of the total area was rechecked for DRC, and 75.4% required routing.
+#    number of violations = 1217
+#cpu time = 00:00:17, elapsed time = 00:00:17, memory = 364.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 1106
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 365.00 (Mb)
+#start 2nd optimization iteration ...
+#    number of violations = 1084
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 365.00 (Mb)
+#start 3rd optimization iteration ...
+#    number of violations = 1079
+#cpu time = 00:00:07, elapsed time = 00:00:07, memory = 365.00 (Mb)
+#start 4th optimization iteration ...
+#    number of violations = 1148
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 365.00 (Mb)
+#start 5th optimization iteration ...
+#    number of violations = 1076
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 365.00 (Mb)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 112
+#Total wire length = 22513 um.
+#Total half perimeter of net bounding box = 10701 um.
+#Total wire length on LAYER metal1 = 219 um.
+#Total wire length on LAYER metal2 = 1924 um.
+#Total wire length on LAYER metal3 = 10233 um.
+#Total wire length on LAYER metal4 = 10137 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 10988
+#Up-Via Summary (total 10988):
+#           
+#-----------------------
+#  Metal 1         3801
+#  Metal 2         3412
+#  Metal 3         3775
+#-----------------------
+#                 10988 
+#
+#Total number of DRC violations = 1076
+#Total number of violations on LAYER metal1 = 981
+#Total number of violations on LAYER metal2 = 95
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#Total number of violations on LAYER metal7 = 0
+#Total number of violations on LAYER metal8 = 0
+#Total number of violations on LAYER metal9 = 0
+#Total number of violations on LAYER metal10 = 0
+#Cpu time = 00:00:47
+#Elapsed time = 00:00:47
+#Increased memory = 2.00 (Mb)
+#Total memory = 360.00 (Mb)
+#Peak memory = 393.00 (Mb)
+#detailRoute Statistics:
+#Cpu time = 00:00:47
+#Elapsed time = 00:00:47
+#Increased memory = 2.00 (Mb)
+#Total memory = 360.00 (Mb)
+#Peak memory = 393.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:49
+#Elapsed time = 00:00:50
+#Increased memory = 28.00 (Mb)
+#Total memory = 358.00 (Mb)
+#Peak memory = 393.00 (Mb)
+#Number of warnings = 31
+#Total number of warnings = 31
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Tue Nov  8 16:42:15 2016
+#
+There are 1076 violation left....
+
+globalDetailRoute
+
+#Start globalDetailRoute on Tue Nov  8 16:42:15 2016
+#
+#WARNING (NRDB-2005) SPECIAL_NET vdd has special wires but no definition for instance-pin connection. This will cause routability problems later.
+#WARNING (NRDB-2005) SPECIAL_NET gnd has special wires but no definition for instance-pin connection. This will cause routability problems later.
+#WARNING (NRDB-976) The step 0.280000 for preferred direction tracks is smaller than the pitch 0.285000 for LAYER metal4. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 0.280000 for preferred direction tracks is smaller than the pitch 0.285000 for LAYER metal6. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 0.840000 for preferred direction tracks is smaller than the pitch 0.855000 for LAYER metal8. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The step 1.680000 for preferred direction tracks is smaller than the pitch 1.710000 for LAYER metal10. This will cause routability problems for NanoRoute.
+#NanoRoute Version v09.14-s029 NR110207-1105/USR65-UB
+#WARNING (NREX-28) The height of the first routing layer metal1 is 0.000000. It should be larger than 0.000000
+#WARNING (NREX-29) The metal thickness of routing layer metal1 is 0.000000. It should be larger than 0.0. Add this to the technology information for better accuracy.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers heigher than routing layer metal1
+#WARNING (NREX-4) No Extended Cap Table was imported. Not enough process information was provided either and default Extended Cap Table database will be used.
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Tue Nov  8 16:42:16 2016
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Tue Nov  8 16:42:16 2016
+#
+#  Resource Analysis:
+#
+#               Routing  #Total     %Gcell
+#  Layer      Direction   Gcell     Blocked
+#  ------------------------------------------
+#  Metal 1        H       39601      59.75%
+#  Metal 2        V       39601      28.09%
+#  Metal 3        H       39601       0.00%
+#  Metal 4        V       39601       0.00%
+#  Metal 5        H       39601       0.00%
+#  Metal 6        V       39601       0.00%
+#  Metal 7        H       39601       0.00%
+#  Metal 8        V       39601       0.00%
+#  Metal 9        H       39601       0.01%
+#  Metal 10       V       39601       0.06%
+#  ------------------------------------------
+#  Total                 396010       8.79%
+#
+#  112 nets (0.39%) with 1 preferred extra spacing.
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 362.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 363.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 363.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 363.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 112
+#Total wire length = 22764 um.
+#Total half perimeter of net bounding box = 10701 um.
+#Total wire length on LAYER metal1 = 0 um.
+#Total wire length on LAYER metal2 = 65 um.
+#Total wire length on LAYER metal3 = 12952 um.
+#Total wire length on LAYER metal4 = 9746 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 10160
+#Up-Via Summary (total 10160):
+#           
+#-----------------------
+#  Metal 1         3404
+#  Metal 2         3660
+#  Metal 3         3096
+#-----------------------
+#                 10160 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 0.00 (Mb)
+#Total memory = 358.00 (Mb)
+#Peak memory = 395.00 (Mb)
+#
+#Start Detail Routing.
+#start initial detail routing ...
+# ECO: 2.2% of the total area was rechecked for DRC, and 76.1% required routing.
+#    number of violations = 1215
+#cpu time = 00:00:18, elapsed time = 00:00:18, memory = 364.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 1108
+#cpu time = 00:00:07, elapsed time = 00:00:07, memory = 366.00 (Mb)
+#start 2nd optimization iteration ...
+#    number of violations = 1088
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 366.00 (Mb)
+#start 3rd optimization iteration ...
+#    number of violations = 1080
+#cpu time = 00:00:07, elapsed time = 00:00:07, memory = 366.00 (Mb)
+#start 4th optimization iteration ...
+#    number of violations = 1151
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 366.00 (Mb)
+#start 5th optimization iteration ...
+#    number of violations = 1079
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 366.00 (Mb)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 112
+#Total wire length = 23598 um.
+#Total half perimeter of net bounding box = 10701 um.
+#Total wire length on LAYER metal1 = 219 um.
+#Total wire length on LAYER metal2 = 1898 um.
+#Total wire length on LAYER metal3 = 11172 um.
+#Total wire length on LAYER metal4 = 10308 um.
+#Total wire length on LAYER metal5 = 0 um.
+#Total wire length on LAYER metal6 = 0 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 11055
+#Up-Via Summary (total 11055):
+#           
+#-----------------------
+#  Metal 1         3799
+#  Metal 2         3432
+#  Metal 3         3824
+#-----------------------
+#                 11055 
+#
+#Total number of DRC violations = 1079
+#Total number of violations on LAYER metal1 = 983
+#Total number of violations on LAYER metal2 = 96
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#Total number of violations on LAYER metal7 = 0
+#Total number of violations on LAYER metal8 = 0
+#Total number of violations on LAYER metal9 = 0
+#Total number of violations on LAYER metal10 = 0
+#Cpu time = 00:00:51
+#Elapsed time = 00:00:51
+#Increased memory = 1.00 (Mb)
+#Total memory = 359.00 (Mb)
+#Peak memory = 395.00 (Mb)
+#detailRoute Statistics:
+#Cpu time = 00:00:51
+#Elapsed time = 00:00:51
+#Increased memory = 1.00 (Mb)
+#Total memory = 359.00 (Mb)
+#Peak memory = 395.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:53
+#Elapsed time = 00:00:53
+#Increased memory = 0.00 (Mb)
+#Total memory = 358.00 (Mb)
+#Peak memory = 395.00 (Mb)
+#Number of warnings = 10
+#Total number of warnings = 41
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Tue Nov  8 16:43:08 2016
+#
+*** Look For Un-Routed Clock Tree Net ***
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M4_M3_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M3_M2_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'M2_M1_via' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+
+#
+# Mode                : Setup
+# Library Name        : gscl45nm
+# Operating Condition : typical
+# Process             : 1
+# Voltage             : 1.1
+# Temperature         : 27
+#
+********** Clock clks.clk Clk-Route-Only Timing Analysis **********
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 3566
+Nr. of Buffer                  : 111
+Nr. of Level (including gates) : 4
+Root Rise Input Tran           : 0.1(ps)
+Root Fall Input Tran           : 0.1(ps)
+Max trig. edge delay at sink(R): tx_core/tx_rs/wakeuptimer_d_reg[1]/CLK 632.4(ps)
+Min trig. edge delay at sink(R): tx_core/axi_slave/burst_addr_d_reg[17]/CLK 526.2(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 526.2~632.4(ps)        0~10(ps)            
+Fall Phase Delay               : 454.8~554(ps)          0~10(ps)            
+Trig. Edge Skew                : 106.2(ps)              60(ps)              
+Rise Skew                      : 106.2(ps)              
+Fall Skew                      : 99.2(ps)               
+Max. Rise Buffer Tran.         : 174.2(ps)              200(ps)             
+Max. Fall Buffer Tran.         : 120.7(ps)              200(ps)             
+Max. Rise Sink Tran.           : 184.1(ps)              200(ps)             
+Max. Fall Sink Tran.           : 116.2(ps)              200(ps)             
+Min. Rise Buffer Tran.         : 67.5(ps)               0(ps)               
+Min. Fall Buffer Tran.         : 40.8(ps)               0(ps)               
+Min. Rise Sink Tran.           : 128.7(ps)              0(ps)               
+Min. Fall Sink Tran.           : 77.3(ps)               0(ps)               
+
+
+Clock Analysis (CPU Time 0:00:00.0)
+
+
+Optimizing clock tree 'clks.clk' ...
+
+Calculating clk-route-only downstream delay for clock tree 'clks.clk' ...
+*** Look For Reconvergent Clock Component ***
+The clock tree clks.clk has no reconvergent cell.
+*** Look For PreservePin And Optimized CrossOver Root Pin ***
+inserting inst FECTS_clks_clk___I0(CLKBUF1) loc=(408120 430540) between driver FECTS_clks_clk___L1_I0/Y and the input term FECTS_clks_clk___L2_I0/A
+global skew: 100.1(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 532.3(ps) tx_core/tx_crc/crcpkt0/data56_d_reg[53]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I1(CLKBUF1) loc=(392920 168720) between driver FECTS_clks_clk___L2_I1/Y and the input term FECTS_clks_clk___L3_I4/A
+global skew: 99.5(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 532.9(ps) tx_core/tx_crc/crcpkt2/crcin16_d_reg[5]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I2(CLKBUF1) loc=(144400 129200) between driver FECTS_clks_clk___L2_I1/Y and the input term FECTS_clks_clk___L3_I5/A
+global skew: 95.8(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 536.6(ps) tx_core/axi_master/link_datain_2_d_reg[27]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I3(CLKBUF1) loc=(186960 529340) between driver FECTS_clks_clk___L2_I2/Y and the input term FECTS_clks_clk___L3_I7/A
+global skew: 92.8(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 539.6(ps) tx_core/tx_crc/crcpkt0/crcin8_d_reg[15]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I4(CLKBUF1) loc=(636120 129200) between driver FECTS_clks_clk___L2_I3/Y and the input term FECTS_clks_clk___L3_I11/A
+global skew: 86.6(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 545.8(ps) tx_core/tx_crc/crcpkt1/crcin8_d_reg[3]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I5(CLKBUF1) loc=(636120 593560) between driver FECTS_clks_clk___L3_I9/Y and the input term FECTS_clks_clk___L4_I69/A
+global skew: 86.1(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 546.3(ps) tx_core/tx_crc/crcpkt1/data24_d_reg[16]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I6(CLKBUF1) loc=(690840 588620) between driver FECTS_clks_clk___L3_I9/Y and the input term FECTS_clks_clk___L4_I70/A
+global skew: 85.3(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 547.1(ps) tx_core/tx_crc/crcpkt1/data56_d_reg[40]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I7(CLKBUF1) loc=(556320 657780) between driver FECTS_clks_clk___L2_I2/Y and the input term FECTS_clks_clk___L3_I8/A
+global skew: 82.5(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 549.9(ps) tx_core/axi_master/pfifo_datain_1_d_reg[7]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I8(CLKBUF1) loc=(395200 425600) between driver FECTS_clks_clk___L3_I6/Y and the input term FECTS_clks_clk___L4_I49/A
+global skew: 78.3(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 554.1(ps) tx_core/tx_crc/crcpkt2/data56_d_reg[23]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I9(CLKBUF1) loc=(144400 371260) between driver FECTS_clks_clk___L3_I3/Y and the input term FECTS_clks_clk___L4_I25/A
+global skew: 77.5(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 554.9(ps) tx_core/tx_rs/crc_bvalid_d_reg[1]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+inserting inst FECTS_clks_clk___I10(CLKBUF1) loc=(744800 687420) between driver FECTS_clks_clk___L3_I9/Y and the input term FECTS_clks_clk___L4_I74/A
+global skew: 76.6(ps)
+max(R): 632.4(ps) tx_core/axi_slave/wchrsp_fifo/depth_left_reg[1]/CLK
+min(R): 555.8(ps) tx_core/tx_crc/crcfifo0/depth_left_reg[1]/CLK
+buffer tran max: [174.2(ps) 120.7(ps)]
+sink tran max: [184.1(ps) 116.2(ps)]
+Inserted cell (CLKBUF1): FECTS_clks_clk___I1
+Inserted cell (CLKBUF1): FECTS_clks_clk___I7
+Inserted cell (CLKBUF1): FECTS_clks_clk___I2
+Inserted cell (CLKBUF1): FECTS_clks_clk___I4
+Inserted cell (CLKBUF1): FECTS_clks_clk___I8
+Inserted cell (CLKBUF1): FECTS_clks_clk___I10
+Inserted cell (CLKBUF1): FECTS_clks_clk___I6
+Inserted cell (CLKBUF1): FECTS_clks_clk___I0
+Inserted cell (CLKBUF1): FECTS_clks_clk___I9
+Inserted cell (CLKBUF1): FECTS_clks_clk___I5
+Inserted cell (CLKBUF1): FECTS_clks_clk___I3
+resized 0 standard cell(s).
+inserted 11 standard cell(s).
+*** Non-Gated Clock Tree Optimization (cpu=0:00:00.6 real=0:00:00.0 mem=358.9M) ***
+*** Finished Clock Tree Skew Optimization (cpu=0:00:00.6 real=0:00:00.0 mem=358.9M) ***
+Doing the final refine placement ...
+***** Start Refine Placement.....
+Starting refinePlace ...
+**ERROR: (ENCSP-2002):	Density too high (100.2%). Stopping detail placement.
+***** Refine Placement Finished (CPU Time: 0:00:00.1  MEM: 358.859M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Tue Nov  8 16:43:08 2016
+#
+Encounter terminated by internal (SEGV) error/signal...
+*** Stack trace:
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(syStackTrace+0x14a)[0xe2a4812]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0x8df6c48]
+linux-gate.so.1(__kernel_rt_sigreturn+0x0)[0xf76eccf0]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xc1ffff5]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xc21802b]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_Z16dbNetWireToRipinP6dbsNet+0x1a)[0xc21f138]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN11PDZT_Import12import_ripinEP7dbsCellP6dbsNetP8PDBT_Net+0x190)[0x9078ff0]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN11PDZT_Import12import_ripinEP7dbsCell+0x148)[0x907a7b8]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN11PDZT_Import16import_cell_viewEP7dbsCell+0x1f0)[0x9084660]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN11PDZT_Import13import_designEv+0x535)[0x9084f15]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN11PDZT_Import11auto_importEv+0xd5)[0x90859f5]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN9PDIT_Main8call_cmdEiPPcbb+0x45d)[0x909937d]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclInvokeStringCommand+0x4f)[0xf4eea2f]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalEx+0x1f6)[0xf4f05f6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_Eval+0x3c)[0xf4f0a8c]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_Z19ckRouteAllIPOedNetsccc+0x26ba)[0xa8c59ee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xa658ab7]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xa65f657]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xa65f9cd]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_Z11ckSynthesisPc+0x575)[0xa6606b7]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xa64b033]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclInvokeStringCommand+0x4f)[0xf4eea2f]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalEx+0x1f6)[0xf4f05f6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x7b)[0xf4f0beb]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjCmd+0x57)[0xf4f5947]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclObjInterpProc+0x3da)[0xf545e9a]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalEx+0x1f6)[0xf4f05f6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x7b)[0xf4f0beb]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjCmd+0x57)[0xf4f5947]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_IfObjCmd+0x134)[0xf4f86d4]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_IfObjCmd+0x134)[0xf4f86d4]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclObjInterpProc+0x3da)[0xf545e9a]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalEx+0x1f6)[0xf4f05f6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_Eval+0x3c)[0xf4f0a8c]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xa64b00b]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclInvokeStringCommand+0x4f)[0xf4eea2f]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalEx+0x1f6)[0xf4f05f6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x7b)[0xf4f0beb]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjCmd+0x57)[0xf4f5947]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_CatchObjCmd+0x56)[0xf4f52c6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclObjInterpProc+0x3da)[0xf545e9a]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_IfObjCmd+0x134)[0xf4f86d4]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclObjInterpProc+0x3da)[0xf545e9a]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalEx+0x1f6)[0xf4f05f6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x7b)[0xf4f0beb]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjCmd+0x57)[0xf4f5947]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_CatchObjCmd+0x56)[0xf4f52c6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_IfObjCmd+0x134)[0xf4f86d4]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclObjInterpProc+0x3da)[0xf545e9a]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_CatchObjCmd+0x56)[0xf4f52c6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter[0xf515eee]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclCompEvalObj+0xa3)[0xf515453]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalObjEx+0x206)[0xf4f0d76]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_IfObjCmd+0x134)[0xf4f86d4]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(TclEvalObjvInternal+0x126)[0xf4efa46]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_EvalEx+0x1f6)[0xf4f05f6]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_Eval+0x3c)[0xf4f0a8c]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_Z10qtfTclEvalPc+0x14c)[0xc83e454]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN8qtfsItem10fUpdateVarEv+0x1175)[0xc7e6325]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_ZN8qtfsItem11qt_metacallEN11QMetaObject4CallEiPPv+0x5e)[0xc88b158]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectiiPPv+0x1f9)[0xf620b9a9]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectPKS_iiPPv+0x60)[0xf620bdd0]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN15QAbstractButton7clickedEb+0x51)[0xf6b1edd1]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate11emitClickedEv+0x49)[0xf6876039]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate5clickEv+0xa0)[0xf6877280]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent+0x88)[0xf68774d8]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN7QWidget5eventEP6QEvent+0xd03)[0xf651bda3]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN15QAbstractButton5eventEP6QEvent+0x63)[0xf6876673]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN11QPushButton5eventEP6QEvent+0x41)[0xf691e0f1]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+0xbf)[0xf64c411f]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN12QApplication6notifyEP7QObjectP6QEvent+0x521)[0xf64c6c61]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4(_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent+0xa6)[0xf61f5f56]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_E+0x103)[0xf64c6143]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN9QETWidget19translateMouseEventEPK7_XEvent+0x4b6)[0xf6530636]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN12QApplication15x11ProcessEventEP7_XEvent+0x149b)[0xf652fbbb]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN19QEventDispatcherX1113processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x151)[0xf6555531]
+/apps/cadence/EDI91/tools.lnx86/lib/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x51)[0xf596206f]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4(_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x49)[0xf61f74e9]
+/apps/cadence/EDI91/tools.lnx86/lib/libtq.so(+0x1800a)[0xf596200a]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(Tcl_DoOneEvent+0x1ac)[0xf53d2fc]
+/apps/cadence/EDI91/tools.lnx86/lib/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0xae)[0xf59620cc]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4(_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE+0x4d)[0xf61f503d]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0x9d)[0xf61f51cd]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4(_ZN16QCoreApplication4execEv+0xa6)[0xf61f7336]
+/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4(_ZN12QApplication4execEv+0x27)[0xf64c3a77]
+/apps/cadence/EDI91/tools.lnx86/lib/libtq.so(_ZN13TqApplication4execEv+0x318)[0xf59645e8]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(_Z7fe_mainiPPc+0x36e)[0x8dd780c]
+/apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter(main+0x79)[0x8dd78e5]
+/lib/libc.so.6(__libc_start_main+0xf6)[0xf50695a6]
+========================================
+               pstack
+========================================
+Thread 4 (Thread 0xf2efcb40 (LWP 5753)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf76aedad in sigwait () from /lib/libpthread.so.0
+#2  0x08df7099 in ctrlCHandle(void*) ()
+#3  0xf76a53ee in start_thread () from /lib/libpthread.so.0
+#4  0xf514892e in clone () from /lib/libc.so.6
+Thread 3 (Thread 0xf36fdb40 (LWP 5752)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf513e7f5 in select () from /lib/libc.so.6
+#2  0x0f55fa9c in NotifierThreadProc ()
+#3  0xf76a53ee in start_thread () from /lib/libpthread.so.0
+#4  0xf514892e in clone () from /lib/libc.so.6
+Thread 2 (Thread 0xf4047b40 (LWP 5751)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf76ae48a in nanosleep () from /lib/libpthread.so.0
+#2  0x097b098a in rdaiLicRecheck(void*) ()
+#3  0xf76a53ee in start_thread () from /lib/libpthread.so.0
+#4  0xf514892e in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xf4f0d780 (LWP 5719)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf510812f in waitpid () from /lib/libc.so.6
+#2  0xf508cdb6 in do_system () from /lib/libc.so.6
+#3  0x0e2a4878 in syStackTrace ()
+#4  0x08df6c48 in rdaiErrorHandler(int, siginfo*, void*) ()
+#5  <signal handler called>
+#6  0x0c1ffff5 in dbiConvertRLCRWire(dbsNet*, dbsRipin**, dbsWire*, dbsRipin**, dbsRipin**, dbsRipin**, char) ()
+#7  0x0c21802b in dbiNetWireToRipinList(dbsNet*, char) ()
+#8  0x0c21f138 in dbNetWireToRipin(dbsNet*) ()
+#9  0x09078ff0 in PDZT_Import::import_ripin(dbsCell*, dbsNet*, PDBT_Net*) ()
+#10 0x0907a7b8 in PDZT_Import::import_ripin(dbsCell*) ()
+#11 0x09084660 in PDZT_Import::import_cell_view(dbsCell*) ()
+#12 0x09084f15 in PDZT_Import::import_design() ()
+#13 0x090859f5 in PDZT_Import::auto_import() ()
+#14 0x0909937d in PDIT_Main::call_cmd(int, char**, bool, bool) ()
+#15 0x0f4eea2f in TclInvokeStringCommand ()
+#16 0x0f4efa46 in TclEvalObjvInternal ()
+#17 0x0f4f05f6 in Tcl_EvalEx ()
+#18 0x0f4f0a8c in Tcl_Eval ()
+#19 0x0a8c59ee in ckRouteAllIPOedNets(char, char, char) ()
+#20 0x0a658ab7 in ckiPostOperation(dbsList*, cksGCTSMode) ()
+#21 0x0a65f657 in ckiObjSynthesis(dbsList*, cksGCTSMode, char) ()
+#22 0x0a65f9cd in ckiSynthesis(dbsList*, cksGCTSMode, char) ()
+#23 0x0a6606b7 in ckSynthesis(char*) ()
+#24 0x0a64b033 in ckiClockSynthesisCmd ()
+#25 0x0f4eea2f in TclInvokeStringCommand ()
+#26 0x0f4efa46 in TclEvalObjvInternal ()
+#27 0x0f4f05f6 in Tcl_EvalEx ()
+#28 0x0f4f0beb in Tcl_EvalObjEx ()
+#29 0x0f4f5947 in Tcl_EvalObjCmd ()
+#30 0x0f4efa46 in TclEvalObjvInternal ()
+#31 0x0f515eee in TclExecuteByteCode ()
+#32 0x0f515453 in TclCompEvalObj ()
+#33 0x0f545e9a in TclObjInterpProc ()
+#34 0x0f4efa46 in TclEvalObjvInternal ()
+#35 0x0f4f05f6 in Tcl_EvalEx ()
+#36 0x0f4f0beb in Tcl_EvalObjEx ()
+#37 0x0f4f5947 in Tcl_EvalObjCmd ()
+#38 0x0f4efa46 in TclEvalObjvInternal ()
+#39 0x0f515eee in TclExecuteByteCode ()
+#40 0x0f515453 in TclCompEvalObj ()
+#41 0x0f4f0d76 in Tcl_EvalObjEx ()
+#42 0x0f4f86d4 in Tcl_IfObjCmd ()
+#43 0x0f4efa46 in TclEvalObjvInternal ()
+#44 0x0f515eee in TclExecuteByteCode ()
+#45 0x0f515453 in TclCompEvalObj ()
+#46 0x0f4f0d76 in Tcl_EvalObjEx ()
+#47 0x0f4f86d4 in Tcl_IfObjCmd ()
+#48 0x0f4efa46 in TclEvalObjvInternal ()
+#49 0x0f515eee in TclExecuteByteCode ()
+#50 0x0f515453 in TclCompEvalObj ()
+#51 0x0f545e9a in TclObjInterpProc ()
+#52 0x0f4efa46 in TclEvalObjvInternal ()
+#53 0x0f4f05f6 in Tcl_EvalEx ()
+#54 0x0f4f0a8c in Tcl_Eval ()
+#55 0x0a64b00b in ckiClockSynthesisCmd ()
+#56 0x0f4eea2f in TclInvokeStringCommand ()
+#57 0x0f4efa46 in TclEvalObjvInternal ()
+#58 0x0f4f05f6 in Tcl_EvalEx ()
+#59 0x0f4f0beb in Tcl_EvalObjEx ()
+#60 0x0f4f5947 in Tcl_EvalObjCmd ()
+#61 0x0f4efa46 in TclEvalObjvInternal ()
+#62 0x0f515eee in TclExecuteByteCode ()
+#63 0x0f515453 in TclCompEvalObj ()
+#64 0x0f4f0d76 in Tcl_EvalObjEx ()
+#65 0x0f4f52c6 in Tcl_CatchObjCmd ()
+#66 0x0f4efa46 in TclEvalObjvInternal ()
+#67 0x0f515eee in TclExecuteByteCode ()
+#68 0x0f515453 in TclCompEvalObj ()
+#69 0x0f545e9a in TclObjInterpProc ()
+#70 0x0f4efa46 in TclEvalObjvInternal ()
+#71 0x0f515eee in TclExecuteByteCode ()
+#72 0x0f515453 in TclCompEvalObj ()
+#73 0x0f4f0d76 in Tcl_EvalObjEx ()
+#74 0x0f4f86d4 in Tcl_IfObjCmd ()
+#75 0x0f4efa46 in TclEvalObjvInternal ()
+#76 0x0f515eee in TclExecuteByteCode ()
+#77 0x0f515453 in TclCompEvalObj ()
+#78 0x0f545e9a in TclObjInterpProc ()
+#79 0x0f4efa46 in TclEvalObjvInternal ()
+#80 0x0f4f05f6 in Tcl_EvalEx ()
+#81 0x0f4f0beb in Tcl_EvalObjEx ()
+#82 0x0f4f5947 in Tcl_EvalObjCmd ()
+#83 0x0f4efa46 in TclEvalObjvInternal ()
+#84 0x0f515eee in TclExecuteByteCode ()
+#85 0x0f515453 in TclCompEvalObj ()
+#86 0x0f4f0d76 in Tcl_EvalObjEx ()
+#87 0x0f4f52c6 in Tcl_CatchObjCmd ()
+#88 0x0f4efa46 in TclEvalObjvInternal ()
+#89 0x0f515eee in TclExecuteByteCode ()
+#90 0x0f515453 in TclCompEvalObj ()
+#91 0x0f4f0d76 in Tcl_EvalObjEx ()
+#92 0x0f4f86d4 in Tcl_IfObjCmd ()
+#93 0x0f4efa46 in TclEvalObjvInternal ()
+#94 0x0f515eee in TclExecuteByteCode ()
+#95 0x0f515453 in TclCompEvalObj ()
+#96 0x0f545e9a in TclObjInterpProc ()
+#97 0x0f4efa46 in TclEvalObjvInternal ()
+#98 0x0f515eee in TclExecuteByteCode ()
+#99 0x0f515453 in TclCompEvalObj ()
+#100 0x0f4f0d76 in Tcl_EvalObjEx ()
+#101 0x0f4f52c6 in Tcl_CatchObjCmd ()
+#102 0x0f4efa46 in TclEvalObjvInternal ()
+#103 0x0f515eee in TclExecuteByteCode ()
+#104 0x0f515453 in TclCompEvalObj ()
+#105 0x0f4f0d76 in Tcl_EvalObjEx ()
+#106 0x0f4f86d4 in Tcl_IfObjCmd ()
+#107 0x0f4efa46 in TclEvalObjvInternal ()
+#108 0x0f4f05f6 in Tcl_EvalEx ()
+#109 0x0f4f0a8c in Tcl_Eval ()
+#110 0x0c83e454 in qtfTclEval(char*) ()
+#111 0x0c7e6325 in qtfsItem::fUpdateVar() ()
+#112 0x0c88b158 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#113 0xf620b9a9 in QMetaObject::activate(QObject*, int, int, void**) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#114 0xf620bdd0 in QMetaObject::activate(QObject*, QMetaObject const*, int, int, void**) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#115 0xf6b1edd1 in QAbstractButton::clicked(bool) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#116 0xf6876039 in QAbstractButtonPrivate::emitClicked() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#117 0xf6877280 in QAbstractButtonPrivate::click() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#118 0xf68774d8 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#119 0xf651bda3 in QWidget::event(QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#120 0xf6876673 in QAbstractButton::event(QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#121 0xf691e0f1 in QPushButton::event(QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#122 0xf64c411f in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#123 0xf64c6c61 in QApplication::notify(QObject*, QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#124 0xf61f5f56 in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#125 0xf64c6143 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#126 0xf6530636 in QETWidget::translateMouseEvent(_XEvent const*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#127 0xf652fbbb in QApplication::x11ProcessEvent(_XEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#128 0xf6555531 in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#129 0xf596206f in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#130 0xf61f74e9 in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#131 0xf596200a in tcl_dispatch_qt () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#132 0x0f53d2fc in Tcl_DoOneEvent ()
+#133 0xf59620cc in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#134 0xf61f503d in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#135 0xf61f51cd in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#136 0xf61f7336 in QCoreApplication::exec() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#137 0xf64c3a77 in QApplication::exec() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#138 0xf59645e8 in TqApplication::exec() () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#139 0x08dd780c in fe_main(int, char**) ()
+#140 0x08dd78e5 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+[New LWP 5751]
+[New LWP 5752]
+[New LWP 5753]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0xf76ecd09 in __kernel_vsyscall ()
+
+Thread 4 (Thread 0xf2efcb40 (LWP 5753)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf76aedad in sigwait () from /lib/libpthread.so.0
+#2  0x08df7099 in ctrlCHandle(void*) ()
+#3  0xf76a53ee in start_thread () from /lib/libpthread.so.0
+#4  0xf514892e in clone () from /lib/libc.so.6
+
+Thread 3 (Thread 0xf36fdb40 (LWP 5752)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf513e7f5 in select () from /lib/libc.so.6
+#2  0x0f55fa9c in NotifierThreadProc ()
+#3  0xf76a53ee in start_thread () from /lib/libpthread.so.0
+#4  0xf514892e in clone () from /lib/libc.so.6
+
+Thread 2 (Thread 0xf4047b40 (LWP 5751)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf76ae48a in nanosleep () from /lib/libpthread.so.0
+#2  0x097b098a in rdaiLicRecheck(void*) ()
+#3  0xf76a53ee in start_thread () from /lib/libpthread.so.0
+#4  0xf514892e in clone () from /lib/libc.so.6
+
+Thread 1 (Thread 0xf4f0d780 (LWP 5719)):
+#0  0xf76ecd09 in __kernel_vsyscall ()
+#1  0xf510812f in waitpid () from /lib/libc.so.6
+#2  0xf508cdb6 in do_system () from /lib/libc.so.6
+#3  0x0e2a4878 in syStackTrace ()
+#4  0x08df6c48 in rdaiErrorHandler(int, siginfo*, void*) ()
+#5  <signal handler called>
+#6  0x0c1ffff5 in dbiConvertRLCRWire(dbsNet*, dbsRipin**, dbsWire*, dbsRipin**, dbsRipin**, dbsRipin**, char) ()
+#7  0x0c21802b in dbiNetWireToRipinList(dbsNet*, char) ()
+#8  0x0c21f138 in dbNetWireToRipin(dbsNet*) ()
+#9  0x09078ff0 in PDZT_Import::import_ripin(dbsCell*, dbsNet*, PDBT_Net*) ()
+#10 0x0907a7b8 in PDZT_Import::import_ripin(dbsCell*) ()
+#11 0x09084660 in PDZT_Import::import_cell_view(dbsCell*) ()
+#12 0x09084f15 in PDZT_Import::import_design() ()
+#13 0x090859f5 in PDZT_Import::auto_import() ()
+#14 0x0909937d in PDIT_Main::call_cmd(int, char**, bool, bool) ()
+#15 0x0f4eea2f in TclInvokeStringCommand ()
+#16 0x0f4efa46 in TclEvalObjvInternal ()
+#17 0x0f4f05f6 in Tcl_EvalEx ()
+#18 0x0f4f0a8c in Tcl_Eval ()
+#19 0x0a8c59ee in ckRouteAllIPOedNets(char, char, char) ()
+#20 0x0a658ab7 in ckiPostOperation(dbsList*, cksGCTSMode) ()
+#21 0x0a65f657 in ckiObjSynthesis(dbsList*, cksGCTSMode, char) ()
+#22 0x0a65f9cd in ckiSynthesis(dbsList*, cksGCTSMode, char) ()
+#23 0x0a6606b7 in ckSynthesis(char*) ()
+#24 0x0a64b033 in ckiClockSynthesisCmd ()
+#25 0x0f4eea2f in TclInvokeStringCommand ()
+#26 0x0f4efa46 in TclEvalObjvInternal ()
+#27 0x0f4f05f6 in Tcl_EvalEx ()
+#28 0x0f4f0beb in Tcl_EvalObjEx ()
+#29 0x0f4f5947 in Tcl_EvalObjCmd ()
+#30 0x0f4efa46 in TclEvalObjvInternal ()
+#31 0x0f515eee in TclExecuteByteCode ()
+#32 0x0f515453 in TclCompEvalObj ()
+#33 0x0f545e9a in TclObjInterpProc ()
+#34 0x0f4efa46 in TclEvalObjvInternal ()
+#35 0x0f4f05f6 in Tcl_EvalEx ()
+#36 0x0f4f0beb in Tcl_EvalObjEx ()
+#37 0x0f4f5947 in Tcl_EvalObjCmd ()
+#38 0x0f4efa46 in TclEvalObjvInternal ()
+#39 0x0f515eee in TclExecuteByteCode ()
+#40 0x0f515453 in TclCompEvalObj ()
+#41 0x0f4f0d76 in Tcl_EvalObjEx ()
+#42 0x0f4f86d4 in Tcl_IfObjCmd ()
+#43 0x0f4efa46 in TclEvalObjvInternal ()
+#44 0x0f515eee in TclExecuteByteCode ()
+#45 0x0f515453 in TclCompEvalObj ()
+#46 0x0f4f0d76 in Tcl_EvalObjEx ()
+#47 0x0f4f86d4 in Tcl_IfObjCmd ()
+#48 0x0f4efa46 in TclEvalObjvInternal ()
+#49 0x0f515eee in TclExecuteByteCode ()
+#50 0x0f515453 in TclCompEvalObj ()
+#51 0x0f545e9a in TclObjInterpProc ()
+#52 0x0f4efa46 in TclEvalObjvInternal ()
+#53 0x0f4f05f6 in Tcl_EvalEx ()
+#54 0x0f4f0a8c in Tcl_Eval ()
+#55 0x0a64b00b in ckiClockSynthesisCmd ()
+#56 0x0f4eea2f in TclInvokeStringCommand ()
+#57 0x0f4efa46 in TclEvalObjvInternal ()
+#58 0x0f4f05f6 in Tcl_EvalEx ()
+#59 0x0f4f0beb in Tcl_EvalObjEx ()
+#60 0x0f4f5947 in Tcl_EvalObjCmd ()
+#61 0x0f4efa46 in TclEvalObjvInternal ()
+#62 0x0f515eee in TclExecuteByteCode ()
+#63 0x0f515453 in TclCompEvalObj ()
+#64 0x0f4f0d76 in Tcl_EvalObjEx ()
+#65 0x0f4f52c6 in Tcl_CatchObjCmd ()
+#66 0x0f4efa46 in TclEvalObjvInternal ()
+#67 0x0f515eee in TclExecuteByteCode ()
+#68 0x0f515453 in TclCompEvalObj ()
+#69 0x0f545e9a in TclObjInterpProc ()
+#70 0x0f4efa46 in TclEvalObjvInternal ()
+#71 0x0f515eee in TclExecuteByteCode ()
+#72 0x0f515453 in TclCompEvalObj ()
+#73 0x0f4f0d76 in Tcl_EvalObjEx ()
+#74 0x0f4f86d4 in Tcl_IfObjCmd ()
+#75 0x0f4efa46 in TclEvalObjvInternal ()
+#76 0x0f515eee in TclExecuteByteCode ()
+#77 0x0f515453 in TclCompEvalObj ()
+#78 0x0f545e9a in TclObjInterpProc ()
+#79 0x0f4efa46 in TclEvalObjvInternal ()
+#80 0x0f4f05f6 in Tcl_EvalEx ()
+#81 0x0f4f0beb in Tcl_EvalObjEx ()
+#82 0x0f4f5947 in Tcl_EvalObjCmd ()
+#83 0x0f4efa46 in TclEvalObjvInternal ()
+#84 0x0f515eee in TclExecuteByteCode ()
+#85 0x0f515453 in TclCompEvalObj ()
+#86 0x0f4f0d76 in Tcl_EvalObjEx ()
+#87 0x0f4f52c6 in Tcl_CatchObjCmd ()
+#88 0x0f4efa46 in TclEvalObjvInternal ()
+#89 0x0f515eee in TclExecuteByteCode ()
+#90 0x0f515453 in TclCompEvalObj ()
+#91 0x0f4f0d76 in Tcl_EvalObjEx ()
+#92 0x0f4f86d4 in Tcl_IfObjCmd ()
+#93 0x0f4efa46 in TclEvalObjvInternal ()
+#94 0x0f515eee in TclExecuteByteCode ()
+#95 0x0f515453 in TclCompEvalObj ()
+#96 0x0f545e9a in TclObjInterpProc ()
+#97 0x0f4efa46 in TclEvalObjvInternal ()
+#98 0x0f515eee in TclExecuteByteCode ()
+#99 0x0f515453 in TclCompEvalObj ()
+#100 0x0f4f0d76 in Tcl_EvalObjEx ()
+#101 0x0f4f52c6 in Tcl_CatchObjCmd ()
+#102 0x0f4efa46 in TclEvalObjvInternal ()
+#103 0x0f515eee in TclExecuteByteCode ()
+#104 0x0f515453 in TclCompEvalObj ()
+#105 0x0f4f0d76 in Tcl_EvalObjEx ()
+#106 0x0f4f86d4 in Tcl_IfObjCmd ()
+#107 0x0f4efa46 in TclEvalObjvInternal ()
+#108 0x0f4f05f6 in Tcl_EvalEx ()
+#109 0x0f4f0a8c in Tcl_Eval ()
+#110 0x0c83e454 in qtfTclEval(char*) ()
+#111 0x0c7e6325 in qtfsItem::fUpdateVar() ()
+#112 0x0c88b158 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#113 0xf620b9a9 in QMetaObject::activate(QObject*, int, int, void**) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#114 0xf620bdd0 in QMetaObject::activate(QObject*, QMetaObject const*, int, int, void**) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#115 0xf6b1edd1 in QAbstractButton::clicked(bool) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#116 0xf6876039 in QAbstractButtonPrivate::emitClicked() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#117 0xf6877280 in QAbstractButtonPrivate::click() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#118 0xf68774d8 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#119 0xf651bda3 in QWidget::event(QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#120 0xf6876673 in QAbstractButton::event(QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#121 0xf691e0f1 in QPushButton::event(QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#122 0xf64c411f in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#123 0xf64c6c61 in QApplication::notify(QObject*, QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#124 0xf61f5f56 in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#125 0xf64c6143 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#126 0xf6530636 in QETWidget::translateMouseEvent(_XEvent const*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#127 0xf652fbbb in QApplication::x11ProcessEvent(_XEvent*) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#128 0xf6555531 in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#129 0xf596206f in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#130 0xf61f74e9 in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#131 0xf596200a in tcl_dispatch_qt () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#132 0x0f53d2fc in Tcl_DoOneEvent ()
+#133 0xf59620cc in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#134 0xf61f503d in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#135 0xf61f51cd in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#136 0xf61f7336 in QCoreApplication::exec() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtCore.so.4
+#137 0xf64c3a77 in QApplication::exec() () from /apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/libQtGui.so.4
+#138 0xf59645e8 in TqApplication::exec() () from /apps/cadence/EDI91/tools.lnx86/lib/libtq.so
+#139 0x08dd780c in fe_main(int, char**) ()
+#140 0x08dd78e5 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 5719] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
+*** INTERRUPTED *** [signal 1]
+5719: No such process

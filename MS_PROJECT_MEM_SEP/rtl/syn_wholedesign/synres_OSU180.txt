@@ -1,0 +1,1624 @@
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+              Version K-2015.06-SP5-1 for linux64 - Feb 26, 2016 
+                                        
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+#
+# set the inf.clk to be your interface name <name>.clk
+# set the inf.rst to be your interface name <name>.rst
+#
+#set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+#set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25}
+set link_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb
+set target_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db}
+/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db
+################################################################################################
+##############################################################################
+################################################################################################
+analyze -format sverilog {
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rtl_struct.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_interface.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D8.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D16.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D24.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D32.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D40.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D48.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D56.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D64.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx_crc.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/prienc.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/queue_selection.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_core.sv 
+}
+Running PRESTO HDLC
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rtl_struct.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_interface.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:42: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:44: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:46: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:50: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:53: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:55: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:56: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:57: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:60: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:61: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:62: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:65: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:66: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:97: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:98: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:99: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:103: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:104: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:108: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:109: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:113: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv:114: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:54: Redeclaration of port 'pcfifo_pop_0'. (VER-331)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:55: Redeclaration of port 'pcfifo_pop_1'. (VER-331)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:56: Redeclaration of port 'pcfifo_pop_2'. (VER-331)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:106: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:107: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:108: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:110: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:111: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:112: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:208: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:209: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:211: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:212: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:274: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:275: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:276: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:277: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:278: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:279: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:280: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:281: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:282: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:283: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:284: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:285: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:287: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:288: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:289: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:290: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:291: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:292: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:293: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:294: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:295: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:296: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:297: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:298: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:428: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:429: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:432: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:433: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:510: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:511: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:512: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:513: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:514: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:515: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:516: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:518: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:519: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:520: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:521: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:522: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:523: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:524: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:572: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:573: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:574: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:575: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:577: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:578: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:579: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv:580: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:61: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:62: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:118: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:119: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:120: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:121: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:123: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:124: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:125: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:126: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:186: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:76: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:77: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:49: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:50: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:56: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:57: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:61: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:62: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:67: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:68: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:78: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:79: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem.sv:70: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:78: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:79: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv:70: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:78: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:79: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv:70: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:78: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:79: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv:70: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:78: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:79: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv:70: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:78: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:79: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv:70: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:78: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:79: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D8.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:52: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:54: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:58: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:59: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:63: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:64: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv:70: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D16.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D24.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D32.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D40.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D48.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D56.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC32_D64.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx_crc.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:67: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:68: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:69: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:71: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:72: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:73: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:74: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:75: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:76: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:77: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:78: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:79: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:86: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:87: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:88: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:89: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:90: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:91: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:92: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:93: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:94: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:95: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:96: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:97: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:98: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:99: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:100: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:101: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:102: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:103: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:104: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:105: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:106: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:107: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:108: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:110: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:111: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:112: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:113: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:114: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:115: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:116: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:117: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:118: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:119: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:126: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:127: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:128: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:129: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:130: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:131: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:132: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:133: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:134: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:135: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:136: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:137: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:138: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:139: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:140: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:141: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:142: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:143: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:144: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:145: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:146: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:147: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:148: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:149: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:150: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:151: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:152: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx_crc.sv:43: the undeclared symbol 'datavld_pkt0' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx_crc.sv:55: the undeclared symbol 'datavld_pkt1' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx_crc.sv:67: the undeclared symbol 'datavld_pkt2' assumed to have the default net type, which is 'wire'. (VER-936)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/prienc.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:37: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:38: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:39: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:40: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:41: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:42: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:43: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:45: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:46: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:47: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:48: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:49: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:50: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv:51: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/queue_selection.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx.sv
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:90: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:91: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:92: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:93: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:94: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:95: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:96: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:97: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:98: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:99: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:100: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:101: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:102: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:103: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:104: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:105: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:106: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:107: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:108: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:109: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:110: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:111: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:113: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:114: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:115: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:116: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:117: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:118: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:119: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:120: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:121: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:122: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:123: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:124: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:125: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:126: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:127: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:128: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:129: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:130: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:131: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:132: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:133: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:134: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx.sv:46: the undeclared symbol 'stack_full' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_tx.sv:47: the undeclared symbol 'stack_empty' assumed to have the default net type, which is 'wire'. (VER-936)
+Compiling source file /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/eth_core.sv
+Presto compilation completed successfully.
+Loading db file '/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+1
+##################################################################################################
+#############eth_core.sv #################################################################
+##################################################################################################
+elaborate eth_core 
+Loading db file '/apps/synopsys/K-2015.06-SP5-1_power_compiler/libraries/syn/gtech.db'
+Loading db file '/apps/synopsys/K-2015.06-SP5-1_power_compiler/libraries/syn/standard.sldb'
+  Loading link library 'osu018_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'eth_core'.
+Information: Building the design 'eth_tx' instantiated from design 'eth_core' with
+	the parameters "|((E%I%WORK/AXI_clks%to_rtl%)(E%I%WORK/AXI_wr_addr_ch%slave_if%)(E%I%WORK/AXI_wr_data_ch%slave_if%)(E%I%WORK/AXI_wr_resp_ch%slave_if%)(E%I%WORK/AXI_rd_addr_ch%master_if%)(E%I%WORK/AXI_rd_data_ch%master_if%)(E%I%WORK/tx_xgmii%from_rtl%)(E%I%WORK/MEMIF_CRC%from_fifo%)(E%I%WORK/MEMIF_CRC%from_fifo%)(E%I%WORK/MEMIF_CRC%from_fifo%)(E%I%WORK/MEMIF_PKTD%from_fifo%)(E%I%WORK/MEMIF_PKTD%from_fifo%)(E%I%WORK/MEMIF_PKTD%from_fifo%)(E%I%WORK/MEMIF_PKTC%from_fifo%)(E%I%WORK/MEMIF_PKTC%from_fifo%)(E%I%WORK/MEMIF_PKTC%from_fifo%)(E%I%WORK/MEMIF_SWCHADDR%from_fifo%)(E%I%WORK/MEMIF_SWCHDATA%from_fifo%)(E%I%WORK/MEMIF_SWCHRSP%from_fifo%))". (HDL-193)
+Presto compilation completed successfully.
+Warning: Filename too long >255 chars. Renaming file:
+'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_wholedesign/ETH_TX_I_CLKS_AXI_CLKS_TO_RTL_I_W_ACH_AXI_WR_ADDR_CH_SLAVE_IF_I_W_DCH_AXI_WR_DATA_CH_SLAVE_IF_I_W_RSPCH_AXI_WR_RESP_CH_SLAVE_IF_I_M_R_ACH_AXI_RD_ADDR_CH_MASTER_IF_I_M_R_DCH_AXI_RD_DATA_CH_MASTER_IF_I_XGMII_TX_TX_XGMII_FROM_RTL_I_MEMIF_CRCF0_MEMIF_CRC_FROM_FIFO_I_MEMIF_CRCF1_MEMIF_CRC_FROM_FIFO_I_MEMIF_CRCF2_MEMIF_CRC_FROM_FIFO_I_MEMIF_PDFIFO0_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PDFIFO1_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PDFIFO2_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PCFIFO0_MEMIF_PKTC_FROM_FIFO_I_MEMIF_PCFIFO1_MEMIF_PKTC_FROM_FIFO_I_MEMIF_PCFIFO2_MEMIF_PKTC_FROM_FIFO_I_MEMIF_SWCHADDR_MEMIF_SWCHADDR_FROM_FIFO_I_MEMIF_SWCHDATA_MEMIF_SWCHDATA_FROM_FIFO_I_MEMIF_SWCHRSP_MEMIF_SWCHRSP_FROM_FIFO_.mr'
+to
+'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_wholedesign/ETH_TX_I_CLKS_AXI_CLKS_TO_RTL_I_W_ACH_AXI_WR_ADDR_CH_SLAVE_IF_I_W_DCH_AXI_WR_DATA_CH_SLAVE_IF_I_W_RSPCH_AXI_WR_RESP_CH_SLAVE_IF_I_M_R_ACH_AXI_RD_ADDR_CH_MASTER_IF_I_M_R_DCH_AXI_RD_DATA_CH_MASTER_IF_I_C3372DC293A1C375E84DFDC07C2249FBF487716B4B9D0AC4_000.mr'
+Information: Building the design 'dma_controller_tx' instantiated from design 'eth_tx_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_m_r_ach_AXI_rd_addr_ch_master_if_I_m_r_dch_AXI_rd_data_ch_master_if_I_xgmii_tx_tx_xgmii_from_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%slave_addr%)(N%slave_data%)(N%wr_en%)(N%linkregs%)(N%rd_en%)(N%rd_addr%)(N%rd_data%)(N%stack_full%)(N%stack_empty%)(N%haddr%))". (HDL-193)
+
+Statistics for case statements in always block at line 40 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            49            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 73 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            75            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine dma_controller_tx_I_clks_AXI_clks_to_rtl_ line 40 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rd_data_d_reg    | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      baddr_reg      | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    clink_ptr_reg    | Flip-flop | 1024  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine dma_controller_tx_I_clks_AXI_clks_to_rtl_ line 95 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_controller_tx.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   4   |  Y  | N  | N  | Y  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===================================================================================
+|               block name/line                 | Inputs | Outputs | # sel inputs |
+===================================================================================
+| dma_controller_tx_I_clks_AXI_clks_to_rtl_/120 |   16   |   64    |      4       |
+===================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'AXI_slave' instantiated from design 'eth_tx_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_m_r_ach_AXI_rd_addr_ch_master_if_I_m_r_dch_AXI_rd_data_ch_master_if_I_xgmii_tx_tx_xgmii_from_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%w_ach%I%WORK/AXI_wr_addr_ch%slave_if%)(N%w_dch%I%WORK/AXI_wr_data_ch%slave_if%)(N%w_rspch%I%WORK/AXI_wr_resp_ch%slave_if%)(N%reg_write_data%)(N%reg_write_addr%)(N%wr_en%)(N%memif_swchaddr%I%WORK/MEMIF_SWCHADDR%from_fifo%)(N%memif_swchdata%I%WORK/MEMIF_SWCHDATA%from_fifo%)(N%memif_swchrsp%I%WORK/MEMIF_SWCHRSP%from_fifo%))". (HDL-193)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv:206: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 67 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            74            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 131 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           147            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 190 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           197            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AXI_slave_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_ line 56 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    awready_d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| w_ach_cur_state_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_slave_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_ line 116 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wready_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| w_dch_cur_state_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  burst_addr_d_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_slave_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_ line 182 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_slave.sv'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| w_rspch_cur_state_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Warning: Filename too long >255 chars. Renaming file:
+'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_wholedesign/AXI_SLAVE_I_CLKS_AXI_CLKS_TO_RTL_I_W_ACH_AXI_WR_ADDR_CH_SLAVE_IF_I_W_DCH_AXI_WR_DATA_CH_SLAVE_IF_I_W_RSPCH_AXI_WR_RESP_CH_SLAVE_IF_I_MEMIF_SWCHADDR_MEMIF_SWCHADDR_FROM_FIFO_I_MEMIF_SWCHDATA_MEMIF_SWCHDATA_FROM_FIFO_I_MEMIF_SWCHRSP_MEMIF_SWCHRSP_FROM_FIFO_.mr'
+to
+'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_wholedesign/AXI_SLAVE_I_CLKS_AXI_CLKS_TO_RTL_I_W_ACH_AXI_WR_ADDR_CH_SLAVE_IF_I_W_DCH_AXI_WR_DATA_CH_SLAVE_IF_I_W_RSPCH_AXI_WR_RESP_CH_SLAVE_IF_I_MEMIF_SWCHADDR_MEMIF_SWCHADDR_FROM_FIFO_I_MEMIF_SWCHDATA_MEMIF_SWC_FB3DB4B6BC2FD484ED8F31B19F98FFD3245B7B97A056CF1B_000.mr'
+Information: Building the design 'AXI_master' instantiated from design 'eth_tx_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_m_r_ach_AXI_rd_addr_ch_master_if_I_m_r_dch_AXI_rd_data_ch_master_if_I_xgmii_tx_tx_xgmii_from_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%raddr_ch%I%WORK/AXI_rd_addr_ch%master_if%)(N%rdata_ch%I%WORK/AXI_rd_data_ch%master_if%)(N%rd%)(N%main_ptr_empty%)(N%haddr%)(N%pfifo_empty_0%)(N%pfifo_empty_1%)(N%pfifo_empty_2%)(N%pfifo_push0%)(N%pfifo_push1%)(N%pfifo_push2%)(N%pfifo_ctrl0%)(N%pfifo_ctrl1%)(N%pfifo_ctrl2%)(N%pfifo_datain_ctrl_0%)(N%pfifo_datain_ctrl_1%)(N%pfifo_datain_ctrl_2%)(N%pfifo_datain0%)(N%pfifo_datain1%)(N%pfifo_datain2%)(N%pcfifo_dataout_0%)(N%pcfifo_dataout_1%)(N%pcfifo_dataout_2%)(N%pfifo_dataout_0%)(N%pfifo_dataout_1%)(N%pfifo_dataout_2%)(N%pfifo_pop_0%)(N%pfifo_pop_1%)(N%pfifo_pop_2%)(N%pcfifo_pop_0%)(N%pcfifo_pop_1%)(N%pcfifo_pop_2%)(N%memif_pdfifo0%I%WORK/MEMIF_PKTD%from_fifo%)(N%memif_pdfifo1%I%WORK/MEMIF_PKTD%from_fifo%)(N%memif_pdfifo2%I%WORK/MEMIF_PKTD%from_fifo%)(N%memif_pcfifo0%I%WORK/MEMIF_PKTC%from_fifo%)(N%memif_pcfifo1%I%WORK/MEMIF_PKTC%from_fifo%)(N%memif_pcfifo2%I%WORK/MEMIF_PKTC%from_fifo%))". (HDL-193)
+
+Statistics for case statements in always block at line 117 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           136            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 216 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           223            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 252 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           255            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 302 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           334            |     no/auto      |
+|           362            |     no/auto      |
+|           387            |    auto/auto     |
+|           398            |    auto/auto     |
+|           409            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 437 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           443            |     no/auto      |
+|           445            |     no/auto      |
+|           447            |    auto/auto     |
+|           455            |    auto/auto     |
+|           463            |    auto/auto     |
+|           471            |    auto/auto     |
+|           482            |    auto/auto     |
+|           490            |    auto/auto     |
+|           498            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 528 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           545            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 584 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           590            |    auto/auto     |
+|           613            |    auto/auto     |
+|           635            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_ line 103 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    arburst_d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    arvalid_d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_ line 206 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  dch_cur_state_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_ line 272 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| pfifo_datain_ctrl2_d_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   pfifo_datain_0_d_reg   | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   pfifo_datain_1_d_reg   | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   pfifo_datain_2_d_reg   | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   link_datain_0_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   link_datain_1_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   link_datain_2_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  pfifo_frag_cnt_0_d_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  pfifo_frag_cnt_1_d_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  pfifo_frag_cnt_2_d_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| pfifo_datain_ctrl0_d_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| pfifo_datain_ctrl1_d_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_ line 425 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     arid_d_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ch_gnt_2d_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_ line 508 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   ctrl_hdr2_d_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    haddr0_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    haddr1_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    haddr2_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   ctrl_hdr0_d_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   ctrl_hdr1_d_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_ line 570 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    ch_gnt_d_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  cur_chstate_0_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  cur_chstate_1_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  cur_chstate_2_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Warning: Filename too long >255 chars. Renaming file:
+'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_wholedesign/AXI_MASTER_I_CLKS_AXI_CLKS_TO_RTL_I_RADDR_CH_AXI_RD_ADDR_CH_MASTER_IF_I_RDATA_CH_AXI_RD_DATA_CH_MASTER_IF_I_MEMIF_PDFIFO0_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PDFIFO1_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PDFIFO2_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PCFIFO0_MEMIF_PKTC_FROM_FIFO_I_MEMIF_PCFIFO1_MEMIF_PKTC_FROM_FIFO_I_MEMIF_PCFIFO2_MEMIF_PKTC_FROM_FIFO_.mr'
+to
+'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_wholedesign/AXI_MASTER_I_CLKS_AXI_CLKS_TO_RTL_I_RADDR_CH_AXI_RD_ADDR_CH_MASTER_IF_I_RDATA_CH_AXI_RD_DATA_CH_MASTER_IF_I_MEMIF_PDFIFO0_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PDFIFO1_MEMIF_PKTD_FROM_FIFO_I_MEMIF_PDFIFO2_MEM_A3B290CAC11123A4DACC374B5A2573D3E2E04553F6DBBA71_000.mr'
+Information: Building the design 'eth_tx_crc' instantiated from design 'eth_tx_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_m_r_ach_AXI_rd_addr_ch_master_if_I_m_r_dch_AXI_rd_data_ch_master_if_I_xgmii_tx_tx_xgmii_from_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "4,32|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%dready_pkt0%)(N%dready_pkt1%)(N%dready_pkt2%)(N%datain_pkt0%)(N%datain_pkt1%)(N%datain_pkt2%)(N%ctrl_wd_pkt0%)(N%ctrl_wd_pkt1%)(N%ctrl_wd_pkt2%)(N%bvalid_pkt0%)(N%bvalid_pkt1%)(N%bvalid_pkt2%)(N%crcfifo0_pull%)(N%crcfifo1_pull%)(N%crcfifo2_pull%)(N%crcfifo0_empty%)(N%crcfifo1_empty%)(N%crcfifo2_empty%)(N%crcfifo0_full%)(N%crcfifo1_full%)(N%crcfifo2_full%)(N%crcfifo0_dataout%)(N%crcfifo1_dataout%)(N%crcfifo2_dataout%)(N%memif_crcf0%I%WORK/MEMIF_CRC%from_fifo%)(N%memif_crcf1%I%WORK/MEMIF_CRC%from_fifo%)(N%memif_crcf2%I%WORK/MEMIF_CRC%from_fifo%))". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'queue_selection' instantiated from design 'eth_tx_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_m_r_ach_AXI_rd_addr_ch_master_if_I_m_r_dch_AXI_rd_data_ch_master_if_I_xgmii_tx_tx_xgmii_from_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%arb_nxt%)(N%pfifo_datain0%)(N%pfifo_datain1%)(N%pfifo_datain2%)(N%crcfifo0_dataout%)(N%crcfifo1_dataout%)(N%crcfifo2_dataout%)(N%pfifo_datain_ctrl_0%)(N%pfifo_datain_ctrl_1%)(N%pfifo_datain_ctrl_2%)(N%crcfifo0_empty%)(N%crcfifo1_empty%)(N%crcfifo2_empty%)(N%pfifo_pop%)(N%crcfifo_pop%)(N%crcfifo0_pull%)(N%crcfifo1_pull%)(N%crcfifo2_pull%)(N%pfifo_pop_0%)(N%pfifo_pop_1%)(N%pfifo_pop_2%)(N%pcfifo_pop_0%)(N%pcfifo_pop_1%)(N%pcfifo_pop_2%)(N%pfifo_datain%)(N%pfifo_datain_ctrl%)(N%crcfifo_dataout%)(N%start_transmit%))". (HDL-193)
+
+Statistics for case statements in always block at line 55 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/queue_selection.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            66            |     no/auto      |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'rs_layer' instantiated from design 'eth_tx_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_m_r_ach_AXI_rd_addr_ch_master_if_I_m_r_dch_AXI_rd_data_ch_master_if_I_xgmii_tx_tx_xgmii_from_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%xgmii_tx%I%WORK/tx_xgmii%from_rtl%)(N%start_transmit%)(N%lpi%)(N%pop_pkt%)(N%pop_crc%)(N%pkt_data%)(N%pkt_empty%)(N%pkt_ctrl%)(N%pkt_crc%)(N%nxt_buf%)(N%bvalidin%))". (HDL-193)
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv:343: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 139 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           161            |     no/auto      |
+|           209            |     no/auto      |
+|           313            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 394 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           399            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine rs_layer_I_clks_AXI_clks_to_rtl_I_xgmii_tx_tx_xgmii_from_rtl_ line 87 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/rs_layer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xgmii_txc_d_reg   | Flip-flop |   4   |  Y  | N  | N  | Y  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     cnt2_d_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    IDC_cnt_d_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   pkt_ctrl_d_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crc_tx_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  xgmii_tx_hold_reg  | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   crc_left_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  crc_bvalid_d_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    cnt128_d_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  cur_state_clk_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  wakeuptimer_d_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  idlernd_cnt_d_reg  | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|  idlernd_cnt_d_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     div2_d_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    gclk_en_d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     bvalid_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   xgmii_txd_d_reg   | Flip-flop |  20   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   xgmii_txd_d_reg   | Flip-flop |  12   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo_exmem_swchrsp' instantiated from design 'AXI_slave_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "DWIDTH=6,AWIDTH=5|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%)(N%memif%I%WORK/MEMIF_SWCHRSP%from_fifo%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_exmem_swchrsp_DWIDTH6_AWIDTH5_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_SWCHRSP_from_fifo_ line 49 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchrsp.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo_exmem_swchaddr' instantiated from design 'AXI_slave_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "DWIDTH=36,AWIDTH=5|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%)(N%memif%I%WORK/MEMIF_SWCHADDR%from_fifo%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_exmem_swchaddr_DWIDTH36_AWIDTH5_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_SWCHADDR_from_fifo_ line 49 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchaddr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo_exmem_swchdata' instantiated from design 'AXI_slave_I_clks_AXI_clks_to_rtl_I_w_ach_AXI_wr_addr_ch_slave_if_I_w_dch_AXI_wr_data_ch_slave_if_I_w_rspch_AXI_wr_resp_ch_slave_if_I_memif_swchaddr_MEMIF_SWCHADDR_from_fifo_I_memif_swchdata_MEMIF_SWCHDATA_from_fifo_I_memif_swchrsp_MEMIF_SWCHRSP_from_fifo_' with
+	the parameters "DWIDTH=32,AWIDTH=5|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%)(N%memif%I%WORK/MEMIF_SWCHDATA%from_fifo%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_exmem_swchdata_DWIDTH32_AWIDTH5_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_SWCHDATA_from_fifo_ line 49 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_swchdata.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo' instantiated from design 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_' with
+	the parameters "32,1|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl_ line 47 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_mem_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo_exmem_pktd' instantiated from design 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_' with
+	the parameters "64,6|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%)(N%memif%I%WORK/MEMIF_PKTD%from_fifo%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_exmem_pktd_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_PKTD_from_fifo_ line 49 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktd.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo_exmem_pktc' instantiated from design 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_' with
+	the parameters "16,6|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%)(N%memif%I%WORK/MEMIF_PKTC%from_fifo%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_exmem_pktc_DWIDTH16_AWIDTH6_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_PKTC_from_fifo_ line 49 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_pktc.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CRC_block' instantiated from design 'eth_tx_crc_AW4_DW32_I_clks_AXI_clks_to_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_' with
+	the parameters "|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%dready%)(N%datain%)(N%ctrl_wd%)(N%bvalid%)(N%data_vld%)(N%crc_vld_2d%)(N%data_out%)(N%crc_out%))". (HDL-193)
+
+Statistics for case statements in always block at line 251 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           271            |     no/auto      |
+|           279            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 323 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           326            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine CRC_block_I_clks_AXI_clks_to_rtl_ line 65 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    crcin8_d_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_vld_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    crc_vld_d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   crc_vld_2d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     dataout_reg     | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       crc_reg       | Flip-flop |  32   |  Y  | N  | N  | Y  | N  | N  | N  |
+|     data8_d_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data16_d_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data32_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data64_d_reg     | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data48_d_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data40_d_reg     | Flip-flop |  40   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data56_d_reg     | Flip-flop |  56   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crcin16_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crcin24_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crcin32_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crcin40_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crcin48_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crcin56_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    crcin64_d_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     load8_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    load16_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    load24_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    load32_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    load40_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    load48_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    load56_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    load64_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    data24_d_reg     | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/CRC_block.sv:240: Netlist for always block is empty. (ELAB-985)
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo_exmem_crc' instantiated from design 'eth_tx_crc_AW4_DW32_I_clks_AXI_clks_to_rtl_I_memif_crcf0_MEMIF_CRC_from_fifo_I_memif_crcf1_MEMIF_CRC_from_fifo_I_memif_crcf2_MEMIF_CRC_from_fifo_' with
+	the parameters "AWIDTH=4,DWIDTH=32|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%)(N%memif%I%WORK/MEMIF_CRC%from_fifo%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_exmem_crc_DWIDTH32_AWIDTH4_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_CRC_from_fifo_ line 49 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/dma_fifo_exmem_crc.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'QOS_arb' instantiated from design 'queue_selection_I_clks_AXI_clks_to_rtl_' with
+	the parameters "|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%req%)(N%arb_nxt%)(N%gnt%))". (HDL-193)
+
+Statistics for case statements in always block at line 69 in file
+	'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            77            |      no/no       |
+===============================================
+
+Inferred memory devices in process
+	in routine QOS_arb_I_clks_AXI_clks_to_rtl_ line 35 in file
+		'/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/QOS_arb.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   queue_gnt_d_reg   | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   srv_cnt0_d_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   srv_cnt1_d_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   srv_cnt2_d_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D8'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D24'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D32'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D40'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D48'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D56'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CRC32_D64'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prienc' instantiated from design 'QOS_arb_I_clks_AXI_clks_to_rtl_' with
+	the parameters "N=3". (HDL-193)
+Presto compilation completed successfully.
+1
+create_clock clks.clk -name clk -period 2.40
+1
+set_propagated_clock clk
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_clock_uncertainty 0.25 clk
+1
+set_propagated_clock clk
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_output_delay 0.5 -clock clk [all_outputs]
+1
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+{w_ach.AWID[3] w_ach.AWID[2] w_ach.AWID[1] w_ach.AWID[0] w_ach.AWADDR[31] w_ach.AWADDR[30] w_ach.AWADDR[29] w_ach.AWADDR[28] w_ach.AWADDR[27] w_ach.AWADDR[26] w_ach.AWADDR[25] w_ach.AWADDR[24] w_ach.AWADDR[23] w_ach.AWADDR[22] w_ach.AWADDR[21] w_ach.AWADDR[20] w_ach.AWADDR[19] w_ach.AWADDR[18] w_ach.AWADDR[17] w_ach.AWADDR[16] w_ach.AWADDR[15] w_ach.AWADDR[14] w_ach.AWADDR[13] w_ach.AWADDR[12] w_ach.AWADDR[11] w_ach.AWADDR[10] w_ach.AWADDR[9] w_ach.AWADDR[8] w_ach.AWADDR[7] w_ach.AWADDR[6] w_ach.AWADDR[5] w_ach.AWADDR[4] w_ach.AWADDR[3] w_ach.AWADDR[2] w_ach.AWADDR[1] w_ach.AWADDR[0] w_ach.AWLEN[3] w_ach.AWLEN[2] w_ach.AWLEN[1] w_ach.AWLEN[0] w_ach.AWSIZE[2] w_ach.AWSIZE[1] w_ach.AWSIZE[0] w_ach.AWBURST[1] w_ach.AWBURST[0] w_ach.AWLOCK[1] w_ach.AWLOCK[0] w_ach.AWCACHE[1] w_ach.AWCACHE[0] w_ach.AWPROT[2] w_ach.AWPROT[1] w_ach.AWPROT[0] w_ach.AWVALID w_dch.WID[3] w_dch.WID[2] w_dch.WID[1] w_dch.WID[0] w_dch.WDATA[63] w_dch.WDATA[62] w_dch.WDATA[61] w_dch.WDATA[60] w_dch.WDATA[59] w_dch.WDATA[58] w_dch.WDATA[57] w_dch.WDATA[56] w_dch.WDATA[55] w_dch.WDATA[54] w_dch.WDATA[53] w_dch.WDATA[52] w_dch.WDATA[51] w_dch.WDATA[50] w_dch.WDATA[49] w_dch.WDATA[48] w_dch.WDATA[47] w_dch.WDATA[46] w_dch.WDATA[45] w_dch.WDATA[44] w_dch.WDATA[43] w_dch.WDATA[42] w_dch.WDATA[41] w_dch.WDATA[40] w_dch.WDATA[39] w_dch.WDATA[38] w_dch.WDATA[37] w_dch.WDATA[36] w_dch.WDATA[35] w_dch.WDATA[34] w_dch.WDATA[33] w_dch.WDATA[32] w_dch.WDATA[31] w_dch.WDATA[30] w_dch.WDATA[29] w_dch.WDATA[28] w_dch.WDATA[27] w_dch.WDATA[26] w_dch.WDATA[25] w_dch.WDATA[24] w_dch.WDATA[23] w_dch.WDATA[22] w_dch.WDATA[21] ...}
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+Error: Cannot find the specified driving cell in memory.   (UID-993)
+0
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+1
+set_output_delay 0.6 -clock clk [all_outputs]
+1
+set_fix_hold [ get_clocks clk ]
+1
+set_output_delay 0.3 -clock clk [all_outputs]
+1
+set_wire_load_model -name T8G00TW8
+Error: Wire load 'T8G00TW8' not found. (UID-40)
+0
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.5.1 |   *     |
+| Licensed DW Building Blocks        | I-2013.12-DWBB_201312.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 3075 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 3 instances of design 'dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl_'. (OPT-1056)
+Information: Uniquified 3 instances of design 'dma_fifo_exmem_pktd_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_PKTD_from_fifo_'. (OPT-1056)
+Information: Uniquified 3 instances of design 'dma_fifo_exmem_pktc_DWIDTH16_AWIDTH6_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_PKTC_from_fifo_'. (OPT-1056)
+Information: Uniquified 3 instances of design 'CRC_block_I_clks_AXI_clks_to_rtl_'. (OPT-1056)
+Information: Uniquified 3 instances of design 'dma_fifo_exmem_crc_DWIDTH32_AWIDTH4_I_clks_AXI_clks_to_rtl_I_memif_MEMIF_CRC_from_fifo_'. (OPT-1056)
+Information: Uniquified 12 instances of design 'CRC32_D8'. (OPT-1056)
+Information: Uniquified 12 instances of design 'CRC32_D16'. (OPT-1056)
+Information: Uniquified 3 instances of design 'CRC32_D24'. (OPT-1056)
+Information: Uniquified 12 instances of design 'CRC32_D32'. (OPT-1056)
+Information: Uniquified 3 instances of design 'CRC32_D40'. (OPT-1056)
+Information: Uniquified 6 instances of design 'CRC32_D48'. (OPT-1056)
+Information: Uniquified 3 instances of design 'CRC32_D56'. (OPT-1056)
+Information: Uniquified 3 instances of design 'CRC32_D64'. (OPT-1056)
+Information: Uniquified 3 instances of design 'prienc_N3'. (OPT-1056)
+  Simplifying Design 'eth_core'
+Information: The register 'tx_core/axi_slave/wchdata_fifo/depth_left_reg[5]' will be removed. (OPT-1207)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/depth_left_reg[4]' will be removed. (OPT-1207)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/depth_left_reg[3]' will be removed. (OPT-1207)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/depth_left_reg[2]' will be removed. (OPT-1207)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/depth_left_reg[1]' will be removed. (OPT-1207)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/depth_left_reg[0]' will be removed. (OPT-1207)
+
+Loaded alib file './alib-52/osu018_stdcells.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy tx_core before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_slave before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/QOS_selector before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_rs before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_slave/wchrsp_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_slave/wchaddr_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_slave/wchdata_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/link_addr_0_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/pkt0_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/pktctrl0_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcfifo0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/QOS_selector/qos before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/link_addr_2_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/link_addr_1_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/pkt2_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/pkt1_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/pktctrl2_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/axi_master/pktctrl1_fifo before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcfifo2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcfifo1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc24 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc40 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc48 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc56 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/QOS_selector/qos/pr0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc24 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc24 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc40 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc40 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc48 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc48 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc56 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc56 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/QOS_selector/qos/pr2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/QOS_selector/qos/pr1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc56/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc40/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc24/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc56/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc40/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc24/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc56/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc40/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc24/crc8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc48/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc24/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc48/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc24/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc48/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc24/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc48/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc40/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc48/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc40/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc48/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc40/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc56/crc48 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc56/crc48 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc56/crc48 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc56/crc48/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc56/crc48/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc56/crc48/crc16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt2/crc56/crc48/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt1/crc56/crc48/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy tx_core/tx_crc/crcpkt0/crc56/crc48/crc32 before Pass 1 (OPT-776)
+Information: Ungrouping 78 of 84 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'CRC_block_I_clks_AXI_clks_to_rtl__0'
+  Processing 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_'
+Information: Added key list 'DesignWare' to design 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_'. (DDB-72)
+Information: The register 'dch_cur_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dch_cur_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dch_cur_state_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arid_d_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arid_d_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_0_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_0_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_1_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_1_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_2_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_2_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_state_reg[2]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_'.
+  Processing 'eth_core'
+Information: Added key list 'DesignWare' to design 'eth_core'. (DDB-72)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/w_ptr_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/w_ptr_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/w_ptr_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/w_ptr_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/w_ptr_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/r_ptr_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/r_ptr_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/r_ptr_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/r_ptr_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/wchdata_fifo/r_ptr_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/w_ach_cur_state_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/w_rspch_cur_state_reg[1]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'eth_core'.
+  Processing 'dma_controller_tx_I_clks_AXI_clks_to_rtl_'
+Information: Added key list 'DesignWare' to design 'dma_controller_tx_I_clks_AXI_clks_to_rtl_'. (DDB-72)
+ Implement Synthetic for 'dma_controller_tx_I_clks_AXI_clks_to_rtl_'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: The register 'tx_core/axi_slave/burst_addr_d_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/burst_addr_d_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/burst_addr_d_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tx_core/axi_slave/burst_addr_d_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'eth_core_RSOP_224'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'eth_core_RSOP_225'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:41 1340916.0      1.01    1002.3       0.0                           2695.8394      0.00  
+    0:01:45 1345731.0      0.46     749.5       0.0                           2707.2900      0.00  
+    0:01:45 1345731.0      0.46     749.5       0.0                           2707.2900      0.00  
+    0:01:45 1346051.0      0.46     749.2       0.0                           2707.7563      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:52 1341561.0      0.46     659.4       0.0                           2691.5408      0.00  
+    0:01:53 1341409.0      0.45     652.3       0.0                           2691.2063      0.00  
+    0:01:54 1341409.0      0.44     582.5       0.0                           2688.1016      0.00  
+    0:01:54 1341409.0      0.44     582.5       0.0                           2688.1016      0.00  
+    0:01:59 1344669.0      0.29     435.5       0.0                           2697.4937      0.00  
+    0:01:59 1344669.0      0.29     435.5       0.0                           2697.4937      0.00  
+    0:01:59 1344669.0      0.29     435.5       0.0                           2697.4937      0.00  
+    0:01:59 1344669.0      0.29     435.5       0.0                           2697.4937      0.00  
+    0:01:59 1344669.0      0.29     435.5       0.0                           2697.4937      0.00  
+    0:01:59 1344669.0      0.29     435.5       0.0                           2697.4937      0.00  
+    0:02:03 1347918.0      0.20     358.1       0.0                           2707.9880      0.00  
+    0:02:03 1347918.0      0.20     358.1       0.0                           2707.9880      0.00  
+    0:02:04 1347918.0      0.20     358.1       0.0                           2707.9978      0.00  
+    0:02:04 1347918.0      0.20     358.1       0.0                           2707.9978      0.00  
+    0:02:04 1347942.0      0.20     358.0       0.0                           2708.0623      0.00  
+    0:02:04 1347942.0      0.20     358.0       0.0                           2708.0623      0.00  
+    0:02:04 1347942.0      0.20     358.0       0.0                           2708.0623      0.00  
+    0:02:04 1347942.0      0.20     358.0       0.0                           2708.0623      0.00  
+    0:02:04 1347942.0      0.20     358.0       0.0                           2708.0623      0.00  
+    0:02:04 1347942.0      0.20     358.0       0.0                           2708.0623      0.00  
+    0:02:05 1347942.0      0.20     358.0       0.0                           2708.0623      0.00  
+    0:02:06 1348733.0      0.18     337.2       0.0 tx_core/tx_crc/crcpkt1/data48_d_reg[32]/D 2709.6919      0.00  
+    0:02:06 1349277.0      0.18     335.1       0.0                           2711.3911      0.00  
+    0:02:08 1349232.0      0.17     321.3       0.0                           2711.2761      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:08 1349232.0      0.17     321.3       0.0                           2711.2761      0.00  
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+    0:02:15 1350097.0      0.14     288.5       0.0                           2702.7632      0.00  
+    0:02:16 1350388.0      0.14     279.4       0.0                           2703.4380      0.00  
+    0:02:16 1350388.0      0.14     279.4       0.0                           2703.4380      0.00  
+    0:02:17 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:17 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:18 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:18 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:18 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:18 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:18 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:18 1349972.0      0.14     282.3       0.0                           2701.3452      0.00  
+    0:02:19 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:19 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:19 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:19 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:19 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:19 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:20 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:20 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:20 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:20 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:20 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:21 1350076.0      0.14     280.6       0.0                           2701.6592      0.00  
+    0:02:22 1349452.0      0.14     270.3       0.0                           2700.8411      0.00  
+    0:02:22 1349412.0      0.14     270.3       0.0                           2700.7795      0.00  
+    0:02:22 1349412.0      0.14     270.3       0.0                           2700.7795      0.00  
+    0:02:23 1349372.0      0.14     270.4       0.0                           2700.5669      0.00  
+    0:02:24 1348900.0      0.14     270.4       0.0                           2699.5146      0.00  
+    0:02:24 1348572.0      0.14     269.6       0.0                           2698.0315      0.00  
+    0:02:25 1348700.0      0.14     269.5       0.0                           2698.4399      0.00  
+    0:02:26 1348740.0      0.14     269.1       0.0                           2698.6238      0.00  
+    0:02:26 1348740.0      0.14     269.1       0.0                           2698.6238      0.00  
+    0:02:27 1348620.0      0.14     269.1       0.0                           2698.0967      0.00  
+Loading db file '/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'eth_core' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'tx_core/tx_crc/crcpkt1/clks.clk': 3566 load(s), 1 driver(s)
+     Net 'tx_core/tx_crc/crcpkt1/clks.rst': 3468 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+create_clock clks.clk -name clk -period 3.00
+1
+update_timing
+Information: Updating design information... (UID-85)
+Warning: Design 'eth_core' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+report_timing -max_paths 3
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : eth_core
+Version: K-2015.06-SP5-1
+Date   : Wed Nov  2 23:11:01 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: osu018_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: tx_core/QOS_selector/qos/srv_cnt0_d_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/CLK (DFFSR)
+                                                          0.00 #     0.00 r
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/Q (DFFSR)
+                                                          0.26       0.26 r
+  U1764/Y (NOR3X1)                                        0.10       0.36 f
+  U1907/Y (NAND3X1)                                       0.09       0.45 r
+  U1921/Y (BUFX2)                                         0.12       0.57 r
+  U1941/Y (NAND3X1)                                       0.06       0.63 f
+  U1880/Y (NAND2X1)                                       0.11       0.74 r
+  U1860/Y (MUX2X1)                                        0.15       0.89 f
+  U1855/Y (NAND2X1)                                       0.09       0.98 r
+  U1774/Y (BUFX2)                                         0.10       1.08 r
+  U1853/Y (NAND2X1)                                       0.04       1.13 f
+  U1854/Y (OAI21X1)                                       0.10       1.23 r
+  U1899/Y (XNOR2X1)                                       0.13       1.36 r
+  U1898/Y (XNOR2X1)                                       0.12       1.49 r
+  U1887/Y (NOR2X1)                                        0.10       1.59 f
+  U1843/Y (AOI21X1)                                       0.10       1.69 r
+  U1841/Y (XOR2X1)                                        0.10       1.79 f
+  U1835/Y (NAND3X1)                                       0.08       1.87 r
+  U1826/Y (OR2X2)                                         0.16       2.03 r
+  U1825/Y (INVX8)                                         0.11       2.14 f
+  U3031/Y (NOR2X1)                                        0.06       2.20 r
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[0]/D (DFFSR)
+                                                          0.00       2.20 r
+  data arrival time                                                  2.20
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.25       2.75
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[0]/CLK (DFFSR)
+                                                          0.00       2.75 r
+  library setup time                                     -0.09       2.66
+  data required time                                                 2.66
+  --------------------------------------------------------------------------
+  data required time                                                 2.66
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+  Startpoint: tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: tx_core/QOS_selector/qos/srv_cnt0_d_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/CLK (DFFSR)
+                                                          0.00 #     0.00 r
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/Q (DFFSR)
+                                                          0.26       0.26 r
+  U1764/Y (NOR3X1)                                        0.10       0.36 f
+  U1907/Y (NAND3X1)                                       0.09       0.45 r
+  U1921/Y (BUFX2)                                         0.12       0.57 r
+  U1941/Y (NAND3X1)                                       0.06       0.63 f
+  U1880/Y (NAND2X1)                                       0.11       0.74 r
+  U1860/Y (MUX2X1)                                        0.15       0.89 f
+  U1855/Y (NAND2X1)                                       0.09       0.98 r
+  U1774/Y (BUFX2)                                         0.10       1.08 r
+  U1853/Y (NAND2X1)                                       0.04       1.13 f
+  U1854/Y (OAI21X1)                                       0.10       1.23 r
+  U1899/Y (XNOR2X1)                                       0.13       1.36 r
+  U1898/Y (XNOR2X1)                                       0.12       1.49 r
+  U1887/Y (NOR2X1)                                        0.10       1.59 f
+  U1843/Y (AOI21X1)                                       0.10       1.69 r
+  U1841/Y (XOR2X1)                                        0.10       1.79 f
+  U1835/Y (NAND3X1)                                       0.08       1.87 r
+  U1826/Y (OR2X2)                                         0.16       2.03 r
+  U1825/Y (INVX8)                                         0.11       2.14 f
+  U3029/Y (NOR2X1)                                        0.06       2.20 r
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[1]/D (DFFSR)
+                                                          0.00       2.20 r
+  data arrival time                                                  2.20
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.25       2.75
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[1]/CLK (DFFSR)
+                                                          0.00       2.75 r
+  library setup time                                     -0.09       2.66
+  data required time                                                 2.66
+  --------------------------------------------------------------------------
+  data required time                                                 2.66
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+  Startpoint: tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: tx_core/QOS_selector/qos/srv_cnt0_d_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/CLK (DFFSR)
+                                                          0.00 #     0.00 r
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/Q (DFFSR)
+                                                          0.26       0.26 r
+  U1764/Y (NOR3X1)                                        0.10       0.36 f
+  U1907/Y (NAND3X1)                                       0.09       0.45 r
+  U1921/Y (BUFX2)                                         0.12       0.57 r
+  U1941/Y (NAND3X1)                                       0.06       0.63 f
+  U1880/Y (NAND2X1)                                       0.11       0.74 r
+  U1860/Y (MUX2X1)                                        0.15       0.89 f
+  U1855/Y (NAND2X1)                                       0.09       0.98 r
+  U1774/Y (BUFX2)                                         0.10       1.08 r
+  U1853/Y (NAND2X1)                                       0.04       1.13 f
+  U1854/Y (OAI21X1)                                       0.10       1.23 r
+  U1899/Y (XNOR2X1)                                       0.13       1.36 r
+  U1898/Y (XNOR2X1)                                       0.12       1.49 r
+  U1887/Y (NOR2X1)                                        0.10       1.59 f
+  U1843/Y (AOI21X1)                                       0.10       1.69 r
+  U1841/Y (XOR2X1)                                        0.10       1.79 f
+  U1835/Y (NAND3X1)                                       0.08       1.87 r
+  U1826/Y (OR2X2)                                         0.16       2.03 r
+  U1825/Y (INVX8)                                         0.11       2.14 f
+  U2770/Y (NOR2X1)                                        0.06       2.20 r
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[2]/D (DFFSR)
+                                                          0.00       2.20 r
+  data arrival time                                                  2.20
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.25       2.75
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[2]/CLK (DFFSR)
+                                                          0.00       2.75 r
+  library setup time                                     -0.09       2.66
+  data required time                                                 2.66
+  --------------------------------------------------------------------------
+  data required time                                                 2.66
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+1
+report_area
+ 
+****************************************
+Report : area
+Design : eth_core
+Version: K-2015.06-SP5-1
+Date   : Wed Nov  2 23:11:02 2016
+****************************************
+
+Library(s) Used:
+
+    osu018_stdcells (File: /home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db)
+
+Number of ports:                         4368
+Number of nets:                         25269
+Number of cells:                        23068
+Number of combinational cells:          19483
+Number of sequential cells:              3580
+Number of macros/black boxes:               0
+Number of buf/inv:                       4805
+Number of references:                      29
+
+Combinational area:             749484.000000
+Buf/Inv area:                    84984.000000
+Noncombinational area:          599136.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               1348620.000000
+Total area:                 undefined
+1
+report_power -analysis_effort  high 
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : eth_core
+Version: K-2015.06-SP5-1
+Date   : Wed Nov  2 23:11:04 2016
+****************************************
+
+
+Library(s) Used:
+
+    osu018_stdcells (File: /home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu018_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 187.0742 mW   (99%)
+  Net Switching Power  =   2.2869 mW    (1%)
+                         ---------
+Total Dynamic Power    = 189.3610 mW  (100%)
+
+Cell Leakage Power     =   2.6981 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         185.7563            0.1490          947.2548          185.9061  (  98.17%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      1.3200            2.1379        1.7508e+03            3.4596  (   1.83%)
+--------------------------------------------------------------------------------------------------
+Total            187.0763 mW         2.2868 mW     2.6981e+03 nW       189.3657 mW
+1
+write -hierarchy -format verilog -output eth_core_OSU180_netlist.v
+Writing verilog file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/syn_wholedesign/eth_core_OSU180_netlist.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 87 nets to module eth_core using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdc     eth_core_OSU180_netlist.sdc
+1
+#write_sdf     eth_core_netlist.sdf
+quit 
+
+Thank you...

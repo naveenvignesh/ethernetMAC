@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Tue Nov 15 03:24:00 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Tue Nov 15 02:57:33 2016"
+[dumpfile_size] 5492674
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/dma_reg_prgramming.gtkw"
+[timestart] 171500
+[size] 1071 600
+[pos] -1 -1
+*-15.000000 206000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[sst_width] 236
+[signals_width] 293
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.slave_addr[31:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.slave_data[63:0]
+@28
+ethernet_tb.tx.tx_core.dma_reg_tx.wr_en
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_0[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_1[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_2[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_3[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_4[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.w_ptr[3:0]
+@28
+ethernet_tb.tx.tx_core.dma_reg_tx.stack_empty
+@29
+ethernet_tb.tx.tx_core.dma_reg_tx.stack_full
+[pattern_trace] 1
+[pattern_trace] 0

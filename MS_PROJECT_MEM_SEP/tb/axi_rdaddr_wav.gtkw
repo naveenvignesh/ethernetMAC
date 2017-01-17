@@ -1,0 +1,84 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Thu Jul 28 04:34:39 2016
+[*]
+[dumpfile] "/home/bo/boop3386/Documents/MS_PROJECT/tb/mac_core.vcd"
+[dumpfile_mtime] "Thu Jul 28 03:56:29 2016"
+[dumpfile_size] 42652
+[savefile] "/home/bo/boop3386/Documents/MS_PROJECT/tb/axi_rdaddr_wav.gtkw"
+[timestart] 172200
+[size] 1000 600
+[pos] -1 -1
+*-16.152388 245000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tb_axi_slave.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[treeopen] ethernet_tb.tx.tx_core.axi_master.
+[sst_width] 214
+[signals_width] 346
+[sst_expanded] 1
+[sst_vpaned_height] 151
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_0[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_1[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_2[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_3[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_4[63:0]
+@28
+ethernet_tb.clks.rst
+ethernet_tb.clks.clk
+ethernet_tb.rd_addr_ch.ARVALID
+ethernet_tb.rd_addr_ch.ARREADY
+ethernet_tb.tx.tx_core.axi_master.arvalid_d
+ethernet_tb.tx.tx_core.axi_master.nxtaddr_to_axi_ready
+@22
+ethernet_tb.rd_addr_ch.ARADDR[31:0]
+@28
+ethernet_tb.rd_addr_ch.ARBURST[1:0]
+@22
+ethernet_tb.rd_addr_ch.ARID[3:0]
+ethernet_tb.tx.tx_core.axi_master.nxt_state[3:0]
+ethernet_tb.tx.tx_core.axi_master.cur_state[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.nxtaddr_to_axi_d
+ethernet_tb.tx.tx_core.axi_master.rd
+@22
+ethernet_tb.tx.tx_core.axi_master.nxtaddr_to_axi[31:0]
+ethernet_tb.tx.tx_core.axi_master.cur_chstate_0[3:0]
+ethernet_tb.tx.tx_core.axi_master.cur_chstate_1[3:0]
+ethernet_tb.tx.tx_core.axi_master.cur_chstate_2[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.ch_gnt_d[2:0]
+ethernet_tb.tx.tx_core.axi_master.arburst_d
+ethernet_tb.tx.tx_core.axi_master.arvalid_d
+@22
+ethernet_tb.tx.tx_core.axi_master.arid_d[3:0]
+ethernet_tb.tx.tx_core.axi_master.arid_nxt[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.arb_nxt
+@23
+ethernet_tb.tx.tx_core.axi_master.haddr0_d[31:0]
+@22
+ethernet_tb.tx.tx_core.axi_master.haddr[63:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.main_ptr_empty
+ethernet_tb.tx.tx_core.dma_reg_tx.stack_empty
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.r_ptr[3:0]
+@28
+ethernet_tb.tx.tx_core.dma_reg_tx.rd_en
+@22
+ethernet_tb.tb_axi_slave.mem_addr_nxt[35:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.link_pull_0
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.w_ptr[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.ch_req_arb[2:0]
+ethernet_tb.tx.tx_core.axi_master.link_addr_0_fifo.push
+ethernet_tb.tx.tx_core.axi_master.link_empty_0
+ethernet_tb.tx.tx_core.axi_master.link_empty_1
+ethernet_tb.tx.tx_core.axi_master.link_empty_2
+[pattern_trace] 1
+[pattern_trace] 0

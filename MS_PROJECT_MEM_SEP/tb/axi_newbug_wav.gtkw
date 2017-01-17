@@ -1,0 +1,124 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Sat Sep 24 04:54:56 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/tb/mac_core.vcd"
+[dumpfile_mtime] "Sat Sep 24 04:45:06 2016"
+[dumpfile_size] 118359
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/tb/axi_newbug_wav.gtkw"
+[timestart] 195200
+[size] 1000 600
+[pos] -5 -2
+*-16.145021 310800 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tb_axi_slave.
+[treeopen] ethernet_tb.tx.tx_core.
+[treeopen] ethernet_tb.tx.tx_core.axi_master.
+[sst_width] 229
+[signals_width] 346
+[sst_expanded] 1
+[sst_vpaned_height] 151
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_0[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_1[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_2[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_3[63:0]
+ethernet_tb.tx.tx_core.dma_reg_tx.reg_4[63:0]
+@28
+ethernet_tb.clks.rst
+ethernet_tb.clks.clk
+ethernet_tb.rd_addr_ch.ARVALID
+ethernet_tb.rd_addr_ch.ARREADY
+ethernet_tb.tx.tx_core.axi_master.arvalid_d
+ethernet_tb.tx.tx_core.axi_master.nxtaddr_to_axi_ready
+@22
+ethernet_tb.rd_addr_ch.ARADDR[31:0]
+@28
+ethernet_tb.rd_addr_ch.ARBURST[1:0]
+@22
+ethernet_tb.rd_addr_ch.ARID[3:0]
+ethernet_tb.tx.tx_core.axi_master.nxt_state[3:0]
+ethernet_tb.tx.tx_core.axi_master.cur_state[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.rd
+@22
+ethernet_tb.tb_axi_slave.mem_addr_d[31:0]
+ethernet_tb.tb_axi_slave.mem_addr_nxt[35:0]
+ethernet_tb.tb_axi_slave.rburst_cnt_nxt[3:0]
+ethernet_tb.tb_axi_slave.rburst_cnt_d[3:0]
+@28
+ethernet_tb.tb_axi_slave.rvalid_d
+ethernet_tb.tb_axi_slave.rvalid_nxt
+@29
+ethernet_tb.tb_axi_slave.nxt_rd_state[2:0]
+@28
+ethernet_tb.tb_axi_slave.cur_rd_state[2:0]
+ethernet_tb.tb_axi_slave.gnt_vector_d[2:0]
+@22
+ethernet_tb.tb_axi_slave.ra_size0
+ethernet_tb.tb_axi_slave.ra_size1
+ethernet_tb.tb_axi_slave.ra_size2
+@28
+ethernet_tb.tb_axi_slave.empty_ra_fifo0
+ethernet_tb.tb_axi_slave.empty_ra_fifo1
+ethernet_tb.tb_axi_slave.empty_ra_fifo2
+ethernet_tb.tx.tx_core.axi_master.pfifo_full_0
+ethernet_tb.tx.tx_core.axi_master.pfifo_full_1
+ethernet_tb.tx.tx_core.axi_master.pfifo_full_2
+@22
+ethernet_tb.tx.tx_core.axi_master.nxtaddr_to_axi[31:0]
+ethernet_tb.tx.tx_core.axi_master.pkt0_fifo.data_in[63:0]
+ethernet_tb.tx.tx_core.axi_master.pkt1_fifo.data_in[63:0]
+ethernet_tb.tx.tx_core.axi_master.pkt2_fifo.data_in[63:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.pkt0_fifo.full
+ethernet_tb.tx.tx_core.axi_master.link_addr_0_fifo.empty
+ethernet_tb.tx.tx_core.axi_master.link_addr_1_fifo.empty
+ethernet_tb.tx.tx_core.axi_master.link_addr_2_fifo.empty
+@22
+ethernet_tb.tx.tx_core.axi_master.link_addr_0_fifo.data_in[31:0]
+ethernet_tb.tx.tx_core.axi_master.link_addr_1_fifo.data_in[31:0]
+ethernet_tb.tx.tx_core.axi_master.link_addr_2_fifo.data_in[31:0]
+ethernet_tb.tx.tx_core.axi_master.cur_chstate_0[3:0]
+ethernet_tb.tx.tx_core.axi_master.cur_chstate_1[3:0]
+ethernet_tb.tx.tx_core.axi_master.cur_chstate_2[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.ch_gnt_d[2:0]
+ethernet_tb.tx.tx_core.axi_master.ch_req_arb[2:0]
+ethernet_tb.tx.tx_core.axi_master.arburst_d
+ethernet_tb.tx.tx_core.axi_master.arvalid_d
+@22
+ethernet_tb.tx.tx_core.axi_master.arid_d[3:0]
+ethernet_tb.tx.tx_core.axi_master.arid_nxt[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.arb_nxt
+@22
+ethernet_tb.tx.tx_core.axi_master.haddr0_d[31:0]
+ethernet_tb.tx.tx_core.axi_master.haddr[63:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.main_ptr_empty
+ethernet_tb.tx.tx_core.dma_reg_tx.stack_empty
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.r_ptr[3:0]
+@28
+ethernet_tb.tx.tx_core.dma_reg_tx.rd_en
+@22
+ethernet_tb.tb_axi_slave.mem_addr_nxt[35:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.link_pull_0
+@22
+ethernet_tb.tx.tx_core.dma_reg_tx.w_ptr[3:0]
+@28
+ethernet_tb.tx.tx_core.axi_master.ch_req_arb[2:0]
+ethernet_tb.tx.tx_core.axi_master.link_addr_0_fifo.push
+ethernet_tb.tx.tx_core.axi_master.link_empty_0
+ethernet_tb.tx.tx_core.axi_master.link_empty_1
+ethernet_tb.tx.tx_core.axi_master.link_empty_2
+ethernet_tb.wr_data_ch.WREADY
+ethernet_tb.wr_data_ch.WVALID
+ethernet_tb.wr_data_ch.WLAST
+@22
+ethernet_tb.wr_data_ch.WID[3:0]
+ethernet_tb.wr_data_ch.WDATA[63:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,12 @@
+`include "ethernet_frame_pkg.sv"
+ import ethernet_frame_pkg::*;
+`include "axi_master_model.sv"
+`include "axi_slave_model.sv"
+`include "eth_tx_protocol_check.sv"
+`include "AXI_interface.sv"
+`include "mem_model_crc.sv"
+`include "mem_model_pktd.sv"
+`include "mem_model_pktc.sv"
+`include "mem_model_swchaddr.sv"
+`include "mem_model_swchdata.sv"
+`include "mem_model_swchrsp.sv"

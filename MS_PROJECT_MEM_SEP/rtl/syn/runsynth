@@ -1,0 +1,3 @@
+#!/usr/bin/csh
+source design_ssc_new.csh
+dc_shell -f synthesis.script | tee log

@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+Design : eth_core
+Version: K-2015.12-SP1
+Date   : Thu Nov 10 23:26:32 2016
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0311    0.0000    0.0000    0.0311 (95.77%)  i
+register                1.645e-04 1.190e-04    0.0000 2.834e-04 ( 0.87%)  
+combinational           5.937e-04 4.826e-04    0.0000 1.076e-03 ( 3.32%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000 1.217e-05    0.0000 1.217e-05 ( 0.04%)  
+
+  Net Switching Power  = 6.137e-04   ( 1.89%)
+  Cell Internal Power  =    0.0318   (98.11%)
+  Cell Leakage Power   =    0.0000   ( 0.00%)
+                         ---------
+Total Power            =    0.0325  (100.00%)
+
+1

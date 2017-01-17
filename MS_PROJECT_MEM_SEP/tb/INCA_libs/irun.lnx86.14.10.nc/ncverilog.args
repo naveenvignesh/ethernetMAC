@@ -1,0 +1,13 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++define+GATE
++libext+.tsbvlibp
++access+r
++sv
++incdir+../rtl
+-y
+/apps/toshiba/sjsu/verilog/tc240c
+ethernet_tb.sv
+../rtl/syn_wholedesign/eth_core_netlist.v

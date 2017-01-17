@@ -1,0 +1,16 @@
+ncverilog: 14.10-p001: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-p001: Started on Nov 01, 2016 at 03:11:29 PDT
+ncverilog
+	+sv
+	+access+r
+	+incdir+..
+	-LINEDEBUG
+	../ethernet_frame_pkg.sv
+ncverilog: *W,BADPRF: The -LINEDEBUG option may have an adverse performance impact.
+Loading snapshot worklib.ethernet_frame_pkg:sv .................... Done
+SVSEED default: 1
+ncsim> source /apps/cadence/INCISIV141/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	ncverilog	14.10-p001: Exiting on Nov 01, 2016 at 03:11:30 PDT  (total: 00:00:01)

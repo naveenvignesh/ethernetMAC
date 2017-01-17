@@ -1,0 +1,2 @@
+#!/usr/bin/csh
+ncverilog +sv +access+r -LINEDEBUG $argv

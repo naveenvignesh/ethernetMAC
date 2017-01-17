@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Tue Nov 15 05:20:19 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Tue Nov 15 02:57:33 2016"
+[dumpfile_size] 5492674
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/axi_master_rd_data_ch.gtkw"
+[timestart] 243470
+[size] 1404 600
+[pos] 50 52
+*-13.603206 255000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[sst_width] 229
+[signals_width] 256
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@29
+ethernet_tb.clks.clk
+@22
+ethernet_tb.rd_data_ch.RDATA[63:0]
+@28
+ethernet_tb.rd_data_ch.RVALID
+@22
+ethernet_tb.rd_data_ch.RID[3:0]
+@28
+ethernet_tb.rd_data_ch.RLAST
+ethernet_tb.rd_data_ch.RREADY
+ethernet_tb.rd_data_ch.RRESP[1:0]
+@22
+ethernet_tb.tx.tx_core.axi_master.dch_cur_state[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

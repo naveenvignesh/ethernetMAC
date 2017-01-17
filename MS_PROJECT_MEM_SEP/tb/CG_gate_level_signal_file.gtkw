@@ -1,0 +1,38 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Thu Nov  3 09:05:32 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core_cg.vcd"
+[dumpfile_mtime] "Thu Nov  3 08:21:51 2016"
+[dumpfile_size] 11879843
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/CG_gate_level_signal_file.gtkw"
+[timestart] 111600
+[size] 1228 600
+[pos] 39 -1
+*-17.118418 216190 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.TX.
+[treeopen] ethernet_tb.TX.\tx_core/dma_reg_tx.
+[treeopen] ethernet_tb.TX.\tx_core/tx_crc/crcpkt0.
+[treeopen] ethernet_tb.TX.\tx_core/tx_crc/crcpkt1.
+[sst_width] 229
+[signals_width] 590
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+ethernet_tb.TX.\tx_core/axi_master.\clk_gate_ctrl_hdr2_d_reg[last_bvalid].CLK
+ethernet_tb.TX.\tx_core/axi_master.\clk_gate_ctrl_hdr2_d_reg[last_bvalid].EN
+ethernet_tb.TX.\tx_core/axi_master.\clk_gate_ctrl_hdr2_d_reg[last_bvalid].ENCLK
+ethernet_tb.TX.\tx_core/axi_master.\clk_gate_ctrl_hdr2_d_reg[last_bvalid].main_gate.A
+ethernet_tb.TX.\tx_core/axi_master.\clk_gate_ctrl_hdr2_d_reg[last_bvalid].main_gate.B
+ethernet_tb.TX.\tx_core/axi_master.\clk_gate_ctrl_hdr2_d_reg[last_bvalid].main_gate.Z
+ethernet_tb.TX.\tx_core/axi_master.clk_gate_pfifo_datain_0_d_reg.CLK
+ethernet_tb.TX.\tx_core/axi_master.clk_gate_pfifo_datain_0_d_reg.EN
+ethernet_tb.TX.\tx_core/tx_crc/crcpkt0.clk_gate_crcin64_d_reg.CLK
+ethernet_tb.TX.\tx_core/tx_crc/crcpkt0.clk_gate_crcin64_d_reg.EN
+ethernet_tb.TX.\tx_core/tx_crc/crcpkt0.clk_gate_crcin64_d_reg.ENCLK
+ethernet_tb.TX.\tx_core/tx_crc/crcpkt1.clk_gate_crcin64_d_reg.CLK
+ethernet_tb.TX.\tx_core/tx_crc/crcpkt1.clk_gate_crcin64_d_reg.EN
+ethernet_tb.TX.\tx_core/tx_crc/crcpkt1.clk_gate_crcin64_d_reg.ENCLK
+[pattern_trace] 1
+[pattern_trace] 0

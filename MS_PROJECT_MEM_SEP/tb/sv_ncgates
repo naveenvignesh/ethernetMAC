@@ -1,0 +1,2 @@
+#!/usr/bin/csh
+ncverilog +define+GATE +libext+.tsbvlibp +access+r +sv +incdir+../rtl -y /apps/toshiba/sjsu/verilog/tc240c $argv

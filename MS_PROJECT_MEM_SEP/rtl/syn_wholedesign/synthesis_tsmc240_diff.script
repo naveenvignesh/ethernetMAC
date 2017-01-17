@@ -1,0 +1,244 @@
+#
+# set the inf.clk to be your interface name <name>.clk
+# set the inf.rst to be your interface name <name>.rst
+#
+# toshiba 250nm cells
+set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25}
+# osu 180nm cells
+#set link_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+#set target_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db}
+
+################################################################################################
+############# AXI master #######################################################################
+################################################################################################
+analyze -format sverilog {
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/rtl_struct.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/AXI_interface.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/AXI_master.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/AXI_slave.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/dma_fifo.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/dma_controller_tx.sv  
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D8.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D16.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D24.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D32.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D40.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D48.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D56.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC32_D64.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/CRC_block.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/rs_layer.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/queue_selection.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/QOS_arb.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/prienc.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/eth_tx.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/eth_core.sv 
+}
+elaborate AXI_master
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power
+#write -hierarchy -format verilog -output AXI_master_gates.v
+#################################################################################################################
+#################################################################################################################
+################################################################################################
+############# AXI slave  #######################################################################
+################################################################################################
+elaborate AXI_slave
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+check_design
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power
+#write -hierarchy -format verilog -output AXI_slave_gates.v
+#################################################################################################################
+#################################################################################################################
+################################################################################################
+############# DMA controller tx  #######################################################################
+################################################################################################
+elaborate dma_controller_tx
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+check_design
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power
+#write -hierarchy -format verilog -output dma_controller_tx_gates.v
+#################################################################################################################
+#################################################################################################################
+############# CRC block  #######################################################################
+################################################################################################
+elaborate CRC_block
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+check_design
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power
+#write -hierarchy -format verilog -output CRC_block_gates.v
+#################################################################################################################
+#################################################################################################################
+############# TX RS_layer block  #######################################################################
+########################################################################################################
+elaborate rs_layer
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+check_design
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power
+#write -hierarchy -format verilog -output rs_layer_gates.v
+
+#################################################################################################################
+#################################################################################################################
+############# TX QUEUE SELECTION block  #######################################################################
+########################################################################################################
+########################################################################################################
+elaborate queue_selection
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+check_design
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power
+#write -hierarchy -format verilog -output queue_selection_gates.v
+#################################################################################################################
+#################################################################################################################
+#################################################################################################################
+############# ETH TX  #######################################################################
+########################################################################################################
+########################################################################################################
+elaborate eth_tx
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+check_design
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+#report_timing -max_paths 3
+#report_area
+#report_power
+#write -hierarchy -format verilog -output eth_tx_gates_tc240.v
+#################################################################################################################
+############# ETH TX CORE  #######################################################################
+########################################################################################################
+########################################################################################################
+#analyze -format sverilog {
+#/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/rtl_struct.sv 
+#/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/AXI_interface.sv 
+#/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/eth_core.sv 
+# }
+elaborate eth_core
+create_clock clks.clk -name clk -period 3.0
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+check_design
+compile_ultra
+create_clock clks.clk -name clk -period 3.10
+update_timing
+report_timing -max_paths 3
+report_area
+report_power
+write -hierarchy -format verilog -output eth_core_gates_tc240.v
+quit

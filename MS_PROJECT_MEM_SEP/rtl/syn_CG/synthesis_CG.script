@@ -1,0 +1,53 @@
+#
+# set the inf.clk to be your interface name <name>.clk
+# set the inf.rst to be your interface name <name>.rst
+#
+set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25}
+#/home/bo/boop3386/Documents/eth_crc/rtl_syn/rtl_struct.sv 
+#set link_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+#set target_library {/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db}
+analyze -format sverilog {
+/home/010123386@SJSUAD.SJSU.EDU/Documents/RSmac/AXI_interface.sv 
+/home/010123386@SJSUAD.SJSU.EDU/Documents/RSmac/rs_layer.sv
+ }
+
+#elaborate CRC32_D8
+#create_clock -name VCLK -period 3.3
+#set_input_delay  -clock VCLK 0.6 [all_inputs]
+#set_output_delay -clock VCLK 0.6 [all_outputs]
+#set_wire_load_model -name T8G00TW8
+#set_max_area 0
+#compile_ultra
+#update_timing
+#report_timing -max_paths 3
+#write -hierarchy -format verilog -output CRC32_D8_gates.v
+
+
+elaborate rs_layer
+#create_clock clks.clk -name clk -period 3.03
+create_clock clks.clk -name clk -period 2.40
+set_propagated_clock clk
+set_clock_uncertainty 0.25 clk
+set_propagated_clock clk
+set_output_delay 0.5 -clock clk [all_outputs]
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+set_output_delay 0.6 -clock clk [all_outputs]
+set_fix_hold [ get_clocks clk ]
+set_output_delay 0.3 -clock clk [all_outputs]
+set_wire_load_model -name T8G00TW8
+set_clock_gating_style -minimum_bitwidth 2
+set_max_area 0
+check_design
+compile_ultra -gate_clock
+create_clock clks.clk -name clk -period 3.00
+update_timing
+report_timing -max_paths 10
+report_area
+#get_attribute {	/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25/CNANDX2 } nandarea
+write -hierarchy -format verilog -output rs_layer_gates.v
+write_sdc  rs_layer_gates.sdc
+quit
+

@@ -1,0 +1,38 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Sat Nov 26 23:49:07 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Sat Nov 26 21:31:59 2016"
+[dumpfile_size] 5505102
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/queue_selection_0.gtkw"
+[timestart] 905000
+[size] 1000 600
+[pos] 169 15
+*-15.024698 905000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[treeopen] ethernet_tb.tx.tx_core.axi_master.
+[treeopen] ethernet_tb.tx.tx_core.tx_crc.
+[treeopen] ethernet_tb.tx.tx_core.tx_crc.crcpkt0.
+[sst_width] 305
+[signals_width] 214
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+ethernet_tb.clks.clk
+ethernet_tb.tx.tx_core.QOS_selector.arb_nxt
+ethernet_tb.tx.tx_core.QOS_selector.buffer_sel[2:0]
+ethernet_tb.tx.tx_core.QOS_selector.start_transmit
+ethernet_tb.tx.tx_core.QOS_selector.crcfifo0_pull
+@22
+ethernet_tb.tx.tx_core.QOS_selector.crcfifo0_dataout[31:0]
+ethernet_tb.tx.tx_core.QOS_selector.pfifo_datain[63:0]
+ethernet_tb.tx.tx_core.QOS_selector.pfifo_datain_ctrl[15:0]
+@28
+ethernet_tb.tx.tx_core.QOS_selector.crcfifo0_empty
+ethernet_tb.tx.tx_core.QOS_selector.crcfifo1_empty
+ethernet_tb.tx.tx_core.QOS_selector.crcfifo2_empty
+[pattern_trace] 1
+[pattern_trace] 0

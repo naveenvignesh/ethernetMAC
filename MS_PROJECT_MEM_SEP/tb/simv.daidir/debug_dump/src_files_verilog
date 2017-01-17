@@ -1,0 +1,13 @@
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/AXI_interface.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/AXI_master.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/AXI_slave.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/dma_controller_tx.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/dma_fifo.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/eth_core.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/eth_tx.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/rtl/rtl_struct.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/tb/axi_master_model.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/tb/axi_slave_model.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/tb/ethernet_frame_pkg.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/tb/ethernet_tb.sv
+/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT/tb/files.sv

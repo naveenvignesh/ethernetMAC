@@ -1,0 +1,46 @@
+[*]
+[*] GTKWave Analyzer v3.3.72 (w)1999-2016 BSI
+[*] Tue Nov 15 03:07:21 2016
+[*]
+[dumpfile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd"
+[dumpfile_mtime] "Tue Nov 15 02:57:33 2016"
+[dumpfile_size] 5492674
+[savefile] "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/axi-slave_data_resp_stats.gtkw"
+[timestart] 161100
+[size] 1220 600
+[pos] -1 -1
+*-15.000000 205000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ethernet_tb.
+[treeopen] ethernet_tb.tx.
+[treeopen] ethernet_tb.tx.tx_core.
+[sst_width] 236
+[signals_width] 258
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@29
+ethernet_tb.clks.clk
+@28
+ethernet_tb.clks.rst
+@22
+ethernet_tb.wr_data_ch.WDATA[63:0]
+ethernet_tb.wr_data_ch.WID[3:0]
+@28
+ethernet_tb.wr_data_ch.WLAST
+ethernet_tb.wr_data_ch.WREADY
+ethernet_tb.wr_data_ch.WVALID
+ethernet_tb.tx.tx_core.axi_slave.w_dch_cur_state[1:0]
+@22
+ethernet_tb.tx.tx_core.axi_slave.wchdata_datain[31:0]
+ethernet_tb.tx.tx_core.axi_slave.reg_write_addr[31:0]
+ethernet_tb.tx.tx_core.axi_slave.reg_write_data[63:0]
+@28
+ethernet_tb.tx.tx_core.axi_slave.wr_en
+ethernet_tb.tx.tx_core.axi_slave.brsp[1:0]
+@22
+ethernet_tb.tx.tx_core.axi_slave.bid[3:0]
+ethernet_tb.tx.tx_core.axi_slave.wchrsp_datain[5:0]
+@28
+ethernet_tb.tx.tx_core.axi_slave.wchrsp_push
+ethernet_tb.tx.tx_core.axi_slave.w_rspch_cur_state[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

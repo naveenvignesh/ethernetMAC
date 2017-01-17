@@ -1,0 +1,8 @@
+#!/bin/csh
+source /apps/design_environment.csh
+setenv PATH "${PATH}:/apps/cadence/EDI91/bin"
+echo ${LD_LIBRARY_PATH}
+setenv LD_LIBRARY_PATH "/apps/cadence/ET91/tools.lnx86/tb/lib/32bit/:/apps/cadence/EDI91/tools.lnx86/pvs/lib/32bit/:/apps/cadence/EDI91/tools.lnx86/tcltools/icd8.4.11/lib/:/apps/cadence/EDI91/tools.lnx86/Qt/32bit/lib/:/apps/cadence/EDI91/tools.lnx86/lib:/apps/cadence/EDI91/tools.lnx86/mesalib/lib:/apps/cadence/MMSIM62/tools.lnx86/vpcd/lib:/apps/cadence/EDI91/tools.lnx86/lib:/apps/cadence/EDI91/tools.lnx86/fe/lib:${LD_LIBRARY_PATH}"
+#ldd /apps/cadence/EDI91/tools.lnx86/fe/bin/32bit/encounter
+encounter
+

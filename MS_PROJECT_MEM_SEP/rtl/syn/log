@@ -1,0 +1,1065 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+          Version I-2013.12-SP5 for RHEL32 -- Jul 20, 2014
+               Copyright (c) 1988-2014 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Information: As of the J-2014.09 version of dc_shell, the 32-bit
+             version of the product will not be delivered by default.
+             If you require a 32-bit version for any reason, please
+             contact Synopsys technical support.
+
+Initializing...
+#
+# set the inf.clk to be your interface name <name>.clk
+# set the inf.rst to be your interface name <name>.rst
+#
+set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb}
+/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25 /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb
+set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25}
+/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25
+analyze -format sverilog {
+/home/bo/boop3386/Documents/MS_PROJECT/rtl/rtl_struct.sv 
+/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_interface.sv 
+/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv 
+/home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv }
+Running PRESTO HDLC
+Compiling source file /home/bo/boop3386/Documents/MS_PROJECT/rtl/rtl_struct.sv
+Compiling source file /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_interface.sv
+Compiling source file /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:616: the undeclared symbol 'pfifo_pop_0' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:617: the undeclared symbol 'pfifo_pop_1' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:618: the undeclared symbol 'pfifo_pop_2' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:620: the undeclared symbol 'pfifo_full_0' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:620: the undeclared symbol 'pfifo_empty_0' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:621: the undeclared symbol 'pfifo_full_1' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:621: the undeclared symbol 'pfifo_empty_1' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:622: the undeclared symbol 'pfifo_full_2' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:622: the undeclared symbol 'pfifo_empty_2' assumed to have the default net type, which is 'wire'. (VER-936)
+Compiling source file /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:76: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv:77: The construct 'assert property' is not supported in synthesis; it is ignored. (VER-708)
+Presto compilation completed successfully.
+Loading db file '/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+1
+elaborate AXI_master
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/gtech.db'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/standard.sldb'
+  Loading link library 'tc240c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:285: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:293: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv:301: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 90 in file
+	'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           109            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 188 in file
+	'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           195            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 250 in file
+	'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           282            |     no/auto      |
+|           310            |     no/auto      |
+|           335            |    auto/auto     |
+|           346            |    auto/auto     |
+|           357            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 385 in file
+	'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           391            |     no/auto      |
+|           393            |     no/auto      |
+|           395            |    auto/auto     |
+|           403            |    auto/auto     |
+|           411            |    auto/auto     |
+|           419            |    auto/auto     |
+|           430            |    auto/auto     |
+|           438            |    auto/auto     |
+|           446            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 476 in file
+	'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           489            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 528 in file
+	'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           534            |    auto/auto     |
+|           557            |    auto/auto     |
+|           579            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AXI_master line 76 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    arburst_d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    arvalid_d_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master line 178 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  dch_cur_state_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master line 220 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| pfifo_datain_0_d_reg | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+| pfifo_datain_1_d_reg | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+| pfifo_datain_2_d_reg | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+| link_datain_0_d_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+| link_datain_1_d_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+| link_datain_2_d_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine AXI_master line 373 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     arid_d_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ch_gnt_2d_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master line 456 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    haddr0_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    haddr1_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    haddr2_d_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AXI_master line 514 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/AXI_master.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    ch_gnt_d_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  cur_chstate_0_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  cur_chstate_1_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  cur_chstate_2_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'AXI_master'.
+Information: Building the design 'dma_fifo' instantiated from design 'AXI_master' with
+	the parameters "32,1|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl_ line 47 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_mem_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dma_fifo' instantiated from design 'AXI_master' with
+	the parameters "64,6|((N%clks%I%WORK/AXI_clks%to_rtl%)(N%push%)(N%pull%)(N%data_in%)(N%data_out%)(N%depth_left%)(N%full%)(N%empty%))". (HDL-193)
+
+Inferred memory devices in process
+	in routine dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_ line 47 in file
+		'/home/bo/boop3386/Documents/MS_PROJECT/rtl/dma_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  22   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  27   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  35   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_mem_reg     | Flip-flop |  49   |  Y  | N  | N  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   depth_left_reg    | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===============================================================================================
+|                   block name/line                    | Inputs | Outputs | # sel inputs | MB |
+===============================================================================================
+| dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_/40 |   64   |   64    |      6       | N  |
+===============================================================================================
+Presto compilation completed successfully.
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt0_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt1_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt2_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+1
+create_clock clks.clk -name clk -period 3.0
+1
+set_propagated_clock clk
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_clock_uncertainty 0.25 clk
+1
+set_propagated_clock clk
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_output_delay 0.5 -clock clk [all_outputs]
+1
+set all_inputs_wo_rst_clk [remove_from_collection [remove_from_collection [all_inputs] [get_port clks.clk]] [get_port clks.rst]]
+{rdata_ch.RID[3] rdata_ch.RID[2] rdata_ch.RID[1] rdata_ch.RID[0] rdata_ch.RDATA[63] rdata_ch.RDATA[62] rdata_ch.RDATA[61] rdata_ch.RDATA[60] rdata_ch.RDATA[59] rdata_ch.RDATA[58] rdata_ch.RDATA[57] rdata_ch.RDATA[56] rdata_ch.RDATA[55] rdata_ch.RDATA[54] rdata_ch.RDATA[53] rdata_ch.RDATA[52] rdata_ch.RDATA[51] rdata_ch.RDATA[50] rdata_ch.RDATA[49] rdata_ch.RDATA[48] rdata_ch.RDATA[47] rdata_ch.RDATA[46] rdata_ch.RDATA[45] rdata_ch.RDATA[44] rdata_ch.RDATA[43] rdata_ch.RDATA[42] rdata_ch.RDATA[41] rdata_ch.RDATA[40] rdata_ch.RDATA[39] rdata_ch.RDATA[38] rdata_ch.RDATA[37] rdata_ch.RDATA[36] rdata_ch.RDATA[35] rdata_ch.RDATA[34] rdata_ch.RDATA[33] rdata_ch.RDATA[32] rdata_ch.RDATA[31] rdata_ch.RDATA[30] rdata_ch.RDATA[29] rdata_ch.RDATA[28] rdata_ch.RDATA[27] rdata_ch.RDATA[26] rdata_ch.RDATA[25] rdata_ch.RDATA[24] rdata_ch.RDATA[23] rdata_ch.RDATA[22] rdata_ch.RDATA[21] rdata_ch.RDATA[20] rdata_ch.RDATA[19] rdata_ch.RDATA[18] rdata_ch.RDATA[17] rdata_ch.RDATA[16] rdata_ch.RDATA[15] rdata_ch.RDATA[14] rdata_ch.RDATA[13] rdata_ch.RDATA[12] rdata_ch.RDATA[11] rdata_ch.RDATA[10] rdata_ch.RDATA[9] rdata_ch.RDATA[8] rdata_ch.RDATA[7] rdata_ch.RDATA[6] rdata_ch.RDATA[5] rdata_ch.RDATA[4] rdata_ch.RDATA[3] rdata_ch.RDATA[2] rdata_ch.RDATA[1] rdata_ch.RDATA[0] rdata_ch.RRESP[1] rdata_ch.RRESP[0] rdata_ch.RLAST rdata_ch.RUSER rdata_ch.RVALID haddr[63] haddr[62] haddr[61] haddr[60] haddr[59] haddr[58] haddr[57] haddr[56] haddr[55] haddr[54] haddr[53] haddr[52] haddr[51] haddr[50] haddr[49] haddr[48] haddr[47] haddr[46] haddr[45] haddr[44] haddr[43] haddr[42] haddr[41] haddr[40] haddr[39] haddr[38] haddr[37] ...}
+set_driving_cell -lib_cell CND2X1 $all_inputs_wo_rst_clk
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+1
+set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
+1
+set_output_delay 0.6 -clock clk [all_outputs]
+1
+set_fix_hold [ get_clocks clk ]
+1
+set_output_delay 0.3 -clock clk [all_outputs]
+1
+set_wire_load_model -name T8G00TW8
+1
+compile_ultra
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.5 |     *     |
+| Licensed DW Building Blocks        | I-2013.12-DWBB_201312.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 281 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/tc240c.db_NOMIN25.alib'
+Information: Ungrouping 0 of 4 hierarchies before Pass 1 (OPT-775)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'AXI_master'
+Information: Added key list 'DesignWare' to design 'AXI_master'. (DDB-72)
+Information: The register 'dch_cur_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dch_cur_state_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'dch_cur_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arid_d_reg[3]' is a constant and will be removed. (OPT-1206)
+  Processing 'dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl__0'
+Information: Added key list 'DesignWare' to design 'dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl__0'. (DDB-72)
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt0_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt1_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt2_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: The register 'link_addr_1_fifo/r_ptr_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'link_addr_2_fifo/r_ptr_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'link_addr_0_fifo/r_ptr_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_2_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_2_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_1_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_1_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_0_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_0_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_1_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_2_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cur_chstate_0_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'arid_d_reg[2]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04    6437.5      0.00      -0.0       0.0                                0.00
+    0:00:04    6437.5      0.00      -0.0       0.0                                0.00
+    0:00:04    6437.5      0.00      -0.0       0.0                                0.00
+    0:00:04    6437.5      0.00      -0.0       0.0                                0.00
+  Re-synthesis Optimization (Phase 1)
+  Re-synthesis Optimization (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05    4944.5      0.01       0.3       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+    0:00:05    4947.5      0.00       0.0       0.0                                0.00
+
+
+  Beginning Design Rule Fixing  (min_path)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05    4947.5      0.00       0.0       0.0                               -3.07
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:06    4983.0      0.53      18.0       0.0                                0.00
+    0:00:06    4941.0      0.53      58.2       0.0                               -0.04
+    0:00:06    4941.0      0.53      58.2       0.0                               -0.04
+    0:00:07    5053.0      0.00       0.0       0.0                               -0.04
+    0:00:07    5053.0      0.00       0.0       0.0                               -0.04
+    0:00:07    5054.0      0.00       0.0       0.0                                0.00
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07    5054.0      0.00       0.0       0.0                                0.00
+    0:00:07    4987.0      0.00       0.0       0.0                               -0.06
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07    4987.0      0.00       0.0       0.0                               -0.06
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+    0:00:08    4859.0      0.00       0.0       0.0                               -0.12
+    0:00:08    4859.0      0.00       0.0       0.0                               -0.12
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+    0:00:08    4861.0      0.00       0.0       0.0                                0.00
+Loading db file '/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_NOMIN25'
+
+  Optimization Complete
+  ---------------------
+1
+create_clock clks.clk -name clk -period 3.10
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt0_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt1_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+Error: Width mismatch on port 'depth_left' of reference to 'dma_fifo' in 'AXI_master'. (LINK-3)
+Error: Unable to match ports of cell pkt2_fifo ('dma_fifo') to 'dma_fifo_DWIDTH64_AWIDTH6_I_clks_AXI_clks_to_rtl_'. (LINK-25)
+1
+update_timing
+Information: Updating design information... (UID-85)
+1
+report_timing -max_paths 3
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : AXI_master
+Version: I-2013.12-SP5
+Date   : Sun Jul 31 17:08:54 2016
+****************************************
+
+Operating Conditions: NOMIN25   Library: tc240c
+Wire Load Model Mode: top
+
+  Startpoint: rdata_ch.RDATA[25]
+              (input port clocked by clk)
+  Endpoint: link_addr_1_fifo/data_mem_reg[0][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AXI_master         T8G00TW8              tc240c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.60       0.60 f
+  rdata_ch.RDATA[25] (in)                                 0.23       0.83 f
+  U925/Z (CENXL)                                          0.21       1.04 r
+  U980/Z (CAN4X1)                                         0.25       1.30 r
+  U981/Z (CAN4X1)                                         0.21       1.51 r
+  U984/Z (CAN4X1)                                         0.25       1.76 r
+  U994/Z (CANR11X4)                                       0.13       1.89 f
+  link_addr_1_fifo/push (dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl__2)
+                                                          0.00       1.89 f
+  link_addr_1_fifo/U3/Z (COND1X2)                         0.11       2.01 r
+  link_addr_1_fifo/U22/Z (CNR3X4)                         0.10       2.10 f
+  link_addr_1_fifo/U23/Z (CNIVX20)                        0.21       2.31 f
+  link_addr_1_fifo/U26/Z (CMX2X1)                         0.17       2.48 f
+  link_addr_1_fifo/data_mem_reg[0][0]/D (CFD1QXL)         0.00       2.48 f
+  data arrival time                                                  2.48
+
+  clock clk (rise edge)                                   3.10       3.10
+  clock network delay (ideal)                             0.00       3.10
+  clock uncertainty                                      -0.25       2.85
+  link_addr_1_fifo/data_mem_reg[0][0]/CP (CFD1QXL)        0.00       2.85 r
+  library setup time                                     -0.27       2.58
+  data required time                                                 2.58
+  --------------------------------------------------------------------------
+  data required time                                                 2.58
+  data arrival time                                                 -2.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.10
+
+
+  Startpoint: rdata_ch.RDATA[25]
+              (input port clocked by clk)
+  Endpoint: link_addr_1_fifo/data_mem_reg[0][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AXI_master         T8G00TW8              tc240c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.60       0.60 f
+  rdata_ch.RDATA[25] (in)                                 0.23       0.83 f
+  U925/Z (CENXL)                                          0.21       1.04 r
+  U980/Z (CAN4X1)                                         0.25       1.30 r
+  U981/Z (CAN4X1)                                         0.21       1.51 r
+  U984/Z (CAN4X1)                                         0.25       1.76 r
+  U994/Z (CANR11X4)                                       0.13       1.89 f
+  link_addr_1_fifo/push (dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl__2)
+                                                          0.00       1.89 f
+  link_addr_1_fifo/U3/Z (COND1X2)                         0.11       2.01 r
+  link_addr_1_fifo/U22/Z (CNR3X4)                         0.10       2.10 f
+  link_addr_1_fifo/U23/Z (CNIVX20)                        0.21       2.31 f
+  link_addr_1_fifo/U27/Z (CMX2X1)                         0.17       2.48 f
+  link_addr_1_fifo/data_mem_reg[0][1]/D (CFD1QXL)         0.00       2.48 f
+  data arrival time                                                  2.48
+
+  clock clk (rise edge)                                   3.10       3.10
+  clock network delay (ideal)                             0.00       3.10
+  clock uncertainty                                      -0.25       2.85
+  link_addr_1_fifo/data_mem_reg[0][1]/CP (CFD1QXL)        0.00       2.85 r
+  library setup time                                     -0.27       2.58
+  data required time                                                 2.58
+  --------------------------------------------------------------------------
+  data required time                                                 2.58
+  data arrival time                                                 -2.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.10
+
+
+  Startpoint: rdata_ch.RDATA[25]
+              (input port clocked by clk)
+  Endpoint: link_addr_1_fifo/data_mem_reg[0][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AXI_master         T8G00TW8              tc240c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.60       0.60 f
+  rdata_ch.RDATA[25] (in)                                 0.23       0.83 f
+  U925/Z (CENXL)                                          0.21       1.04 r
+  U980/Z (CAN4X1)                                         0.25       1.30 r
+  U981/Z (CAN4X1)                                         0.21       1.51 r
+  U984/Z (CAN4X1)                                         0.25       1.76 r
+  U994/Z (CANR11X4)                                       0.13       1.89 f
+  link_addr_1_fifo/push (dma_fifo_DWIDTH32_AWIDTH1_I_clks_AXI_clks_to_rtl__2)
+                                                          0.00       1.89 f
+  link_addr_1_fifo/U3/Z (COND1X2)                         0.11       2.01 r
+  link_addr_1_fifo/U22/Z (CNR3X4)                         0.10       2.10 f
+  link_addr_1_fifo/U23/Z (CNIVX20)                        0.21       2.31 f
+  link_addr_1_fifo/U24/Z (CMX2X1)                         0.17       2.48 f
+  link_addr_1_fifo/data_mem_reg[0][2]/D (CFD1QXL)         0.00       2.48 f
+  data arrival time                                                  2.48
+
+  clock clk (rise edge)                                   3.10       3.10
+  clock network delay (ideal)                             0.00       3.10
+  clock uncertainty                                      -0.25       2.85
+  link_addr_1_fifo/data_mem_reg[0][2]/CP (CFD1QXL)        0.00       2.85 r
+  library setup time                                     -0.27       2.58
+  data required time                                                 2.58
+  --------------------------------------------------------------------------
+  data required time                                                 2.58
+  data arrival time                                                 -2.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.10
+
+
+1
+write -hierarchy -format verilog -output AXI_master_gates.v
+Writing verilog file '/home/bo/boop3386/Documents/MS_PROJECT/rtl/syn/AXI_master_gates.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+quit
+
+Thank you...

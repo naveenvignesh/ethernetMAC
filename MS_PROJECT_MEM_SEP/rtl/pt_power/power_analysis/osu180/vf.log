@@ -1,0 +1,197 @@
+                                        
+                                 PrimeTime (R)
+                                        
+               Version K-2015.12-SP1 for linux64 - Jan 14, 2016 
+                                        
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+set power_enable_analysis TRUE
+TRUE
+set power_analysis_mode averaged
+averaged
+#####################################################################
+#       link design
+#####################################################################
+set search_path         "../../pt_syn/osu180  ."
+../../pt_syn/osu180  .
+set link_library "/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb"
+/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb
+read_verilog		eth_core_OSU180_netlist.v
+1
+current_design		eth_core
+Loading verilog file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v'
+Loading db file '/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+{"eth_core"}
+link
+Linking design eth_core...
+Warning: Unable to resolve reference to 'dma_controller_tx_I_clks_AXI_clks_to_rtl_' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'CRC_block_I_clks_AXI_clks_to_rtl__2' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'CRC_block_I_clks_AXI_clks_to_rtl__1' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'CRC_block_I_clks_AXI_clks_to_rtl__0' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_' in 'eth_core'. (LNK-005)
+Information: Creating black box for tx_core/axi_master/AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_... (LNK-043)
+Information: Creating black box for tx_core/dma_reg_tx/dma_controller_tx_I_clks_AXI_clks_to_rtl_... (LNK-043)
+Information: Creating black box for tx_core/tx_crc/crcpkt0/CRC_block_I_clks_AXI_clks_to_rtl__2... (LNK-043)
+Information: Creating black box for tx_core/tx_crc/crcpkt1/CRC_block_I_clks_AXI_clks_to_rtl__1... (LNK-043)
+Information: Creating black box for tx_core/tx_crc/crcpkt2/CRC_block_I_clks_AXI_clks_to_rtl__0... (LNK-043)
+Information: Removing 5 unneeded designs..... (LNK-034)
+Warning: Module 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'dma_controller_tx_I_clks_AXI_clks_to_rtl_' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'CRC_block_I_clks_AXI_clks_to_rtl__0' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'CRC_block_I_clks_AXI_clks_to_rtl__2' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'CRC_block_I_clks_AXI_clks_to_rtl__1' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Information: 8 (25.00%) library cells are unused in library osu018_stdcells..... (LNK-045)
+Information: total 8 library cells are unused (LNK-046)
+Design 'eth_core' was successfully linked.
+Information: There are 3833 leaf cells, ports, hiers and 4423 nets in the design (LNK-047)
+1
+#####################################################################
+#       read SDC
+#####################################################################
+read_sdc ../../pt_syn/osu180/eth_core_OSU180_netlist.sdc
+
+Reading SDC version 2.0...
+1
+1
+#set_disable_timing [get_lib_pins ssc_core_typ/*/G]
+#####################################################################
+#       set transition time / annotate parasitics
+#####################################################################
+read_parasitics		../../pt_syn/osu180/eth_core.spf
+Information: Log for 'read_parasitics command' will be generated in 'parasitics_command.log'. (PARA-107)
+1
+#####################################################################
+#       check/update/report timing
+#####################################################################
+check_timing 
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+Information: Checking 'no_input_delay'.
+Information: Checking 'no_driving_cell'.
+Information: Checking 'unconstrained_endpoints'.
+Warning: There are 366 endpoints which are not constrained for maximum delay.
+
+Information: Checking 'unexpandable_clocks'.
+Information: Checking 'latch_fanout'.
+Information: Checking 'no_clock'.
+Warning: There are 366 register clock pins with no clock.
+
+Information: Checking 'partial_input_delay'.
+Information: Checking 'generic'.
+Information: Checking 'loops'.
+Information: Checking 'generated_clocks'.
+Information: Checking 'pulse_clock_non_pulse_clock_merge'.
+Information: Checking 'pll_configuration'.
+0
+update_timing
+1
+report_timing
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : eth_core
+Version: K-2015.12-SP1
+Date   : Fri Nov 11 14:42:24 2016
+****************************************
+
+
+  Startpoint: tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: tx_core/QOS_selector/qos/srv_cnt0_d_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/CLK (DFFSR)
+                                                          0.00       0.00 r
+  tx_core/QOS_selector/qos/srv_cnt1_d_reg[3]/Q (DFFSR)
+                                                          0.26       0.26 r
+  U1764/Y (NOR3X1)                                        0.10       0.36 f
+  U1907/Y (NAND3X1)                                       0.09       0.45 r
+  U1921/Y (BUFX2)                                         0.12       0.57 r
+  U1941/Y (NAND3X1)                                       0.06       0.63 f
+  U1880/Y (NAND2X1)                                       0.11       0.74 r
+  U1860/Y (MUX2X1)                                        0.15       0.89 f
+  U1855/Y (NAND2X1)                                       0.09       0.98 r
+  U1774/Y (BUFX2)                                         0.10       1.08 r
+  U1853/Y (NAND2X1)                                       0.04       1.13 f
+  U1854/Y (OAI21X1)                                       0.10       1.23 r
+  U1899/Y (XNOR2X1)                                       0.13       1.36 r
+  U1898/Y (XNOR2X1)                                       0.12       1.49 r
+  U1887/Y (NOR2X1)                                        0.10       1.59 f
+  U1843/Y (AOI21X1)                                       0.10       1.69 r
+  U1841/Y (XOR2X1)                                        0.10       1.79 f
+  U1835/Y (NAND3X1)                                       0.08       1.87 r
+  U1826/Y (OR2X2)                                         0.16       2.03 r
+  U1825/Y (INVX8)                                         0.11       2.14 f
+  U3031/Y (NOR2X1)                                        0.06       2.20 r
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[0]/D (DFFSR)
+                                                          0.00       2.20 r
+  data arrival time                                                  2.20
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock reconvergence pessimism                           0.00       3.00
+  clock uncertainty                                      -0.25       2.75
+  tx_core/QOS_selector/qos/srv_cnt0_d_reg[0]/CLK (DFFSR)             2.75 r
+  library setup time                                     -0.09       2.66
+  data required time                                                 2.66
+  ------------------------------------------------------------------------------
+  data required time                                                 2.66
+  data arrival time                                                 -2.20
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+1
+#####################################################################
+#       check/update/report power 
+#####################################################################
+check_power
+Information: Checked out license 'PrimeTime-PX' (PT-019)
+Information: The power model is different from the delay model in the library.  (PLIB-161)
+Information: Checking 'out_of_table_range'.
+Warning: There are 1435 out_of_range ramps.
+Warning: There are 418 out_of_range loads.
+Information: Checking 'missing_table'.
+Information: Checking 'missing_function'.
+Warning: There are 5 library cells without function.
+0
+update_power
+Warning: The hierarchical cell 'tx_core/dma_reg_tx' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/tx_crc/crcpkt0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/tx_crc/crcpkt2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/tx_crc/crcpkt1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/axi_master' is an empty cell (PWR-278)
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+1
+report_power -hierarchy > vf.rpt
+quit
+Suppressed Messages Summary:
+Id          Severity      Occurrences   Suppressed
+-------------------------------------------------------------------------------
+PARA-123    Warning             23645        23545
+Total 1 type of message is suppressed
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 643.78 MB
+CPU usage for this session: 3 seconds 
+Elapsed time for this session: 2 seconds
+Diagnostics summary: 17 warnings, 14 informationals
+
+Thank you for using pt_shell!

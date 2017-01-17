@@ -1,0 +1,7 @@
+./AXI_interface.sv
+./mem_model_crc.sv
+./mem_model_pktd.sv
+./mem_model_pktc.sv
+./mem_model_swchaddr.sv
+./mem_model_swchdata.sv
+./mem_model_swchrsp.sv

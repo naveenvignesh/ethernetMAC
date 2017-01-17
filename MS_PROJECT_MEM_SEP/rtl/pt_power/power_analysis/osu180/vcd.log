@@ -1,0 +1,164 @@
+                                        
+                                 PrimeTime (R)
+                                        
+               Version K-2015.12-SP1 for linux64 - Jan 14, 2016 
+                                        
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+set power_enable_analysis TRUE
+TRUE
+set power_analysis_mode averaged
+averaged
+#####################################################################
+#       link design
+#####################################################################
+set search_path         "../../pt_syn/osu180  ."
+../../pt_syn/osu180  .
+set link_library "/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb"
+/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db  /apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb
+read_verilog		eth_core_OSU180_netlist.v
+1
+current_design		eth_core
+Loading verilog file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v'
+Loading db file '/home/morris/PnRhw/tsmc018/signalstorm/osu018_stdcells.db'
+Loading db file '/apps/synopsys/I-2013.12-SP5/libraries/syn/dw_foundation.sldb'
+{"eth_core"}
+link
+Linking design eth_core...
+Warning: Unable to resolve reference to 'dma_controller_tx_I_clks_AXI_clks_to_rtl_' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'CRC_block_I_clks_AXI_clks_to_rtl__2' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'CRC_block_I_clks_AXI_clks_to_rtl__1' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'CRC_block_I_clks_AXI_clks_to_rtl__0' in 'eth_core'. (LNK-005)
+Warning: Unable to resolve reference to 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_' in 'eth_core'. (LNK-005)
+Information: Creating black box for tx_core/axi_master/AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_... (LNK-043)
+Information: Creating black box for tx_core/dma_reg_tx/dma_controller_tx_I_clks_AXI_clks_to_rtl_... (LNK-043)
+Information: Creating black box for tx_core/tx_crc/crcpkt0/CRC_block_I_clks_AXI_clks_to_rtl__2... (LNK-043)
+Information: Creating black box for tx_core/tx_crc/crcpkt1/CRC_block_I_clks_AXI_clks_to_rtl__1... (LNK-043)
+Information: Creating black box for tx_core/tx_crc/crcpkt2/CRC_block_I_clks_AXI_clks_to_rtl__0... (LNK-043)
+Information: Removing 5 unneeded designs..... (LNK-034)
+Warning: Module 'AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_PKTD_from_fifo_I_memif_pdfifo1_MEMIF_PKTD_from_fifo_I_memif_pdfifo2_MEMIF_PKTD_from_fifo_I_memif_pcfifo0_MEMIF_PKTC_from_fifo_I_memif_pcfifo1_MEMIF_PKTC_from_fifo_I_memif_pcfifo2_MEMIF_PKTC_from_fifo_' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'dma_controller_tx_I_clks_AXI_clks_to_rtl_' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'CRC_block_I_clks_AXI_clks_to_rtl__0' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'CRC_block_I_clks_AXI_clks_to_rtl__2' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Warning: Module 'CRC_block_I_clks_AXI_clks_to_rtl__1' in file '/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/rtl/pt_power/pt_syn/osu180/eth_core_OSU180_netlist.v' is not used in the current design .  (LNK-039)
+Information: 8 (25.00%) library cells are unused in library osu018_stdcells..... (LNK-045)
+Information: total 8 library cells are unused (LNK-046)
+Design 'eth_core' was successfully linked.
+Information: There are 3833 leaf cells, ports, hiers and 4423 nets in the design (LNK-047)
+1
+#####################################################################
+#       set transition time / annotate parasitics
+#####################################################################
+read_parasitics		../../pt_syn/osu180/eth_core.spf
+Information: Log for 'read_parasitics command' will be generated in 'parasitics_command.log'. (PARA-107)
+1
+#####################################################################
+#       check/update/report timing 
+#####################################################################
+check_timing
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+Information: Checking 'no_input_delay'.
+Information: Checking 'no_driving_cell'.
+Information: Checking 'unconstrained_endpoints'.
+Warning: There are 894 endpoints which are not constrained for maximum delay.
+
+Information: Checking 'unexpandable_clocks'.
+Information: Checking 'latch_fanout'.
+Information: Checking 'no_clock'.
+Warning: There are 732 register clock pins with no clock.
+
+Information: Checking 'partial_input_delay'.
+Information: Checking 'generic'.
+Information: Checking 'loops'.
+Information: Checking 'generated_clocks'.
+Information: Checking 'pulse_clock_non_pulse_clock_merge'.
+Information: Checking 'pll_configuration'.
+0
+update_timing
+1
+report_timing
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : eth_core
+Version: K-2015.12-SP1
+Date   : Fri Nov 11 15:07:49 2016
+****************************************
+
+No constrained paths.
+
+1
+#####################################################################
+#       read switching activity file
+#####################################################################
+read_vcd "/home/010123386@SJSUAD.SJSU.EDU/Documents/MS_PROJECT_MEM_SEP/tb/mac_core.vcd" -strip_path "ethernet_tb/tx"
+Information: Checked out license 'PrimeTime-PX' (PT-019)
+Information: The power model is different from the delay model in the library.  (PLIB-161)
+Information: Reading file mac_core.vcd to annotate toggle rates on the design...
+Warning: Partial mapping of VCD vector tx_core/axi_slave/w_ach_cur_state[1:0] encountered, which may cause incorrect annotation. (PWR-981)
+Warning: Partial mapping of VCD vector tx_core/axi_slave/w_rspch_cur_state[1:0] encountered, which may cause incorrect annotation. (PWR-981)
+Warning: Partial mapping of VCD vector tx_core/QOS_selector/qos/queue_gnt_q[2:0] encountered, which may cause incorrect annotation. (PWR-981)
+
+======================================================================
+Summary:
+Total number of nets = 4321
+Number of annotated nets = 1155 (26.73%)
+Total number of leaf cells = 2563
+Number of fully annotated leaf cells = 0 (0.00%)
+======================================================================
+
+1
+#####################################################################
+#       check/update/report power 
+#####################################################################
+check_power
+Information: Checking 'out_of_table_range'.
+Warning: There are 1801 out_of_range ramps.
+Warning: There are 418 out_of_range loads.
+Information: Checking 'missing_table'.
+Information: Checking 'missing_function'.
+Warning: There are 5 library cells without function.
+0
+update_power
+Warning: The hierarchical cell 'tx_core/dma_reg_tx' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/tx_crc/crcpkt0' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/tx_crc/crcpkt2' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/tx_crc/crcpkt1' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'tx_core/axi_master' is an empty cell (PWR-278)
+Warning: No clock specified. 
+	 PrimeTime PX will derive a default switching activity of (0.1/ns) from the library time unit (1ns), 
+	 because no clock is defined in the design. In order to calculate power accurately,
+	 PrimeTime PX needs to know what frequency your design works on. 
+	 You can specify the frequency by defining one or more clocks. 
+	 For designs without clocks, you can specify a virtual clock 
+	 by using the command 
+	 'create_clock -name virtual_clock_name -period your_design_period'. 
+
+  (PWR-171)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+1
+report_power  > vcd.rpt
+quit
+Suppressed Messages Summary:
+Id          Severity      Occurrences   Suppressed
+-------------------------------------------------------------------------------
+PARA-123    Warning             23645        23545
+Total 1 type of message is suppressed
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 640.64 MB
+CPU usage for this session: 4 seconds 
+Elapsed time for this session: 2 seconds
+Diagnostics summary: 20 warnings, 14 informationals
+
+Thank you for using pt_shell!

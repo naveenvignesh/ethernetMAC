@@ -1,0 +1,7 @@
+Gate area 24.0000 um^2
+Level 0 Module eth_core                                 Gates=     66345 Cells=   26475 Area= 1592288.0 um^2
+Level 1 Module tx_core/axi_master                       Gates=10447      Cells=4157     Area=  250736.0 um^2
+Level 1 Module tx_core/dma_reg_tx                       Gates=14957      Cells=5904     Area=  358984.0 um^2
+Level 1 Module tx_core/tx_crc/crcpkt2                   Gates=10967      Cells=4323     Area=  263208.0 um^2
+Level 1 Module tx_core/tx_crc/crcpkt1                   Gates=10978      Cells=4329     Area=  263488.0 um^2
+Level 1 Module tx_core/tx_crc/crcpkt0                   Gates=10999      Cells=4338     Area=  263992.0 um^2

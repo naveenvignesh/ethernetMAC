@@ -1,0 +1,43 @@
+++eth_core.sv
+  ++eth_tx.sv
+    ++dma_controller_tx.sv
+    ++AXI_master.sv
+      ++dma_fifo.sv
+    ++AXI_slave.sv
+      ++dma_fifo.sv
+    ++eth_tx_crc.sv
+      ++CRC_block.sv
+        ++CRC32_D16.sv
+        ++CRC32_D24.sv
+        ++CRC32_D32.sv
+        ++CRC32_D40.sv
+        ++CRC32_D48.sv
+        ++CRC32_D56.sv
+        ++CRC32_D64.sv
+        ++CRC32_D8.sv
+      ++dma_fifo.sv
+    ++queue_selection.sv
+      ++QOS_arb.sv
+        ++prienc.sv
+    ++rs_layer.sv
+========================================================
+AXI_master.sv:
+AXI_slave.sv:
+CRC32_D16.sv:
+CRC32_D24.sv:
+CRC32_D32.sv:
+CRC32_D40.sv:
+CRC32_D48.sv:
+CRC32_D56.sv:
+CRC32_D64.sv:
+CRC32_D8.sv:
+CRC_block.sv:
+dma_controller_tx.sv:
+dma_fifo.sv:  // used in lot of modules 
+eth_core.sv:
+eth_tx_crc.sv:
+eth_tx.sv:
+prienc.sv:
+QOS_arb.sv:
+queue_selection.sv:
+rs_layer.sv:

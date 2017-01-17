@@ -1,0 +1,112 @@
+routeGuideNet FECTS_clks_clk___L1_N0
+#Trunk_Term begin
+#Trunk FECTS_clks_clk___L1_I0 Y 44.555 21.185
+#Trunk FECTS_clks_clk___L2_I5 A 42.3775 43.355
+#Trunk_Term end
+wire 44.555 38.415 42.3775 38.415 H 0.5
+wire 42.3775 38.415 42.3775 43.355 V 0.5
+wire 44.555 21.185 44.555 38.415 V 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N7
+wire 31.16 48.4035 31.16 42.845 V 0.5
+wire 30.78 53.3435 26.98 53.3435 H 0.5
+wire 30.4 33.5835 31.16 33.5835 H 0.5
+wire 31.16 33.5835 31.16 42.845 V 0.5
+wire 26.98 48.4035 31.16 48.4035 H 0.5
+wire 26.6 53.3435 26.98 53.3435 H 0.5
+wire 21.66 51.1565 21.66 48.4035 V 0.5
+wire 21.66 48.4035 26.98 48.4035 H 0.5
+wire 20.9 46.2165 21.66 46.2165 H 0.5
+wire 21.66 46.2165 21.66 48.4035 V 0.5
+wire 31.16 42.845 40.755 42.845 H 0.5
+wire 26.98 53.3435 26.98 48.4035 V 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N6
+#Trunk_Term begin
+#Trunk FECTS_clks_clk___L2_I6 Y 54.055 37.905
+#Trunk burst_addr_d_reg[31] CLK 48.26 51.1565
+#Trunk_Term end
+wire 51.68 41.2765 54.055 41.2765 H 0.5
+wire 54.055 41.2765 54.055 37.905 V 0.5
+wire 51.68 41.2765 51.68 48.4035 V 0.5
+wire 51.68 51.1565 48.26 51.1565 H 0.5
+wire 51.68 51.1565 51.68 48.4035 V 0.5
+wire 43.7 51.1565 48.26 51.1565 H 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N5
+#Trunk_Term begin
+#Trunk FECTS_clks_clk___L2_I5 Y 42.275 42.845
+#Trunk wchrsp_fifo/r_ptr_reg[2] CLK 49.4 61.0365
+#Trunk_Term end
+wire 49.4 61.0365 44.46 61.0365 H 0.5
+wire 44.46 61.0365 42.275 61.0365 H 0.5
+wire 42.275 61.0365 42.275 42.845 V 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N4
+wire 68.02 43.4635 63.84 43.4635 H 0.5
+wire 58.52 41.2765 57.38 41.2765 H 0.5
+wire 57.38 41.2765 57.38 43.4635 V 0.5
+wire 54.72 46.2165 55.1 46.2165 H 0.5
+wire 55.1 53.3435 55.1 46.2165 V 0.5
+wire 55.575 37.905 58.52 37.905 H 0.5
+wire 58.52 37.905 58.52 38.5235 V 0.5
+wire 57.38 43.4635 55.1 43.4635 H 0.5
+wire 55.1 43.4635 55.1 46.2165 V 0.5
+wire 58.52 38.5235 58.52 41.2765 V 0.5
+wire 62.32 46.2165 62.7 46.2165 H 0.5
+wire 62.7 46.2165 62.7 43.4635 V 0.5
+wire 62.7 41.2765 58.52 41.2765 H 0.5
+wire 63.84 43.4635 62.7 43.4635 H 0.5
+wire 68.02 41.2765 68.02 43.4635 V 0.5
+wire 68.78 43.4635 68.02 43.4635 H 0.5
+wire 62.7 43.4635 62.7 41.2765 V 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N3
+#Trunk_Term begin
+#Trunk FECTS_clks_clk___L2_I3 Y 39.995 42.845
+#Trunk wchaddr_fifo/depth_left_reg[1] CLK 26.22 33.5835
+#Trunk_Term end
+wire 26.22 33.5835 39.995 33.5835 H 0.5
+wire 39.995 33.5835 39.995 42.845 V 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N2
+#Trunk_Term begin
+#Trunk FECTS_clks_clk___L2_I2 Y 53.295 37.905
+#Trunk wchrsp_fifo/depth_left_reg[5] CLK 37.24 23.7035
+#Trunk_Term end
+wire 53.295 37.905 47.88 37.905 H 0.5
+wire 47.88 37.905 47.88 36.3365 V 0.5
+wire 47.88 33.5835 47.88 26.4565 V 0.5
+wire 47.88 33.5835 47.88 36.3365 V 0.5
+wire 47.88 26.4565 47.88 23.7035 V 0.5
+wire 42.18 23.7035 37.24 23.7035 H 0.5
+wire 42.18 23.7035 47.88 23.7035 H 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N1
+#Trunk_Term begin
+#Trunk FECTS_clks_clk___L2_I1 Y 41.515 42.845
+#Trunk burst_addr_d_reg[17] CLK 30.02 61.0365
+#Trunk_Term end
+wire 41.515 42.845 39.52 42.845 H 0.5
+wire 39.52 42.845 39.52 53.3435 V 0.5
+wire 39.52 63.2235 39.52 53.3435 V 0.5
+wire 39.52 63.2235 34.96 63.2235 H 0.5
+wire 34.96 63.2235 34.2 63.2235 H 0.5
+wire 34.2 63.2235 34.2 61.0365 V 0.5
+wire 34.2 61.0365 30.02 61.0365 H 0.5
+endRouteGuideNet
+routeGuideNet FECTS_clks_clk___L2_N0
+wire 71.44 28.6435 71.44 23.7035 V 0.5
+wire 69.92 23.7035 71.44 23.7035 H 0.5
+wire 65.36 36.3365 65.36 31.3965 V 0.5
+wire 65.36 28.6435 71.44 28.6435 H 0.5
+wire 64.98 31.3965 65.36 31.3965 H 0.5
+wire 58.14 23.7035 58.14 31.3965 V 0.5
+wire 55.1 31.3965 58.14 31.3965 H 0.5
+wire 54.815 37.905 55.1 37.905 H 0.5
+wire 55.1 37.905 55.1 31.3965 V 0.5
+wire 58.14 31.3965 64.98 31.3965 H 0.5
+wire 71.44 23.7035 71.82 23.7035 H 0.5
+wire 71.82 23.7035 71.82 21.5165 V 0.5
+wire 65.36 31.3965 65.36 28.6435 V 0.5
+endRouteGuideNet

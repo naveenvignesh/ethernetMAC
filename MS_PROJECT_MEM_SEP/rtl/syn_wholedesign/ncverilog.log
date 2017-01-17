@@ -1,0 +1,56 @@
+ncverilog: 14.10-p001: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-p001: Started on Nov 01, 2016 at 02:21:02 PDT
+ncverilog
+	+define+GATE
+	+libext+.tsbvlibp
+	+access+r
+	+sv
+	-y
+	/apps/toshiba/sjsu/verilog/tc240c
+	../../tb/ethernet_tb.sv
+	eth_core_netlist.v
+file: ../../tb/ethernet_tb.sv
+`include "files.sv"
+                  |
+ncvlog: *E,COFILX (../../tb/ethernet_tb.sv,2|18): cannot open include file 'files.sv'.
+import ethernet_frame_pkg::*;
+                        |
+ncvlog: *E,NOPBIND (../../tb/ethernet_tb.sv,3|24): Package ethernet_frame_pkg could not be bound.
+  int i =0;
+        |
+ncvlog: *W,VARIST (../../tb/ethernet_tb.sv,69|8): Local static variable with initializer requires 'static' keyword.
+ pkt_gen_mem_fill pkt = new();
+                |
+ncvlog: *E,NOIPRT (../../tb/ethernet_tb.sv,79|16): Unrecognized declaration 'pkt_gen_mem_fill' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+ pkt_gen_mem_fill pkt = new();
+                |
+ncvlog: *E,NOTINF (../../tb/ethernet_tb.sv,79|16): Interfaces are not allowed within tasks [SystemVerilog].
+ pkt_gen_mem_fill pkt = new();
+                    |
+ncvlog: *E,ILLPDL (../../tb/ethernet_tb.sv,79|20): Mixing of ansi & non-ansi style port declaration is not legal.
+ pkt_gen_mem_fill pkt = new();
+                      |
+ncvlog: *E,EXPSMC (../../tb/ethernet_tb.sv,79|22): expecting a semicolon (';') [12.3.2(IEEE)].
+ pkt.build_ethernet_frame();
+   |
+ncvlog: *E,EXPRPA (../../tb/ethernet_tb.sv,80|3): expecting a right parenthesis (')') [A.2.6(IEEE)].
+	module worklib.ethernet_tb:sv
+		errors: 5, warnings: 1
+file: eth_core_netlist.v
+	module worklib.AXI_master_I_clks_AXI_clks_to_rtl_I_raddr_ch_AXI_rd_addr_ch_master_if_I_rdata_ch_AXI_rd_data_ch_master_if_I_memif_pdfifo0_MEMIF_from_fifo_I_memif_pdfifo1_MEMIF_from_fifo_I_memif_pdfifo2_MEMIF_from_fifo_I_memif_pcfifo0_MEMIF_from_fifo_I_memif_pcfifo1_MEMIF_from_fifo_I_memif_pcfifo2_MEMIF_from_fifo_:v
+		errors: 0, warnings: 0
+	module worklib.dma_controller_tx_I_clks_AXI_clks_to_rtl_:v
+		errors: 0, warnings: 0
+	module worklib.CRC_block_I_clks_AXI_clks_to_rtl__0:v
+		errors: 0, warnings: 0
+	module worklib.CRC_block_I_clks_AXI_clks_to_rtl__2:v
+		errors: 0, warnings: 0
+	module worklib.CRC_block_I_clks_AXI_clks_to_rtl__1:v
+		errors: 0, warnings: 0
+	module worklib.eth_core:v
+		errors: 0, warnings: 0
+ncvlog: *W,LIBNOU: Library "/apps/toshiba/sjsu/verilog/tc240c" given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 2, warnings: 1
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	ncverilog	14.10-p001: Exiting on Nov 01, 2016 at 02:21:04 PDT  (total: 00:00:02)

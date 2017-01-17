@@ -1,0 +1,31 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Tue Nov  8 14:53:31 2016                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v09.14-s273_1 (32bit) 02/17/2011 18:35 (Linux 2.6)
+#@(#)CDS: NanoRoute v09.14-s029 NR110207-1105/USR65-UB (database version 2.30, 112.2.1) {superthreading v1.15}
+#@(#)CDS: CeltIC v09.14-s097_1 (32bit) 02/08/2011 02:24:38 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: AAE 09.14-s001 (32bit) 02/17/2011 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CTE 09.14-s140_1 (32bit) Feb  8 2011 01:13:15 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CPE v09.14-s001
+
+loadConfig ./encounter.conf
+floorPlan -r 1.0 0.6 20 20 20 20
+addRing -spacing_bottom 5 -width_left 5 -width_bottom 5 -width_top 5 -spacing_top 5 -layer_bottom metal5 -width_right 5 -around core -center 1 -layer_top metal5 -spacing_right 5 -spacing_left 5 -layer_right metal6 -layer_left metal6 -nets { gnd vdd }
+amoebaPlace
+sroute -noBlockPins -noPadRings
+trialRoute
+buildTimingGraph
+setCteReport
+setDrawView fplan
+setDrawView ameba
+setDrawView place
+help
+help timing
+help report
+help Report
+report_timing
+help report_timing

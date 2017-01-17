@@ -1,0 +1,13 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-YDIR
+/apps/toshiba/sjsu/verilog/tc240c
+-DEFINE
+GATE
+-LIBEXT
+.tsbvlibp
+-sv
+-INCDIR
+../rtl
